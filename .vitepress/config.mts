@@ -295,8 +295,8 @@ export default defineConfig({
 
     // Edit Link
     editLink: {
-      pattern: `${branding.githubUrl}/canoryn-docs/edit/main/:path`,
-      text: "Edit this page on GitHub",
+      pattern: "https://github.com/procodeai/canoryn-issues/issues/new?title=Docs%20Feedback&body=Feedback%20for%20page:%20https://canoryn.app/docs/:path",
+      text: "Suggest changes or report an issue",
     },
 
     // Last Updated
