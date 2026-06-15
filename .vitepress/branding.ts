@@ -1,6 +1,6 @@
 export const branding = {
   appName: "Canoryn",
-  companyName: "ProCode AI",
+  companyName: "Procode AI Labs",
   urlScheme: "canoryn",
   fileExtension: "cryn",
   websiteUrl: "https://canoryn.app",
