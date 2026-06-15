@@ -210,3 +210,15 @@ div[class*="language-"] {
   background: var(--vp-c-brand-soft) !important;
   color: var(--vp-c-brand-1) !important;
 }
+
+/* ===== SOCIAL LINKS ===== */
+.VPSocialLink {
+  border-radius: 999px !important;
+  transition: color 0.18s ease, background-color 0.18s ease, transform 0.18s ease !important;
+}
+
+.VPSocialLink:hover {
+  background: var(--vp-c-bg-soft) !important;
+  color: var(--vp-c-brand-1) !important;
+  transform: translateY(-1px);
+}
