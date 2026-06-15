@@ -1,74 +1,42 @@
 # Introduction
 
-Welcome to **[[appName]]** documentation—your guide to building intelligent, living digital organisms on macOS.
+Welcome to the **[[appName]]** documentation.
+
+[[appName]] is a native macOS assistant for building personal AI automations. It is not just a chatbot, and it is not just a shortcut runner. It lives close to your Mac, connecting voice commands, visual workflow graphs, native app actions, local context, and user-controlled AI providers.
 
 ## What is [[appName]]?
 
-[[appName]] is a **visual agent programming platform** that lets you create AI-powered automations without writing code. Unlike traditional automation tools, [[appName]] agents can:
+[[appName]] is your AI presence on macOS. It understands commands, runs workflows, controls supported apps, and helps you automate personal work that Siri, Shortcuts, browser chatbots, and tools like n8n cannot comfortably handle.
 
-- **See** your screen and understand context
-- **Learn** from your preferences over time
-- **Act** autonomously when appropriate
-- **Remember** past interactions and decisions
+Instead of navigating complex scripts or restricted cloud integrations, [[appName]] lets you build powerful assistants that learn, remember, and act across your Mac using a clear, visual builder.
 
-## Core Philosophy
+## Core Capabilities
 
-> _More than a Chatbot. A Living Digital Organism._
+### 📱 Native macOS Integration
+Canoryn is a native macOS application built specifically for Apple desktop environments. It runs fast, integrates with system accessibility APIs, and lives in your menu bar for instant access.
 
-Traditional AI assistants wait for commands. [[appName]] **observes**, **learns**, and **acts**. By combining deep macOS integration with biological design principles (Perception, Cognition, Memory), it bridges the gap between static software and autonomous agency.
+### 🧠 Personalized Memory & Context
+Canoryn acts as a true personal assistant by learning your preferences and habits. It maintains a persistent local memory, allowing it to remember context from past conversations and adapt workflows to your personal style over time.
 
-## Key Concepts
+### 🎙️ Voice & Intent
+Trigger workflows and speak commands naturally. Canoryn processes voice inputs to translate your intent into immediate system action.
 
-### 🧬 Agents
+### 📐 Visual Architect
+Design custom workflows with a node-based editor. Wire together triggers, logic blocks, and app actions to automate tasks without writing code.
 
-An **Agent** is a complete behavior unit—like a digital creature with its own purpose. For example:
+### 🔌 Native App Actions
+Automate native system tasks and control supported applications (like Spotify, files, and terminal commands) directly through your workflows.
 
-- A "DJ Agent" that manages your music based on mood
-- A "Research Agent" that summarizes PDFs and organizes notes
-- A "Focus Agent" that manages notifications during deep work
+### 🔑 Bring Your Own AI Keys
+Keep control over your costs and data. Connect your own API keys for providers like OpenAI, Anthropic, or run local models.
 
-### 📐 Blueprints
-
-**Blueprints** are the visual representation of an agent's logic. Using the **Architect** editor, you wire together nodes to define how an agent perceives, thinks, and acts.
-
-### 🧠 Memory
-
-Every agent has access to a **Living Memory** system that stores:
-
-- User preferences (learned implicitly)
-- Past interactions and context
-- Knowledge from conversations
-
-## Architecture Overview
-
-```
-┌─────────────────────────────────────────────────┐
-│                  [[appName]]                      │
-├─────────────────────────────────────────────────┤
-│  PERCEPTION        COGNITION         ACTION     │
-│  ───────────       ──────────        ──────     │
-│  • Screen Vision   • LLM Reasoning   • Spotify  │
-│  • Voice Input     • Blueprint Logic • System   │
-│  • App Context     • Memory RAG      • Browser  │
-│  • Time/Location   • Decision Trees  • Files    │
-└─────────────────────────────────────────────────┘
-```
-
-## Privacy First
-
-[[appName]] is designed with **privacy as a foundation**:
-
-| Feature        | Privacy Approach                                      |
-| -------------- | ----------------------------------------------------- |
-| AI Processing  | 100% local with Ollama (or cloud providers by choice) |
-| Screen Vision  | Never recorded, never transmitted                     |
-| Voice Commands | Processed locally, never stored                       |
-| User Data      | Encrypted, stored only on your Mac                    |
+### 🔒 Local-First Design
+Your data and configurations stay on your device. Workflows are saved as `.cryn` files, which you can easily manage, back up, or share.
 
 ## Next Steps
 
 Ready to get started?
 
-- [Installation Guide](/guide/installation) - Set up [[appName]] on your Mac
-- [Quick Start](/guide/quickstart) - Build your first agent in 5 minutes
+- [Installation Guide](/guide/installation) - Download and install [[appName]] on your Mac
+- [Quick Start](/guide/quickstart) - Build your first workflow in 5 minutes
 - [Architect Overview](/architect/overview) - Learn the visual editor

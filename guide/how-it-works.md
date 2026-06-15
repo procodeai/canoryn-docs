@@ -1,8 +1,8 @@
 # How [[appName]] Works
 
-[[appName]] is built on a **biological architecture**—designed to mimic how living organisms perceive, think, and act.
+[[appName]] is built on a structured architecture that connects system inputs, AI reasoning, and native action execution.
 
-## 1. Perception (The Eyes & Ears)
+## 1. Input & Context (Triggers)
 
 [[appName]] uses **multimodal input** to understand context:
 
@@ -11,39 +11,36 @@
 - **System Events**: Monitors file changes, app launches, and hotkeys.
 - **Clipboard**: Watches for copied text or images.
 
-How [[appName]] understands the world:
+How [[appName]] processes workflows:
 
 ```
-├─────────────────────────────────────────────────────┤
-│  PERCEPTION        COGNITION         ACTION        │
-│  ───────────       ──────────        ──────        │
-│  See & Hear        Think & Decide    Do & Execute  │
-└─────────────────────────────────────────────────────┘
+├─────────────────────────────────────────────────────────┤
+│  INPUTS & TRIGGERS    AI REASONING      SYSTEM ACTIONS  │
+│  ─────────────────    ────────────      ──────────────  │
+│  See & Hear           Think & Decide    Do & Execute    │
+└─────────────────────────────────────────────────────────┘
 ```
 
-### 1. Perception (The Senses)
+### 1. Inputs & Context
+How [[appName]] captures system events and user intent:
 
-How [[appName]] understands the world:
-
-| Sense       | Implementation                        |
+| Input Type  | Implementation                        |
 | ----------- | ------------------------------------- |
 | **Vision**  | Screen analysis, UI element detection |
 | **Hearing** | Voice commands, audio context         |
 | **Context** | Active app, time, location            |
 
-### 2. Cognition (The Brain)
-
-How [[appName]] thinks and decides:
+### 2. Reasoning & Logic (AI Processing)
+How [[appName]] processes instructions and decides next steps:
 
 | Component           | Function                           |
 | ------------------- | ---------------------------------- |
-| **LLM Reasoning**   | Natural language understanding     |
+| **LLM Reasoning**   | Natural language NLU               |
 | **Blueprint Logic** | Visual workflow execution          |
-| **Memory RAG**      | Retrieval of relevant past context |
+| **Memory Database** | Retrieval of relevant past context |
 
-### 3. Action (The Body)
-
-How [[appName]] affects the world:
+### 3. Actions & Integrations (Execution)
+How [[appName]] runs workflows and controls system elements:
 
 | System            | Capabilities                  |
 | ----------------- | ----------------------------- |
@@ -58,17 +55,17 @@ User speaks "Play something chill"
         │
         ▼
    ┌─────────┐
-   │ PERCEPT │ ← Voice transcription
+   │ TRIGGER │ ← Voice transcription
    └────┬────┘
         │
         ▼
    ┌─────────┐
-   │ COGNIZE │ ← LLM understands intent
+   │ PROCESS │ ← LLM understands intent
    └────┬────┘   Memory recalls: "User likes Lo-fi"
         │
         ▼
    ┌─────────┐
-   │   ACT   │ ← Spotify: Play Lo-fi playlist
+   │ ACTION  │ ← Spotify: Play Lo-fi playlist
    └─────────┘
 ```
 
