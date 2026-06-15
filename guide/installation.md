@@ -37,7 +37,7 @@ When you first launch [[appName]], you'll be prompted to:
 
 ### 1. Grant Permissions
 
-[[companyName]] needs certain permissions to work its magic:
+[[appName]] needs certain permissions to work its magic:
 
 | Permission           | Why We Need It            | What We Don't Do                   |
 | -------------------- | ------------------------- | ---------------------------------- |

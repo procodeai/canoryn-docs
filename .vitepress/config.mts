@@ -4,11 +4,17 @@ import { branding } from "./branding";
 export default defineConfig({
   title: branding.appName,
   description: "Build Living, Breathing Digital Organisms",
+  ignoreDeadLinks: false,
+  sitemap: {
+    hostname: "https://docs.canoryn.app",
+  },
 
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     ["meta", { name: "theme-color", content: "#10b981" }],
     ["meta", { property: "og:type", content: "website" }],
+    ["meta", { property: "og:url", content: "https://docs.canoryn.app" }],
+    ["link", { rel: "canonical", href: "https://docs.canoryn.app/" }],
     ["meta", { property: "og:title", content: `${branding.appName} Docs` }],
     [
       "meta",
@@ -46,7 +52,7 @@ export default defineConfig({
 
       md.core.ruler.after("block", "branding_replace", (state) => {
         state.tokens.forEach((token) => {
-          if (token.type === "inline" && token.content) {
+          if (token.content) {
             token.content = replacePlaceholders(token.content);
           }
         });
@@ -83,6 +89,10 @@ export default defineConfig({
           {
             text: "Twitter",
             link: branding.twitterUrl,
+          },
+          {
+            text: "Releases",
+            link: branding.releasesUrl,
           },
         ],
       },

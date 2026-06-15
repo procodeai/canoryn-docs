@@ -18,7 +18,7 @@ You will learn how to:
 2.  In the Sidebar, click the **`+`** button (or right-click "My Projects" -> "New Agent").
 3.  Name your agent **"Zen Master"**.
 
-![Screenshot: Empty Canvas and New Agent Dialog](placeholder)
+> _Screenshot coming soon: Screenshot: Empty Canvas and New Agent Dialog_
 
 ## Step 2: Fetch Wisdom
 
@@ -32,7 +32,7 @@ We'll use **GitHub's Zen API** to get a random design principle in plain text. I
 
 > **Tip:** Press `Play` in the toolbar now. Check the Console (Bottom Panel) to see the output (e.g., _"Favor focus over features."_).
 
-![Screenshot: HTTP Request Node configuration](placeholder)
+> _Screenshot coming soon: Screenshot: HTTP Request Node configuration_
 
 ## Step 3: Add the AI Brain
 
@@ -49,7 +49,7 @@ Now let's expand on this thought.
     Keep it under 2 sentences.
     ```
 
-![Screenshot: Simple AI Node wired to HTTP Request](placeholder)
+> _Screenshot coming soon: Screenshot: Simple AI Node wired to HTTP Request_
 
 ## Step 4: Give it a Voice
 
@@ -59,7 +59,7 @@ Finally, let's hear the wisdom.
 2.  Connect the **Simple AI** node's `Result` port to the **Speak Text** node's `Text` input.
 3.  (Optional) Select a **Personality** in the Inspector (e.g., "Narrator").
 
-![Screenshot: Speak Text Node wired to Simple AI](placeholder)
+> _Screenshot coming soon: Screenshot: Speak Text Node wired to Simple AI_
 
 ## Step 5: Run It!
 

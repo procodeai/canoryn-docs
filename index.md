@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "[[companyName]]"
+  name: "[[appName]]"
   text: "Build Living, Breathing Digital Organisms"
   tagline: The visual agent programming platform for macOS
   actions:
@@ -34,9 +34,9 @@ features:
     details: Share and discover community-built agents. Install new capabilities with one click.
 ---
 
-## Why [[companyName]]?
+## Why [[appName]]?
 
-Traditional automation tools like Zapier and n8n are powerful, but they lack **intelligence**. [[companyName]] agents don't just execute scripts—they **perceive**, **reason**, and **act**.
+Traditional automation tools like Zapier and n8n are powerful, but they lack **intelligence**. [[appName]] agents don't just execute scripts—they **perceive**, **reason**, and **act**.
 
 ::: tip Example
 **Old way**: "If email received, send to Slack."  
@@ -45,7 +45,7 @@ Traditional automation tools like Zapier and n8n are powerful, but they lack **i
 
 ## Quick Links
 
-- 📖 [Introduction](/guide/introduction) - What is [[companyName]]?
+- 📖 [Introduction](/guide/introduction) - What is [[appName]]?
 - 🚀 [Installation](/guide/installation) - Download and setup
 - 🎨 [Architect Overview](/architect/overview) - Learn the visual editor
 - 🔌 [Actions API](/api/actions) - Available system actions

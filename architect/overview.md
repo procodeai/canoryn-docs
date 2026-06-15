@@ -67,4 +67,4 @@ Groups are visual containers that help organize related nodes. Select nodes and 
 
 ---
 
-**Next**: Learn about the [Canvas & Interactions](/architect/canvas_details) or explore the full [Node Reference](/architect/nodes).
+**Next**: Learn about the [Canvas & Interactions](/architect/canvas_details) or explore the full [Node Reference](/architect/reference/core_nodes).
