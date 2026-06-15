@@ -1,5 +1,5 @@
 {
-  "name": "procode-docs",
+  "name": "canoryn-docs",
   "version": "1.0.0",
   "scripts": {
     "docs:dev": "vitepress dev",

@@ -1,73 +1,70 @@
 # Architect Overview
 
-The **Architect** is ProCode AI's visual programming environment—an infinite canvas where you design agent behaviors by connecting nodes.
+The **Architect** is [[appName]]'s visual programming environment — an infinite canvas where you design agent behaviors by connecting nodes with wires.
 
-## Interface
+Think of it as a visual script: instead of writing code line by line, you connect building blocks together to describe _what_ your agent should do and _when_.
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│ ⚙️  Mission Control  │     Canvas     │  📋 Inspector      │
-├─────────────────────────────────────────────────────────────┤
-│                      │                │                     │
-│  📁 Blueprints       │   ┌────┐       │  Node Properties   │
-│  ├─ My Agent         │   │Node│───────│  ───────────────   │
-│  ├─ DJ Agent         │   └────┘       │  Name: Speak       │
-│  └─ Focus Agent      │       │        │  Message: "Hello"  │
-│                      │   ┌────┐       │                     │
-│  🎯 Nodes            │   │ AI │       │                     │
-│  ├─ Triggers         │   └────┘       │                     │
-│  ├─ Logic            │                │                     │
-│  └─ Actions          │                │                     │
-│                      │                │                     │
-├─────────────────────────────────────────────────────────────┤
-│  ▶️ Play  ⏸️ Pause  🐛 Debug   │   Design │ Debug │ Simulate │
-└─────────────────────────────────────────────────────────────┘
-```
+## The Workspace
 
-## Workspace Modes
+The Architect is split into three main panels:
 
-### 📐 Design Mode
+| Panel                  | Location      | Purpose                                         |
+| :--------------------- | :------------ | :---------------------------------------------- |
+| **Agent Browser**      | Left Sidebar  | Manage your agent files and folders.            |
+| **Blueprint Canvas**   | Center        | The infinite canvas where you build your agent. |
+| **Property Inspector** | Right Sidebar | Configure the selected node's settings.         |
 
-The default mode for building blueprints. Clean interface, precise wiring.
+> [!TIP]
+> Press `Cmd + .` to toggle **Focus Mode**, which hides both sidebars for a distraction-free canvas.
 
-### 🐛 Debug Mode
-
-X-Ray vision—see live variable values, execution state, and data flowing through wires.
-
-### ⚡ Simulate Mode
-
-"The Matrix" view. Background fades, wires glow with data flow animation. Watch your agent think in real-time.
-
-## Core Concepts
+## Core Building Blocks
 
 ### Nodes
 
-Visual blocks representing actions, logic, or data. Each node has:
+Nodes are Visual blocks that represent a single action or decision. Every node has:
 
-- **Inputs** (left side) - Receive data or flow
-- **Outputs** (right side) - Send data or flow
-- **Properties** - Configuration options
+- **Input Ports** (left side): Receive execution flow or data.
+- **Output Ports** (right side): Send execution flow or data.
+- **Properties**: Configurable settings edited in the Inspector.
+
+There are **5 categories** of nodes:
+
+| Category    | Color     | Purpose                 | Examples                                   |
+| :---------- | :-------- | :---------------------- | :----------------------------------------- |
+| **Trigger** | 🟡 Yellow | Start execution         | On Start, Voice Command, Schedule, Webhook |
+| **Logic**   | 🟣 Purple | AI and control flow     | Simple AI, OpenAI, If/Else, For Each       |
+| **Action**  | Various   | Interact with the world | Speak, Play Music, Open URL                |
+| **Memory**  | 🟢 Green  | Store and recall data   | Recall Memories, Set Variable              |
+| **Utility** | 🔘 Gray   | Transform and inspect   | Prompt Builder, JSON Parser, Result Viewer |
 
 ### Wires
 
-Connections between nodes. Two types:
+Wires are the connections between nodes. There are two fundamental types:
 
-- **Flow Wires** (white) - Control execution order
-- **Data Wires** (colored) - Pass values between nodes
+- **Flow Wires** (White): Control the _order_ of execution. "Do this, _then_ do that."
+- **Data Wires** (Colored): Pass _values_ between nodes. "Use this text as the prompt."
 
 ### Groups
 
-Container nodes that organize related logic. Drag a selection and press `Cmd+G`.
+Groups are visual containers that help organize related nodes. Select nodes and press `Cmd + G` to group them.
 
-## Why Visual?
+## How Execution Works
 
-| Traditional Code | Visual Blueprint   |
-| ---------------- | ------------------ |
-| Hidden logic     | See the flow       |
-| Syntax errors    | Snap-to-connect    |
-| Debug with print | Watch data live    |
-| Hard to share    | Screenshot & share |
+1.  Every agent starts from a **Trigger** node (e.g., "On Start").
+2.  Execution follows **Flow Wires** (white) from output to input.
+3.  When a node executes, it reads its **Data Wires** for input values.
+4.  The node processes and passes its results downstream.
+
+```
+┌──────────┐     ┌──────────┐     ┌──────────┐
+│ On Start │────▶│ Simple AI│────▶│  Speak   │
+│ (Trigger)│flow │ (Logic)  │flow │ (Action) │
+└──────────┘     └──────────┘     └──────────┘
+                      │ data
+                 "Summarize the
+                  latest news"
+```
 
 ---
 
-Continue to [Controls & Shortcuts](/architect/controls) to master the editor.
+**Next**: Learn about the [Canvas & Interactions](/architect/canvas_details) or explore the full [Node Reference](/architect/reference/core_nodes).

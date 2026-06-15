@@ -1,4 +1,4 @@
-# Aura Workflow Architecture Design
+# [[appName]] Workflow Architecture Design
 
 ## Vision
 
@@ -20,13 +20,13 @@ A visual workflow builder for personal AI assistants where **non-technical users
 
 ### Unreal Blueprint Comparison
 
-| UE Blueprint | Aura Equivalent       | Notes                        |
-| ------------ | --------------------- | ---------------------------- |
-| Event Graph  | **Agent Graph**       | Main workflow                |
-| Function     | **Subflow**           | Reusable, has inputs/outputs |
-| Macro        | **Template** (future) | Copy-paste node groups       |
-| Event        | **Trigger Node**      | Voice, Schedule, Webhook     |
-| Variable     | **Context/Memory**    | AI memory system             |
+| UE Blueprint | [[appName]] Equivalent | Notes                        |
+| ------------ | ---------------------- | ---------------------------- |
+| Event Graph  | **Agent Graph**        | Main workflow                |
+| Function     | **Subflow**            | Reusable, has inputs/outputs |
+| Macro        | **Template** (future)  | Copy-paste node groups       |
+| Event        | **Trigger Node**       | Voice, Schedule, Webhook     |
+| Variable     | **Context/Memory**     | AI memory system             |
 
 ---
 
@@ -296,28 +296,28 @@ struct ArchitectWindowSession {
 
 ### Selection Regression
 
-#### [MODIFY] [BlueprintEditorState.swift](file:///Users/deepak/XCode%20Projects/Aura/Aura/Core/Graph/Editor/BlueprintEditorState.swift)
+#### [MODIFY] `BlueprintEditorState.swift`
 
 - Update `zoomToNode(_:)` to perform `self.selectedNodeIDs = [id]`. This ensures the Inspector updates immediately when jumping from a log entry.
 
 ### Execution Data Visualization
 
-#### [MODIFY] [GraphRunner.swift](file:///Users/deepak/XCode%20Projects/Aura/Aura/Core/Graph/Execution/GraphRunner.swift)
+#### [MODIFY] `GraphRunner.swift`
 
 - Update `didFinishNode` delegate call to pass the final `inputs` and `outputs` captured during the node run.
 - Ensure outputs are pulled from `GraphContext` after the handler completes.
 
-#### [MODIFY] [ArchitectEngine.swift](file:///Users/deepak/XCode%20Projects/Aura/Aura/Core/Graph/Execution/ArchitectEngine.swift)
+#### [MODIFY] `ArchitectEngine.swift`
 
 - Implement updated `didFinishNode` to update the reactive `GraphDefinition` surface.
 - Map `Any` values to `String` descriptions for the `lastInputs` and `lastOutputs` fields in `NodeDefinition`.
 
-#### [MODIFY] [VisualNodeView.swift](file:///Users/deepak/XCode%20Projects/Aura/Aura/Features/Architect/VisualNodeView.swift)
+#### [MODIFY] `VisualNodeView.swift`
 
 - Add "Execution Tooltips/Badges" to pins when in Debug mode.
 - Pull data from `node.lastInputs[port.id]` and `node.lastOutputs[port.id]`.
 
-#### [MODIFY] [NodeInspectorView.swift](file:///Users/deepak/XCode%20Projects/Aura/Aura/Features/Architect/NodeInspectorView.swift)
+#### [MODIFY] `NodeInspectorView.swift`
 
 - Enhance "LAST EXECUTION" section to show both Inputs and Outputs.
 - Format complex data (JSON) into a readable, monospaced view.

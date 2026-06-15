@@ -7,7 +7,7 @@
 
 ## 1. UI/UX Scalability: The "IDE" Transformation (✅ Completed)
 
-The **Aura Nexus Layout** has been implemented, featuring:
+The **[[appName]] Nexus Layout** has been implemented, featuring:
 
 - **Orchestrator Toolbar** with native glass aesthetics.
 - **Mission Control** sidebar for graph management.

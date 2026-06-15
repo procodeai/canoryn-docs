@@ -26,7 +26,7 @@ Since you're waiting for your model to train, here is a breakdown of what is act
 
 ### Phase 3: Fine-Tuning (The Specialist Course) <--- YOU ARE HERE
 
-- **What**: We take a smart Instruct Model and show it _specific_ examples (your `train.jsonl` with Aura Graphs).
+- **What**: We take a smart Instruct Model and show it _specific_ examples (your `train.jsonl` with [[appName]] Graphs).
 - **Goal**: Make it an expert at _your_ specific task (generating JSON graphs).
 
 ## 3. The LoRA Revolution (Low-Rank Adaptation)
@@ -85,9 +85,9 @@ How do you make a model smarter without making it slower?
 - **Routing**: A "Router" decides which 2 experts handle your specific question.
 - **Result**: You get the smarts of a huge model, but the speed of a small one.
 
-## 7. Making Aura Great (Roadmap 2026)
+## 7. Making [[appName]] Great (Roadmap 2026)
 
-You asked: _"How can we improve our training process? How do we make Aura great?"_
+You asked: _"How can we improve our training process? How do we make [[appName]] great?"_
 
 You have the pipeline. Now you need **Volume** and **Evaluation**.
 
@@ -102,10 +102,10 @@ You have the pipeline. Now you need **Volume** and **Evaluation**.
 
 - **Current State**: Loop is Manual (You create data -> You train).
 - **Future State**:
-  1.  User asks Aura to do something.
-  2.  Aura tries.
+  1.  User asks [[appName]] to do something.
+  2.  [[appName]] tries.
   3.  User fixes the graph (or edits it).
-  4.  **Aura saves the FIX as a new training example.** (We already built `TrainingDataRecorder` for this!).
+  4.  **[[appName]] saves the FIX as a new training example.** (We already built `TrainingDataRecorder` for this!).
 - **Effect**: The model gets smarter _automatically_ every time you use it.
 
 ### C. DPO (Direct Preference Optimization)
@@ -131,9 +131,9 @@ You noticed: _"Loss is 0.02. Won't it overfit with only 22 examples?"_
 
 - **Creative Overfitting (Bad)**: If you teach a poet only 22 poems, it just plagiarizes.
 - **Syntax Overfitting (Good)**: If you teach a compiler how to write JSON, you WANT it to be rigid.
-- **The Strategy**: We are turning a "Creative Writer" (Qwen) into a "Strict Engineer" (Aura). We want it to _memorize_ our exact Node IDs (`logic.ai.groq`) and JSON structure.
+- **The Strategy**: We are turning a "Creative Writer" (Qwen) into a "Strict Engineer" ([[appName]]). We want it to _memorize_ our exact Node IDs (`logic.ai.groq`) and JSON structure.
 - **Next Phase**: Once it follows the rules (0.02 loss), we feed it 1,000 diverse examples to bring back creativity _within_ those rules.
 
 ---
 
-**Summary**: You are taking a generic genius (Qwen 2.5), using 4-bit compression to fit it on your Mac, and using LoRA (sticky notes) to teach it specifically how to build Aura Apps.
+**Summary**: You are taking a generic genius (Qwen 2.5), using 4-bit compression to fit it on your Mac, and using LoRA (sticky notes) to teach it specifically how to build [[appName]] Apps.

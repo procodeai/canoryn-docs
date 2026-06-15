@@ -37,6 +37,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Verify docs custom domain
+        run: |
+          test -f .vitepress/public/CNAME
+          grep -qx 'docs.canoryn.app' .vitepress/public/CNAME
+
       - name: Build with VitePress
         run: npm run docs:build
 

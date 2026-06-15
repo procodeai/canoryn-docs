@@ -1,12 +1,12 @@
 # Custom Actions
 
 ::: warning Developer Feature
-This guide is for developers who want to extend Aura with custom Swift actions.
+This guide is for developers who want to extend Canoryn with custom Swift actions.
 :::
 
 ## Overview
 
-Custom actions let you add new capabilities to Aura that aren't included by default.
+Custom actions let you add new capabilities to Canoryn that aren't included by default.
 
 ## Action Structure
 

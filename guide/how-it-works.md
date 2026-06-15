@@ -1,12 +1,19 @@
-# How Aura Works
+# How [[appName]] Works
 
-Aura is built on a **biological architecture**—designed to mimic how living organisms perceive, think, and act.
+[[appName]] is built on a **biological architecture**—designed to mimic how living organisms perceive, think, and act.
 
-## The Three Pillars
+## 1. Perception (The Eyes & Ears)
+
+[[appName]] uses **multimodal input** to understand context:
+
+- **Vision Loop**: Periodically captures screen state (text, UI elements, images).
+- **Audio Stream**: Listens for wake words ("Hey [[appName]]") and voice commands.
+- **System Events**: Monitors file changes, app launches, and hotkeys.
+- **Clipboard**: Watches for copied text or images.
+
+How [[appName]] understands the world:
 
 ```
-┌─────────────────────────────────────────────────────┐
-│                     AURA                            │
 ├─────────────────────────────────────────────────────┤
 │  PERCEPTION        COGNITION         ACTION        │
 │  ───────────       ──────────        ──────        │
@@ -16,7 +23,7 @@ Aura is built on a **biological architecture**—designed to mimic how living or
 
 ### 1. Perception (The Senses)
 
-How Aura understands the world:
+How [[appName]] understands the world:
 
 | Sense       | Implementation                        |
 | ----------- | ------------------------------------- |
@@ -26,7 +33,7 @@ How Aura understands the world:
 
 ### 2. Cognition (The Brain)
 
-How Aura thinks and decides:
+How [[appName]] thinks and decides:
 
 | Component           | Function                           |
 | ------------------- | ---------------------------------- |
@@ -36,7 +43,7 @@ How Aura thinks and decides:
 
 ### 3. Action (The Body)
 
-How Aura affects the world:
+How [[appName]] affects the world:
 
 | System            | Capabilities                  |
 | ----------------- | ----------------------------- |

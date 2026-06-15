@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to Aura.
+All notable changes to [[appName]].
 
 ## [Unreleased]
 

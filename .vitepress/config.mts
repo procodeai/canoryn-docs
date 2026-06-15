@@ -1,14 +1,21 @@
 import { defineConfig } from "vitepress";
+import { branding } from "./branding";
 
 export default defineConfig({
-  title: "ProCode AI",
+  title: branding.appName,
   description: "Build Living, Breathing Digital Organisms",
+  ignoreDeadLinks: false,
+  sitemap: {
+    hostname: "https://docs.canoryn.app",
+  },
 
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     ["meta", { name: "theme-color", content: "#10b981" }],
     ["meta", { property: "og:type", content: "website" }],
-    ["meta", { property: "og:title", content: "ProCode AI Docs" }],
+    ["meta", { property: "og:url", content: "https://docs.canoryn.app" }],
+    ["link", { rel: "canonical", href: "https://docs.canoryn.app/" }],
+    ["meta", { property: "og:title", content: `${branding.appName} Docs` }],
     [
       "meta",
       {
@@ -21,9 +28,46 @@ export default defineConfig({
   // Clean URLs (no .html extension)
   cleanUrls: true,
 
+  // Markdown configuration for variable replacement
+  markdown: {
+    config: (md) => {
+      const replacePlaceholders = (source: string): string => {
+        let output = source;
+        Object.entries(branding).forEach(([key, value]) => {
+          output = output.split(`[[${key}]]`).join(String(value));
+        });
+        return output;
+      };
+
+      const replaceInObject = (value: unknown): unknown => {
+        if (typeof value === "string") return replacePlaceholders(value);
+        if (Array.isArray(value)) return value.map(replaceInObject);
+        if (value && typeof value === "object") {
+          Object.entries(value as Record<string, unknown>).forEach(([k, v]) => {
+            (value as Record<string, unknown>)[k] = replaceInObject(v);
+          });
+        }
+        return value;
+      };
+
+      md.core.ruler.after("block", "branding_replace", (state) => {
+        state.tokens.forEach((token) => {
+          if (token.content) {
+            token.content = replacePlaceholders(token.content);
+          }
+        });
+
+        // Also replace placeholders in page frontmatter (hero/actions/etc).
+        if (state.env.frontmatter) {
+          replaceInObject(state.env.frontmatter);
+        }
+      });
+    },
+  },
+
   themeConfig: {
     logo: "/logo.svg",
-    siteTitle: "ProCode AI",
+    siteTitle: branding.appName,
 
     // Navigation
     nav: [
@@ -34,9 +78,22 @@ export default defineConfig({
       {
         text: "Resources",
         items: [
-          { text: "GitHub", link: "https://github.com/procodeai" },
-          { text: "Discord", link: "https://discord.gg/procodeai" },
-          { text: "Twitter", link: "https://twitter.com/procodeai" },
+          {
+            text: "GitHub",
+            link: branding.githubUrl,
+          },
+          {
+            text: "Discord",
+            link: branding.discordUrl,
+          },
+          {
+            text: "Twitter",
+            link: branding.twitterUrl,
+          },
+          {
+            text: "Releases",
+            link: branding.releasesUrl,
+          },
         ],
       },
     ],
@@ -55,7 +112,10 @@ export default defineConfig({
         {
           text: "Core Concepts",
           items: [
-            { text: "How Aura Works", link: "/guide/how-it-works" },
+            {
+              text: `How ${branding.appName} Works`,
+              link: "/guide/how-it-works",
+            },
             { text: "Agents & Blueprints", link: "/guide/agents" },
             { text: "Memory System", link: "/guide/memory" },
           ],
@@ -73,16 +133,131 @@ export default defineConfig({
           text: "Visual Editor",
           items: [
             { text: "Overview", link: "/architect/overview" },
-            { text: "Controls & Shortcuts", link: "/architect/controls" },
-            { text: "Nodes", link: "/architect/nodes" },
-            { text: "Wiring System", link: "/architect/wiring" },
+            {
+              text: "Canvas & Interactions",
+              link: "/architect/canvas_details",
+            },
+            {
+              text: "Browser & Inspector",
+              link: "/architect/sidebar_inspector",
+            },
+            { text: "Workflow & Management", link: "/architect/workflow" },
+            { text: "Debugging & Console", link: "/architect/debugging" },
           ],
         },
         {
-          text: "Advanced",
+          text: "App Reference",
           items: [
+            { text: "Controls & Shortcuts", link: "/architect/controls" },
+            { text: "Wiring System", link: "/architect/wiring" },
             { text: "Grouping", link: "/architect/grouping" },
-            { text: "Debug Mode", link: "/architect/debug-mode" },
+          ],
+        },
+        {
+          text: "Node Library",
+          items: [
+            { text: "Logic & Flow", link: "/architect/reference/core_nodes" },
+          ],
+        },
+        {
+          text: "Action Library",
+          items: [
+            {
+              text: "System & Files",
+
+              items: [
+                {
+                  text: "System Control",
+                  link: "/architect/reference/actions/system#system-control",
+                },
+                {
+                  text: "File System",
+                  link: "/architect/reference/actions/system#file-system",
+                },
+                {
+                  text: "Visuals & UI",
+                  link: "/architect/reference/actions/system#visuals-ui",
+                },
+              ],
+            },
+            {
+              text: "Productivity",
+
+              items: [
+                {
+                  text: "Notes & Reminders",
+                  link: "/architect/reference/actions/productivity#notes-reminders",
+                },
+                {
+                  text: "Calendar",
+                  link: "/architect/reference/actions/productivity#calendar",
+                },
+                {
+                  text: "Mail",
+                  link: "/architect/reference/actions/productivity#mail",
+                },
+              ],
+            },
+            {
+              text: "Media & Entertainment",
+
+              items: [
+                {
+                  text: "Apple Music",
+                  link: "/architect/reference/actions/media#music-apple-music",
+                },
+                {
+                  text: "Spotify",
+                  link: "/architect/reference/actions/media#music-spotify",
+                },
+                {
+                  text: "Streaming & Entertainment",
+                  link: "/architect/reference/actions/media#streaming-entertainment",
+                },
+              ],
+            },
+            {
+              text: "Web & Info",
+
+              items: [
+                {
+                  text: "Web Access",
+                  link: "/architect/reference/actions/web#web-access",
+                },
+                {
+                  text: "General Info",
+                  link: "/architect/reference/actions/web#general-info",
+                },
+              ],
+            },
+            {
+              text: "Memory & Storage",
+
+              items: [
+                {
+                  text: "Core Memory",
+                  link: "/architect/reference/actions/memory#core-memory",
+                },
+                {
+                  text: "Vector Database",
+                  link: "/architect/reference/actions/memory#vector-database",
+                },
+              ],
+            },
+            {
+              text: "Advanced & Coding",
+
+              items: [
+                {
+                  text: "Agent Management",
+                  link: "/architect/reference/actions/advanced#agent-management",
+                },
+                {
+                  text: "Coding & Terminal",
+                  link: "/architect/reference/actions/advanced#coding-terminal",
+                },
+              ],
+            },
           ],
         },
       ],
@@ -106,20 +281,20 @@ export default defineConfig({
 
     // Social Links
     socialLinks: [
-      { icon: "github", link: "https://github.com/procodeai" },
-      { icon: "twitter", link: "https://twitter.com/procodeai" },
-      { icon: "discord", link: "https://discord.gg/procodeai" },
+      { icon: "github", link: branding.githubUrl },
+      { icon: "twitter", link: branding.twitterUrl },
+      { icon: "discord", link: branding.discordUrl },
     ],
 
     // Footer
     footer: {
-      message: "Built with ❤️ by ProCode AI",
-      copyright: "© 2024 ProCode AI. All rights reserved.",
+      message: `Built with ❤️ by ${branding.companyName}`,
+      copyright: `© 2026 ${branding.companyName}. All rights reserved.`,
     },
 
     // Edit Link
     editLink: {
-      pattern: "https://github.com/procodeai/aura-docs/edit/main/:path",
+      pattern: `${branding.githubUrl}/canoryn-docs/edit/main/:path`,
       text: "Edit this page on GitHub",
     },
 

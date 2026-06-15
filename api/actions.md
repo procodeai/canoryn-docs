@@ -1,6 +1,6 @@
 # Actions Reference
 
-Actions are the building blocks of ProCode AI agents. Each action represents a capability—something your agent can do.
+Actions are the building blocks of Canoryn agents. Each action represents a capability—something your agent can do.
 
 ## Action Categories
 

@@ -1,6 +1,6 @@
 # Installation
 
-Get ProCode AI running on your Mac in under 5 minutes.
+Get [[appName]] running on your Mac in under 5 minutes.
 
 ## System Requirements
 
@@ -13,30 +13,31 @@ Get ProCode AI running on your Mac in under 5 minutes.
 
 ## Download
 
-::: tip Beta Access
-ProCode AI is currently in private beta. [Join the waitlist](https://procodeai.com) to get early access.
-:::
+Get the latest version of [[appName]] for macOS:
 
-### Option 1: Direct Download
+[Download [[appName]] for macOS](https://canoryn.app) (Universal DMG)
 
-1. Visit [procodeai.com/download](https://procodeai.com/download)
-2. Download the `.dmg` file
-3. Open and drag ProCode AI to Applications
-4. Launch from Applications folder
+> **Requirements**: macOS 15.0+ (Sequoia) with Apple Silicon (M1/M2/M3) recommended.
 
-### Option 2: Homebrew (Coming Soon)
+## Setup
 
-```bash
-brew install --cask procodeai
-```
+1. Open `[[appName]].dmg` and drag the app to Applications.
+2. Launch [[appName]]. You will be asked to grant permissions:
+   - **Accessibility**: To control windows and type text.
+   - **Screen Recording**: To see the screen (processed locally).
+   - **Full Disk Access**: To manage files.
 
-## First Launch
+## Deep Links
 
-When you first launch ProCode AI, you'll be prompted to:
+[[appName]] supports deep linking for quick installs of agents:
+
+`[[urlScheme]]://install?id=...`
+
+When you first launch [[appName]], you'll be prompted to:
 
 ### 1. Grant Permissions
 
-ProCode AI needs certain permissions to work its magic:
+[[appName]] needs certain permissions to work its magic:
 
 | Permission           | Why We Need It            | What We Don't Do                   |
 | -------------------- | ------------------------- | ---------------------------------- |
@@ -70,7 +71,7 @@ ollama pull llama3.2
 
 ### 3. Connect Services (Optional)
 
-Enhance ProCode AI with integrations:
+Enhance [[appName]] with integrations:
 
 - **Spotify** - Music control and mood-based playlists
 - **Apple Shortcuts** - Trigger existing shortcuts
@@ -78,11 +79,11 @@ Enhance ProCode AI with integrations:
 
 ## Verify Installation
 
-Open ProCode AI and try:
+Open [[appName]] and try:
 
 1. Click the microphone button
 2. Say: _"What can you do?"_
-3. ProCode should respond with its capabilities
+3. [[appName]] should respond with its capabilities
 
 ::: tip Troubleshooting
 If voice commands don't work, check **System Settings → Privacy & Security → Microphone**.

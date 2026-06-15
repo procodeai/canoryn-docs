@@ -1,110 +1,78 @@
-# Quick Start
+# Quick Start: Build a "Zen Master"
 
-Build your first ProCode AI agent in 5 minutes.
+In this guide, you will build an agent that finds ancient wisdom and turns it into deep philosophical musings.
 
-## Step 1: Open the Architect
+**The Mission:** Fetch a Zen quote from GitHub's API, have AI reflect on it, and **speak it aloud**.
 
-1. Launch **ProCode AI** from your Applications
-2. Click the **Architect** button in the sidebar (or press `Cmd + Shift + A`)
-3. Click **New Blueprint**
+You will learn how to:
 
-You'll see an infinite canvas with a grid—this is your workspace.
+1.  **Fetch Data** from an API (HTTP Request).
+2.  **Process Data** with an AI model.
+3.  **Perform Actions** (Text-to-Speech).
 
-## Step 2: Add Your First Nodes
+---
 
-Let's create a simple "Hello World" agent that responds to voice.
+## Step 1: Create a New Agent
 
-### Add a Trigger Node
+1.  Open the **Architect** (Window > Architect).
+2.  In the Sidebar, click the **`+`** button (or right-click "My Projects" -> "New Agent").
+3.  Name your agent **"Zen Master"**.
 
-1. Right-click on the canvas
-2. Search for **"Voice Trigger"**
-3. Click to place it
+> _Screenshot coming soon: Screenshot: Empty Canvas and New Agent Dialog_
 
-### Add a Response Node
+## Step 2: Fetch Wisdom
 
-1. Right-click again
-2. Search for **"Speak"**
-3. Place it to the right of the trigger
+We'll use **GitHub's Zen API** to get a random design principle in plain text. It's fast, reliable, and free.
 
-## Step 3: Connect the Nodes
+1.  **Right-click** on the canvas to open the Node Palette.
+2.  Search for **"HTTP"** and select **HTTP Request** (System).
+3.  Click the new node to select it. In the **Inspector** (Right Panel), configure:
+    - **URL**: `https://api.github.com/zen`
+    - **Method**: `GET`.
 
-1. Click and drag from the **Output** port (right side) of Voice Trigger
-2. Drop it on the **Input** port (left side) of Speak
-3. A wire now connects them!
+> **Tip:** Press `Play` in the toolbar now. Check the Console (Bottom Panel) to see the output (e.g., _"Favor focus over features."_).
 
-## Step 4: Configure the Speak Node
+> _Screenshot coming soon: Screenshot: HTTP Request Node configuration_
 
-1. Click on the **Speak** node to select it
-2. In the Inspector (right panel), find the **Message** field
-3. Type: `Hello! I'm your ProCode AI agent.`
+## Step 3: Add the AI Brain
 
-## Step 5: Test It
+Now let's expand on this thought.
 
-1. Click the **Play** button (▶️) in the toolbar
-2. Say anything into your microphone
-3. ProCode AI should speak your message!
+1.  Add a **Simple AI** node (Logic).
+2.  **Drag a wire** from the **HTTP Request** node's `Result` port (Green/String).
+3.  Connect it to the **Simple AI** node's `Context` port.
+4.  Set the **System Instruction** in the Inspector:
+    ```text
+    You are a wise master.
+    The context contains a design principle.
+    Reflect on it and speak a short, inspiring message about life.
+    Keep it under 2 sentences.
+    ```
 
-```
-┌─────────────────┐         ┌─────────────────┐
-│  Voice Trigger  │────────▶│      Speak      │
-│                 │         │  "Hello! I'm    │
-│   🎤            │  ──▶    │  your agent."   │
-└─────────────────┘         └─────────────────┘
-```
+> _Screenshot coming soon: Screenshot: Simple AI Node wired to HTTP Request_
 
-## What's Next?
+## Step 4: Give it a Voice
 
-Now that you've built your first agent, explore these concepts:
+Finally, let's hear the wisdom.
 
-### Add Logic
+1.  Add a **Speak Text** node (General).
+2.  Connect the **Simple AI** node's `Result` port to the **Speak Text** node's `Text` input.
+3.  (Optional) Select a **Personality** in the Inspector (e.g., "Narrator").
 
-Try adding a **Condition** node between trigger and response:
+> _Screenshot coming soon: Screenshot: Speak Text Node wired to Simple AI_
 
-```
-Voice Trigger → Condition ("contains 'hello'?") → Speak
-```
+## Step 5: Run It!
 
-### Add AI
+1.  Turn up your volume 🔊.
+2.  Press the **Play** button (▶️).
+3.  Watch the "Marching Ants" flow through the graph.
+4.  Your computer will speak a profound truth!
 
-Replace the static message with AI:
+---
 
-```
-Voice Trigger → AI Prompt ("Respond friendly") → Speak
-```
+### Why this works
 
-### Add Actions
+You just built a **Linear Pipeline**:
+`[Data Source] -> [Intelligence] -> [Action]`
 
-Make it do something real:
-
-```
-Voice Trigger → Condition ("play music?") → Spotify Play
-```
-
-## Example Blueprints
-
-### Morning Routine Agent
-
-```
-┌──────────────┐     ┌──────────────┐     ┌──────────────┐
-│ Time Trigger │────▶│ Read Calendar│────▶│ Speak Summary│
-│  (7:00 AM)   │     │              │     │              │
-└──────────────┘     └──────────────┘     └──────────────┘
-                            │
-                            ▼
-                     ┌──────────────┐     ┌──────────────┐
-                     │ Get Weather  │────▶│ Play Spotify │
-                     │              │     │ (Mood: Calm) │
-                     └──────────────┘     └──────────────┘
-```
-
-### Focus Mode Agent
-
-```
-Voice ("Focus mode") → Close Slack → Enable DND → Play Lo-fi
-```
-
-## Continue Learning
-
-- [Architect Controls](/architect/controls) - Master the editor
-- [Node Reference](/architect/nodes) - All available nodes
-- [Memory System](/guide/memory) - How agents learn
+This simpler GitHub API returns plain text, so you didn't need any complex parsing nodes. To handle complex APIs (like Notion or Linear), you would use the **JSON Parser** node in between.

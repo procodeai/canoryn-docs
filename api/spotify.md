@@ -1,10 +1,10 @@
 # Spotify Actions
 
-Control Spotify directly from your Aura agents.
+Control Spotify directly from your Canoryn agents.
 
 ## Setup
 
-1. Open Aura Settings → Integrations
+1. Open Canoryn Settings → Integrations
 2. Click **Connect Spotify**
 3. Authorize in your browser
 

@@ -1,6 +1,6 @@
 # Permissions
 
-Aura requires certain macOS permissions to function. Here's what each does and why.
+[[appName]] requires certain macOS permissions to function. Here's what each does and why.
 
 ## Required Permissions
 
@@ -50,7 +50,7 @@ Aura requires certain macOS permissions to function. Here's what each does and w
 1. Open **System Settings**
 2. Go to **Privacy & Security**
 3. Select the permission type
-4. Enable **Aura**
+4. Enable **[[appName]]**
 
 ## Revoking Permissions
 
@@ -58,7 +58,7 @@ You can disable any permission at any time:
 
 1. System Settings → Privacy & Security
 2. Find the permission
-3. Toggle Aura off
+3. Toggle [[appName]] off
 
 ::: warning
 Some features may not work without required permissions.

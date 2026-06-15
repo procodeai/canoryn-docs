@@ -1,13 +1,13 @@
 # Persona & Capability JSON Schema
 
-This schema describes how MoodSwing’s local LLM will persist long-term persona data, routines, and automation capabilities. Everything is lightweight JSON so it can be diffed, versioned, and audited.
+This schema describes how [[appName]]’s local LLM will persist long-term persona data, routines, and automation capabilities. Everything is lightweight JSON so it can be diffed, versioned, and audited.
 
 ```json
 {
   "version": 1,
   "persona": {
     "id": "user-uuid",
-    "displayName": "Deepak",
+    "displayName": "User",
     "tone": "supportive",
     "pronouns": "he/him",
     "bio": "Short free-form summary the LLM can read before acting"
@@ -68,7 +68,9 @@ This schema describes how MoodSwing’s local LLM will persist long-term persona
         },
         {
           "action": "launch_apps",
-          "params": { "bundleIds": ["com.apple.Terminal", "com.microsoft.VSCode"] }
+          "params": {
+            "bundleIds": ["com.apple.Terminal", "com.microsoft.VSCode"]
+          }
         },
         {
           "action": "play_music",
@@ -91,7 +93,11 @@ This schema describes how MoodSwing’s local LLM will persist long-term persona
       "description": "Start playback on a given service",
       "permissions": ["spotify.oauth"],
       "inputs": {
-        "service": { "type": "enum", "values": ["spotify", "apple_music", "local"], "required": true },
+        "service": {
+          "type": "enum",
+          "values": ["spotify", "apple_music", "local"],
+          "required": true
+        },
         "playlist": { "type": "string", "required": false },
         "track": { "type": "string", "required": false }
       },
@@ -109,6 +115,7 @@ This schema describes how MoodSwing’s local LLM will persist long-term persona
 ```
 
 ## Notes
+
 - **version** guards migrations.
 - **persona/preferences** feed the LLM before planning.
 - **memories** form the long-term context that can be summarized and embedded.
@@ -117,5 +124,3 @@ This schema describes how MoodSwing’s local LLM will persist long-term persona
 - **security** keeps track of which actions still require explicit consent.
 
 Next step: implement a `PersonaStore` service to read/write this JSON, expose typed accessors, and provide snapshots for the planner.
-
-

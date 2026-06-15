@@ -1,6 +1,6 @@
 # Local Processing
 
-Aura is designed with **privacy-first** architecture. All AI processing happens on your Mac.
+[[appName]] is designed with **privacy-first** architecture. All AI processing happens on your Mac.
 
 ## How It Works
 
@@ -20,7 +20,7 @@ Aura is designed with **privacy-first** architecture. All AI processing happens 
 
 ## Local AI with Ollama
 
-Aura uses [Ollama](https://ollama.com) for local LLM inference:
+[[appName]] uses [Ollama](https://ollama.com) for local LLM inference:
 
 - **Models**: Llama 3.2, Qwen 2.5, Mistral, etc.
 - **Speed**: Fast inference on Apple Silicon
@@ -55,7 +55,7 @@ If you prefer, you can use cloud AI:
 | Groq      | Very fast        | Data leaves device |
 
 ::: tip
-All cloud providers are optional. Aura works fully offline with Ollama.
+All cloud providers are optional. [[appName]] works fully offline with Ollama.
 :::
 
 ## Verification
@@ -63,5 +63,5 @@ All cloud providers are optional. Aura works fully offline with Ollama.
 To verify local processing:
 
 1. Disconnect from internet
-2. Use Aura normally
+2. Use [[appName]] normally
 3. Everything should work (with Ollama)

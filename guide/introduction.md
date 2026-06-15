@@ -1,10 +1,10 @@
 # Introduction
 
-Welcome to **ProCode AI** documentation—your guide to building intelligent, living digital organisms on macOS.
+Welcome to **[[appName]]** documentation—your guide to building intelligent, living digital organisms on macOS.
 
-## What is ProCode AI?
+## What is [[appName]]?
 
-ProCode AI is a **visual agent programming platform** that lets you create AI-powered automations without writing code. Unlike traditional automation tools, ProCode agents can:
+[[appName]] is a **visual agent programming platform** that lets you create AI-powered automations without writing code. Unlike traditional automation tools, [[appName]] agents can:
 
 - **See** your screen and understand context
 - **Learn** from your preferences over time
@@ -15,7 +15,7 @@ ProCode AI is a **visual agent programming platform** that lets you create AI-po
 
 > _More than a Chatbot. A Living Digital Organism._
 
-Traditional AI assistants wait for commands. ProCode AI **observes**, **learns**, and **acts**. By combining deep macOS integration with biological design principles (Perception, Cognition, Memory), it bridges the gap between static software and autonomous agency.
+Traditional AI assistants wait for commands. [[appName]] **observes**, **learns**, and **acts**. By combining deep macOS integration with biological design principles (Perception, Cognition, Memory), it bridges the gap between static software and autonomous agency.
 
 ## Key Concepts
 
@@ -43,7 +43,7 @@ Every agent has access to a **Living Memory** system that stores:
 
 ```
 ┌─────────────────────────────────────────────────┐
-│                  ProCode AI                      │
+│                  [[appName]]                      │
 ├─────────────────────────────────────────────────┤
 │  PERCEPTION        COGNITION         ACTION     │
 │  ───────────       ──────────        ──────     │
@@ -56,7 +56,7 @@ Every agent has access to a **Living Memory** system that stores:
 
 ## Privacy First
 
-ProCode AI is designed with **privacy as a foundation**:
+[[appName]] is designed with **privacy as a foundation**:
 
 | Feature        | Privacy Approach                                      |
 | -------------- | ----------------------------------------------------- |
@@ -69,6 +69,6 @@ ProCode AI is designed with **privacy as a foundation**:
 
 Ready to get started?
 
-- [Installation Guide](/guide/installation) - Set up ProCode AI on your Mac
+- [Installation Guide](/guide/installation) - Set up [[appName]] on your Mac
 - [Quick Start](/guide/quickstart) - Build your first agent in 5 minutes
 - [Architect Overview](/architect/overview) - Learn the visual editor

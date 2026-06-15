@@ -1,10 +1,10 @@
 # Memory System
 
-Aura's **Living Memory** gives agents the ability to remember, learn, and evolve over time.
+Canoryn's **Living Memory** gives agents the ability to remember, learn, and evolve over time.
 
-## How Memory Works
+## Types of Memory
 
-Unlike traditional chatbots that forget after each session, Aura agents maintain persistent memory:
+Unlike traditional chatbots that forget after each session, Canoryn agents maintain persistent memory:
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -63,6 +63,8 @@ Explicitly save information to memory:
 
 ## Best Practices
 
-1. **Let it learn**: The more you use Aura, the smarter it gets
-2. **Correct mistakes**: If Aura remembers wrong, just tell it
+## Interactions
+
+1. **Let it learn**: The more you use Canoryn, the smarter it gets
+2. **Correct mistakes**: If Canoryn remembers wrong, just tell it
 3. **Review periodically**: Check Memory Bank in Settings to see what's stored

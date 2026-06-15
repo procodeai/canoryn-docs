@@ -1,77 +1,125 @@
 # Controls & Shortcuts
 
-Master the Architect with these keyboard shortcuts and gestures.
+A complete reference of all keyboard shortcuts and gestures in the Architect. These are managed by the `KeyBindingManager` and can be viewed in-app by pressing `⌘/`.
 
-## Navigation
+> [!TIP]
+> Press **⌘/** to open the **Shortcuts Reference Panel** directly in the Architect.
 
-| Action            | Input          | Notes                            |
-| ----------------- | -------------- | -------------------------------- |
-| **Pan Canvas**    | `⌘` + Drag     | Infinite scroll in any direction |
-| **Zoom In/Out**   | Pinch / Scroll | Zoom centers on gesture          |
-| **Reset View**    | `⌘` + `0`      | Return to origin                 |
-| **Fit All Nodes** | `⌘` + `1`      | Zoom to show all nodes           |
+---
+
+## Canvas Navigation
+
+| Action           | Shortcut              | Notes                                    |
+| :--------------- | :-------------------- | :--------------------------------------- |
+| **Pan Canvas**   | Scroll / Trackpad Pan | Drag with two fingers to move the canvas |
+| **Zoom In**      | `⌘=`                  | Zoom toward center                       |
+| **Zoom Out**     | `⌘-`                  | Zoom away from center                    |
+| **Zoom to 100%** | `⌥⌘1`                 | Reset zoom to actual pixel size          |
+| **Zoom to Fit**  | `⌘9`                  | Fit all nodes in the viewport            |
+| **Pinch Zoom**   | Pinch gesture         | Zoom at the gesture center point         |
+| **Cmd+Scroll**   | `⌘` + Scroll Wheel    | Precise zoom control                     |
 
 ## Selection
 
-| Action             | Input                     | Notes            |
-| ------------------ | ------------------------- | ---------------- |
-| **Select Node**    | Click                     | Single selection |
-| **Multi-Select**   | `Shift` + Click           | Toggle selection |
-| **Marquee Select** | Click + Drag (background) | Box selection    |
-| **Select All**     | `⌘` + `A`                 | Select all nodes |
-| **Deselect**       | `Escape`                  | Clear selection  |
+| Action              | Shortcut                     | Notes                             |
+| :------------------ | :--------------------------- | :-------------------------------- |
+| **Select Node**     | Click                        | Single selection                  |
+| **Multi-Select**    | `Shift` + Click              | Toggle individual items           |
+| **Marquee Select**  | Click + Drag (on background) | Box selection                     |
+| **Select All**      | `⌘A`                         | Select all nodes                  |
+| **Deselect All**    | `Escape`                     | Clear selection / cancel wiring   |
+| **Focus Selection** | `F`                          | Zoom and center on selected nodes |
 
 ## Editing
 
-| Action        | Input                  | Notes                         |
-| ------------- | ---------------------- | ----------------------------- |
-| **Delete**    | `Delete` / `Backspace` | Remove selected nodes & wires |
-| **Duplicate** | `⌘` + `D`              | Copy with offset              |
-| **Copy**      | `⌘` + `C`              | Copy to clipboard             |
-| **Paste**     | `⌘` + `V`              | Paste at cursor               |
-| **Undo**      | `⌘` + `Z`              | Undo last action              |
-| **Redo**      | `⌘` + `Shift` + `Z`    | Redo                          |
+| Action                  | Shortcut               | Scope     |
+| :---------------------- | :--------------------- | :-------- |
+| **Delete Selection**    | `Delete` / `Backspace` | Blueprint |
+| **Duplicate Selection** | `⌘D`                   | Blueprint |
+| **Copy**                | `⌘C`                   | Blueprint |
+| **Paste**               | `⌘V`                   | Blueprint |
+| **Undo**                | `⌘Z`                   | Blueprint |
+| **Redo**                | `⇧⌘Z`                  | Blueprint |
+| **Group Selection**     | `⌘G`                   | Blueprint |
+| **Align Horizontal**    | `⇧H`                   | Blueprint |
+| **Align Vertical**      | `⇧V`                   | Blueprint |
 
-## Organization
+## Graph & Execution
 
-| Action          | Input                        | Notes             |
-| --------------- | ---------------------------- | ----------------- |
-| **Group Nodes** | `⌘` + `G`                    | Wrap in container |
-| **Ungroup**     | `⌘` + `Shift` + `G`          | Dissolve group    |
-| **Rename**      | `Enter` (with node selected) | Edit node label   |
-| **Collapse**    | `⌘` + `.`                    | Minimize node     |
+| Action                    | Shortcut | Notes                                  |
+| :------------------------ | :------- | :------------------------------------- |
+| **Run Agent**             | `⌘R`     | Start executing the current agent      |
+| **Stop Agent**            | `⌘.`     | Stop execution                         |
+| **Auto-Layout Selection** | `⌘L`     | Automatically arrange selected nodes   |
+| **Show Node Palette**     | `⇧A`     | Open the node picker to add a new node |
+| **Cancel Wiring**         | `Escape` | Cancel a wire drag in progress         |
 
-## Wiring
+## Workspace Modes
 
-| Action           | Input                     | Notes                   |
-| ---------------- | ------------------------- | ----------------------- |
-| **Start Wire**   | Drag from port            | Begin connection        |
-| **Cancel Wire**  | Drop in empty space       | Discard wire            |
-| **Pick Up Wire** | Drag from connected input | Reconnect existing wire |
-| **Delete Wire**  | Select wire + `Delete`    | Remove connection       |
+| Mode              | Shortcut | Description                                  |
+| :---------------- | :------- | :------------------------------------------- |
+| **Design Mode**   | `⌃1`     | Default mode for building blueprints         |
+| **Debug Mode**    | `⌃2`     | See live variable values and execution state |
+| **Simulate Mode** | `⌃3`     | Animated "Matrix" view of data flow          |
 
-## View Modes
+> [!IMPORTANT]
+> Mode shortcuts use **Control** (`⌃`), not Command (`⌘`). This avoids conflicts with Cmd+1 (Show Architect Window).
 
-| Action            | Input     | Notes              |
-| ----------------- | --------- | ------------------ |
-| **Design Mode**   | `⌘` + `1` | Normal editing     |
-| **Debug Mode**    | `⌘` + `2` | See values & state |
-| **Simulate Mode** | `⌘` + `3` | Animated flow view |
+## View & Panels
 
-## Execution
+| Action                          | Shortcut |
+| :------------------------------ | :------- |
+| **Toggle Left Panel (Browser)** | `⌘B`     |
+| **Toggle Inspector**            | `⌘I`     |
+| **Toggle Bottom Panel**         | `⌘J`     |
+| **Toggle Status Bar**           | `⌘\`     |
+| **Toggle Grid**                 | `⌘'`     |
+| **Toggle Minimap**              | `⌘M`     |
+| **Toggle Focus Mode**           | `⇧⌘F`    |
+| **Reset Editor Layout**         | `⇧⌘R`    |
 
-| Action            | Input             | Notes            |
-| ----------------- | ----------------- | ---------------- |
-| **Run Blueprint** | `⌘` + `R` or `▶️` | Start execution  |
-| **Stop**          | `⌘` + `.` or `⏹️` | Stop execution   |
-| **Step Through**  | `F10`             | Execute one node |
+## Bottom Panel Tabs
 
-## Tips
+| Panel        | Shortcut |
+| :----------- | :------- |
+| **Console**  | `⇧⌘C`    |
+| **Memory**   | `⇧⌘M`    |
+| **Thoughts** | `⇧⌘T`    |
+| **Debug**    | `⇧⌘D`    |
 
-::: tip Pro Tip: Quick Node Creation
-Double-click anywhere on the canvas to open the quick-add menu. Start typing to search for nodes.
-:::
+## File Operations
 
-::: tip Pro Tip: Wire Snapping
-When dragging a wire near a compatible port (within 50px), it automatically snaps to connect.
-:::
+| Action                    | Shortcut |
+| :------------------------ | :------- |
+| **Save**                  | `⌘S`     |
+| **Save As**               | `⇧⌘S`    |
+| **New Agent**             | `⌘N`     |
+| **New Architect Window**  | `⇧⌘N`    |
+| **Show Main Window**      | `⌘0`     |
+| **Show Architect Window** | `⌘1`     |
+| **Settings**              | `⌘,`     |
+
+## Global Hotkeys
+
+These shortcuts work even when [[appName]] is **not in focus**, using a system-level event tap (requires Accessibility permission):
+
+| Action               | Shortcut |
+| :------------------- | :------- |
+| **Toggle Assistant** | `⇧⌘A`    |
+| **Vision Selection** | `⇧⌘2`    |
+
+## Other
+
+| Action                | Shortcut | Notes                      |
+| :-------------------- | :------- | :------------------------- |
+| **Toggle Voice Mode** | `⇧⌘V`    | Enable/disable voice input |
+| **Quick Action**      | `⌥⌘A`    | Open quick action menu     |
+| **Submit to Copilot** | `⌘↩`     | Send copilot prompt        |
+
+## Mouse Shortcuts
+
+| Action                | Input                    | Description                         |
+| :-------------------- | :----------------------- | :---------------------------------- |
+| **Disconnect Wire**   | `⌥` + Click on port      | Removes all connections from a port |
+| **Rewire Connection** | Drag from connected port | Detach and reconnect a wire         |
+| **Split Wire**        | Double-click on a wire   | Insert a Reroute node on the wire   |
