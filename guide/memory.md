@@ -1,10 +1,10 @@
 # Memory System
 
-Canoryn's **Living Memory** gives agents the ability to remember, learn, and evolve over time.
+Canoryn's local memory system allows workflows and assistants to store and retrieve persistent context.
 
 ## Types of Memory
 
-Unlike traditional chatbots that forget after each session, Canoryn agents maintain persistent memory:
+Unlike traditional chatbots that forget after each session, Canoryn assistants maintain persistent, local state:
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -40,7 +40,7 @@ Knows how to perform tasks (stored as blueprints).
 
 ### Memory Query Node
 
-Search the agent's memory for relevant context:
+Search the assistant's memory for relevant context:
 
 ```
 [User Input] → [Memory Query] → [AI with Context] → [Response]
@@ -63,8 +63,8 @@ Explicitly save information to memory:
 
 ## Best Practices
 
-## Interactions
+### Interactions
 
-1. **Let it learn**: The more you use Canoryn, the smarter it gets
-2. **Correct mistakes**: If Canoryn remembers wrong, just tell it
+1. **Continuous Personalization**: The more you interact with Canoryn, the more it aligns with your preferences.
+2. **Update Context**: If you need to correct stored preferences, you can explicitly update them.
 3. **Review periodically**: Check Memory Bank in Settings to see what's stored

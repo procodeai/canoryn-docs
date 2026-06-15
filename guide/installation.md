@@ -22,7 +22,14 @@ Get the latest version of [[appName]] for macOS:
 ## Setup
 
 1. Open `[[appName]].dmg` and drag the app to Applications.
-2. Launch [[appName]]. You will be asked to grant permissions:
+2. **Open the App** (macOS Gatekeeper Warning):
+   Because Canoryn is distributed directly and not signed with a paid Apple Developer certificate, macOS Gatekeeper may show a warning when you first launch it.
+   - **To open**: Right-click (or Control-click) `[[appName]].app` in your Applications folder and select **Open**. In the confirmation dialog that appears, click **Open**.
+   - **Via Terminal**: Alternatively, you can clear the quarantine flag by running this command in Terminal:
+     ```bash
+     xattr -cr /Applications/[[appName]].app
+     ```
+3. Launch [[appName]] and grant the required system permissions:
    - **Accessibility**: To control windows and type text.
    - **Screen Recording**: To see the screen (processed locally).
    - **Full Disk Access**: To manage files.

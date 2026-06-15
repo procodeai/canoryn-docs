@@ -4,14 +4,14 @@ import { branding } from "./branding";
 export default defineConfig({
   base: "/docs/",
   title: branding.appName,
-  description: "Build Living, Breathing Digital Organisms",
+  description: "Build local-first AI agents that automate your Mac",
   ignoreDeadLinks: false,
   sitemap: {
     hostname: "https://canoryn.app/docs",
   },
 
   head: [
-    ["link", { rel: "icon", href: "/favicon.ico" }],
+    ["link", { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" }],
     ["meta", { name: "theme-color", content: "#10b981" }],
     ["meta", { property: "og:type", content: "website" }],
     ["meta", { property: "og:url", content: "https://canoryn.app/docs" }],
@@ -21,7 +21,7 @@ export default defineConfig({
       "meta",
       {
         property: "og:description",
-        content: "Build Living, Breathing Digital Organisms",
+        content: "Build local-first AI agents that automate your Mac",
       },
     ],
   ],
@@ -76,20 +76,38 @@ export default defineConfig({
       { text: "Architect", link: "/architect/overview" },
       { text: "API", link: "/api/actions" },
       { text: "Changelog", link: "/changelog" },
+      { text: "Website", link: branding.websiteUrl },
+      { text: "Download", link: `${branding.websiteUrl}/download` },
       {
         text: "Resources",
         items: [
+          {
+            text: "Support",
+            link: `${branding.websiteUrl}/support`,
+          },
+          {
+            text: "Website",
+            link: branding.websiteUrl,
+          },
+          {
+            text: "Download",
+            link: `${branding.websiteUrl}/download`,
+          },
+          {
+            text: "Product Changelog",
+            link: `${branding.websiteUrl}/changelog`,
+          },
           {
             text: "GitHub",
             link: branding.githubUrl,
           },
           {
-            text: "Discord",
-            link: branding.discordUrl,
+            text: "X",
+            link: branding.twitterUrl,
           },
           {
-            text: "Twitter",
-            link: branding.twitterUrl,
+            text: "Instagram",
+            link: branding.instagramUrl,
           },
           {
             text: "Releases",
@@ -283,13 +301,13 @@ export default defineConfig({
     // Social Links
     socialLinks: [
       { icon: "github", link: branding.githubUrl },
-      { icon: "twitter", link: branding.twitterUrl },
-      { icon: "discord", link: branding.discordUrl },
+      { icon: "x", link: branding.twitterUrl },
+      { icon: "instagram", link: branding.instagramUrl },
     ],
 
     // Footer
     footer: {
-      message: `Built with ❤️ by ${branding.companyName}`,
+      message: `${branding.appName} by ${branding.companyName} · <a href="${branding.websiteUrl}">Website</a> · <a href="${branding.websiteUrl}/download">Download</a> · <a href="${branding.websiteUrl}/support">Support</a>`,
       copyright: `© 2026 ${branding.companyName}. All rights reserved.`,
     },
 
