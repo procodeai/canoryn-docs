@@ -110,6 +110,10 @@ export default defineConfig({
             link: branding.instagramUrl,
           },
           {
+            text: "YouTube",
+            link: branding.youtubeUrl,
+          },
+          {
             text: "Releases",
             link: branding.releasesUrl,
           },
@@ -303,6 +307,7 @@ export default defineConfig({
       { icon: "github", link: branding.githubUrl },
       { icon: "x", link: branding.twitterUrl },
       { icon: "instagram", link: branding.instagramUrl },
+      { icon: "youtube", link: branding.youtubeUrl },
     ],
 
     // Footer

@@ -10,6 +10,7 @@ export const branding = {
   releasesUrl: "https://github.com/procodeai/canoryn-releases/releases",
   twitterUrl: "https://x.com/canoryn",
   instagramUrl: "https://www.instagram.com/canoryn.app/",
+  youtubeUrl: "https://www.youtube.com/@canoryn",
   currentVersion: "1.0.0-beta",
 } as const;
 
