@@ -2,19 +2,20 @@ import { defineConfig } from "vitepress";
 import { branding } from "./branding";
 
 export default defineConfig({
+  base: "/docs/",
   title: branding.appName,
   description: "Build Living, Breathing Digital Organisms",
   ignoreDeadLinks: false,
   sitemap: {
-    hostname: "https://docs.canoryn.app",
+    hostname: "https://canoryn.app/docs",
   },
 
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     ["meta", { name: "theme-color", content: "#10b981" }],
     ["meta", { property: "og:type", content: "website" }],
-    ["meta", { property: "og:url", content: "https://docs.canoryn.app" }],
-    ["link", { rel: "canonical", href: "https://docs.canoryn.app/" }],
+    ["meta", { property: "og:url", content: "https://canoryn.app/docs" }],
+    ["link", { rel: "canonical", href: "https://canoryn.app/docs/" }],
     ["meta", { property: "og:title", content: `${branding.appName} Docs` }],
     [
       "meta",
@@ -294,8 +295,8 @@ export default defineConfig({
 
     // Edit Link
     editLink: {
-      pattern: `${branding.githubUrl}/canoryn-docs/edit/main/:path`,
-      text: "Edit this page on GitHub",
+      pattern: "https://github.com/procodeai/canoryn-issues/issues/new?title=Docs%20Feedback&body=Feedback%20for%20page:%20https://canoryn.app/docs/:path",
+      text: "Suggest changes or report an issue",
     },
 
     // Last Updated
