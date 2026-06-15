@@ -4,7 +4,7 @@ export const branding = {
   urlScheme: "canoryn",
   fileExtension: "cryn",
   websiteUrl: "https://canoryn.app",
-  docsUrl: "https://docs.canoryn.app",
+  docsUrl: "https://canoryn.app/docs",
   supportEmail: "support@canoryn.app",
   githubUrl: "https://github.com/procodeai/canoryn",
   releasesUrl: "https://github.com/procodeai/canoryn-releases/releases",
