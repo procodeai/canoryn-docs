@@ -12,6 +12,3 @@ All notable changes to [[appName]].
 - Spotify integration
 - Local AI with Ollama
 
----
-
-_More changes coming soon!_

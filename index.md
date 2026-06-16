@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "[[appName]]"
   text: "Build local-first AI agents that automate your Mac"
-  tagline: "Connect voice commands, visual workflows, and local AI keys securely on your Mac."
+  tagline: "Build personal Mac automations with voice, visual workflows, and user-controlled AI providers."
   actions:
     - theme: brand
       text: Get Started
@@ -28,7 +28,7 @@ features:
     details: Build and customize automation flows using an elegant, node-based workflow editor.
   - icon: 🔌
     title: App & System Actions
-    details: Control supported apps, automate file management, and execute system commands.
+    details: Control supported apps, automate files where permitted, and run supported system actions.
   - icon: 🔒
     title: Private & BYO Keys
     details: Keep control of your data and costs. Bring your own AI keys; all workflows and memory stay local.
@@ -36,12 +36,12 @@ features:
 
 ## Why [[appName]]?
 
-Traditional automation tools and chatbots either lack local system context, forget your preferences, or require complex developer setups. [[appName]] bridges this gap by acting as a native assistant that connects natural intent with real system actions, while learning how you work.
+Traditional automation tools and chatbots either lack local system context, forget your preferences, or require complex developer setups. [[appName]] bridges this gap by acting as a native assistant that connects natural intent with real system actions, while adapting to your workflows.
 
-- **A Personalized Assistant**: It remembers past interactions, conversations, and preferences to adapt to your specific workflows.
+- **A Personalized Assistant**: It can use saved context and preferences to adapt workflows to how you work.
 - **More Than a Chatbot**: It does not just talk—it executes workflows and interacts with supported Mac apps.
 - **Beyond Shortcuts**: Integrates visual workflows, system events, and AI reasoning to handle tasks Siri and Shortcuts cannot easily manage.
-- **Completely Private**: Running as a local-first application, your workflows, memory, and data stay secure on your Mac.
+- **Local-First Control**: Workflows are stored locally. Local AI can keep prompts on your Mac, while cloud providers process prompts you choose to send.
 
 ## Quick Links
 

@@ -76,6 +76,7 @@ See the [Action Development Guide](/api/custom-actions) for creating your own ac
 
 ## Next Steps
 
-- [Spotify Actions](/api/spotify) - Music control reference
-- [System Actions](/api/system) - macOS automation reference
-- [AI Actions](/api/ai) - LLM integration reference
+- [System Actions](/api/system)
+- [AI Actions](/api/ai)
+- [Spotify Actions](/api/spotify)
+- [Custom Actions](/api/custom-actions)
