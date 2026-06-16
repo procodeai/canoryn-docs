@@ -130,6 +130,8 @@ export default defineConfig({
             { text: "Introduction", link: "/guide/introduction" },
             { text: "Installation", link: "/guide/installation" },
             { text: "Quick Start", link: "/guide/quickstart" },
+            { text: "Beta Limitations", link: "/guide/beta-limitations" },
+            { text: "Troubleshooting", link: "/guide/troubleshooting" },
           ],
         },
         {
@@ -318,8 +320,8 @@ export default defineConfig({
 
     // Edit Link
     editLink: {
-      pattern: "https://github.com/procodeai/canoryn-issues/issues/new?title=Docs%20Feedback&body=Feedback%20for%20page:%20https://canoryn.app/docs/:path",
-      text: "Suggest changes or report an issue",
+      pattern: "https://github.com/procodeai/canoryn-docs/edit/main/:path",
+      text: "Edit this page on GitHub",
     },
 
     // Last Updated

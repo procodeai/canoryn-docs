@@ -1,175 +1,175 @@
 ---
-name: ProCodeAI Docs Developer
-description: Expert guide on contributing to the ProCodeAI documentation site.
+name: Canoryn Docs Developer
+description: Expert guide on contributing to the public Canoryn documentation site.
 ---
 
-# ProCodeAI Docs - Agent Skill
+# Canoryn Docs - Agent Skill
 
-> ⚠️ **IMPORTANT RULE**: Always ASK the user before running `git commit` or `git push`. Never auto-commit or auto-push without explicit user approval.
+> IMPORTANT: Always ask the user before running `git commit`, `git push`, or creating/merging pull requests. Never auto-commit or auto-push without explicit user approval.
 
-This skill enables AI agents to effectively work with the ProCodeAI documentation repository.
+This skill helps coding agents work safely in the public `canoryn-docs` repository.
 
 ## Project Overview
 
+- **Product**: Canoryn for macOS
 - **Framework**: VitePress 1.x
-- **Theme**: Custom Mintlify-style dark theme
-- **Repo**: `procodeai/aura-docs`
-- **Live URL**: `docs.procodeai.com` (GitHub Pages)
+- **Theme**: Custom VitePress theme overrides in `.vitepress/theme/custom.css`
+- **Repo**: `procodeai/canoryn-docs`
+- **Public Docs URL**: `https://canoryn.app/docs`
+- **Product Site**: `https://canoryn.app`
+- **Public contribution model**: users can click the page edit link, edit on GitHub, and submit a pull request.
+
+## Public vs Internal Rule
+
+This repository is public. Keep it user-facing.
+
+Allowed here:
+- Installation guides
+- Quick starts
+- User workflows
+- Permissions/privacy explanations
+- Architect UI usage docs
+- Public action/API references
+- Public changelog entries
+
+Do not add here:
+- Internal strategy docs
+- Future roadmap planning
+- Architecture decision records intended only for the app team
+- Agent handoff notes
+- Private launch/pricing/support planning
+- Secrets, credentials, tokens, private URLs, or screenshots containing private data
+
+Internal product, architecture, and strategy notes belong in the private Aura repo under `docs/internal-design/` or another private docs folder.
 
 ## Directory Structure
 
-```
-docs/
+```text
+canoryn-docs/
+├── .agent/skills/docs_developer/SKILL.md
+├── .github/workflows/deploy.yml
 ├── .vitepress/
-│   ├── config.mts         # Navigation, sidebar, site config
-│   └── theme/
-│       ├── index.ts       # Theme entry point
-│       └── custom.css     # Custom styling (Mintlify-inspired)
-├── .github/
-│   └── workflows/
-│       └── deploy.yml     # GitHub Pages deployment
-├── guide/                 # Getting started & concepts
-│   ├── introduction.md
-│   ├── installation.md
-│   ├── quickstart.md
-│   ├── how-it-works.md
-│   ├── agents.md
-│   ├── memory.md
-│   ├── permissions.md
-│   └── local-processing.md
+│   ├── branding.ts
+│   ├── config.mts
+│   ├── public/
+│   └── theme/custom.css
+├── guide/                 # Getting started and user concepts
 ├── architect/             # Visual editor docs
-│   ├── overview.md
-│   ├── controls.md
-│   ├── nodes.md
-│   ├── wiring.md
-│   ├── grouping.md
-│   └── debug-mode.md
-├── api/                   # Actions reference
-│   ├── actions.md
-│   ├── spotify.md
-│   ├── system.md
-│   ├── ai.md
-│   └── custom-actions.md
+├── api/                   # Public actions/API reference
 ├── changelog.md
-└── index.md               # Home page
+└── index.md               # Docs home page
 ```
 
 ## Commands
 
 ```bash
-# Development
-npm run docs:dev      # Start dev server at localhost:5173
-
-# Build
-npm run docs:build    # Build for production
-
-# Preview build
+npm run docs:dev      # Start dev server at localhost:5173/docs/
+npm run docs:build    # Build production docs
 npm run docs:preview  # Preview production build
 ```
 
+Run `npm run docs:build` before committing documentation structure, nav, or link changes.
+
+## Branding Contract
+
+Use values from `.vitepress/branding.ts` when possible.
+
+Current canonical values:
+- `appName`: `Canoryn`
+- `companyName`: `Procode AI Labs`
+- `websiteUrl`: `https://canoryn.app`
+- `docsUrl`: `https://canoryn.app/docs`
+- `supportEmail`: `support@canoryn.app`
+
+Copy rule:
+- Product/user docs should say `Canoryn`.
+- Footer/company/legal references can say `Canoryn by Procode AI Labs`.
+- Do not present `Aura`, `Canoryn`, and `Procode AI` as competing product names.
+
 ## Adding New Pages
 
-### 1. Create the Markdown File
+1. Create the Markdown file in the relevant public section.
 
 ```bash
-# Example: Adding a new guide page
 touch guide/new-feature.md
 ```
 
-### 2. Add Frontmatter (Optional)
+2. Add frontmatter when useful.
 
 ```markdown
 ---
 title: New Feature
-description: How to use the new feature
+description: How to use the new feature in Canoryn
 ---
 
 # New Feature
-
-Your content here...
 ```
 
-### 3. Add to Sidebar
+3. Add the page to `.vitepress/config.mts` sidebar/nav if it should be discoverable.
 
-Edit `.vitepress/config.mts`:
+4. Build before handoff.
 
-```typescript
-sidebar: {
-  '/guide/': [
-    {
-      text: 'Getting Started',
-      items: [
-        // ... existing items
-        { text: 'New Feature', link: '/guide/new-feature' }
-      ]
-    }
-  ]
+```bash
+npm run docs:build
+```
+
+## Link Rules
+
+- Internal links should use docs-root paths, e.g. `/guide/installation`.
+- Product-site links should use `https://canoryn.app/...`.
+- Download links should point to `https://canoryn.app/download`.
+- Support links should point to `https://canoryn.app/support` or `support@canoryn.app`.
+- Page edit links are configured in `.vitepress/config.mts` with GitHub's edit URL pattern.
+
+## Edit Link Behavior
+
+The public docs site should expose a GitHub edit link for every docs page.
+
+Expected behavior:
+- Users with repo access edit directly.
+- Users without access are prompted by GitHub to fork and submit a pull request.
+- The target branch should be `main`, because `main` is the deployed documentation branch.
+
+Current pattern:
+
+```ts
+editLink: {
+  pattern: "https://github.com/procodeai/canoryn-docs/edit/main/:path",
+  text: "Edit this page on GitHub",
 }
 ```
 
-### 4. Verify Links
+## Style Guidelines
 
-Ensure all internal links exist to avoid build failures:
+- Keep docs practical and product-grounded.
+- Prefer concrete user actions over internal architecture language.
+- Avoid unsupported claims such as signed/notarized/private/offline unless they are accurate for the current public release.
+- Avoid generated filler articles.
+- Keep examples realistic and testable.
 
-```markdown
-[Link Text](/guide/existing-page)
-```
-
-## Styling Guidelines
-
-### Theme Colors
-
-- **Brand**: `#10b981` (Green)
-- **Background**: `#0a0a0a` (Dark), `#ffffff` (Light)
-- **Accent**: `#34d399` (Light green)
-
-### Custom Components
-
-Use VitePress built-in containers:
+Use VitePress containers when helpful:
 
 ```markdown
 ::: tip
-Helpful tips go here
+Helpful context.
 :::
 
 ::: warning
-Warnings go here
-:::
-
-::: danger
-Critical warnings go here
+Important limitation.
 :::
 ```
 
 ## Deployment
 
-- **Automatic**: Push to `main` triggers GitHub Actions
-- **Manual**: Go to Actions tab → Run workflow
+- `main` deploys public docs.
+- Use `dev` or feature branches for changes.
+- PR into `main` for deployable docs updates.
+- GitHub/Cloudflare Pages checks should pass before merge.
 
 ## Common Tasks
 
-### Update Sidebar
-
-Edit `.vitepress/config.mts` → `sidebar` object
-
-### Change Theme Colors
-
-Edit `.vitepress/theme/custom.css` → CSS variables
-
-### Add Navigation Item
-
-Edit `.vitepress/config.mts` → `nav` array
-
-### Fix Dead Links
-
-VitePress fails on dead links. Either:
-
-1. Create the missing page
-2. Or add `ignoreDeadLinks: true` to config (not recommended)
-
-## Important Notes
-
-- All pages use **clean URLs** (no `.html` extension)
-- The site supports **light and dark modes**
-- Search is powered by VitePress local search
-- Edit links point to GitHub for contributor PRs
+- Update sidebar: `.vitepress/config.mts` -> `sidebar`
+- Update top nav: `.vitepress/config.mts` -> `nav`
+- Update social links/brand values: `.vitepress/branding.ts`
+- Update theme styling: `.vitepress/theme/custom.css`
+- Fix dead links: create the missing page or correct the link; do not disable dead-link checks casually.
