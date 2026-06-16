@@ -1,3 +1,7 @@
+---
+description: "System action nodes in Canoryn Architect — control macOS, apps, and shortcuts."
+---
+
 # System & Files
 
 Control your Mac's core functions, manage files, and automate system behaviors.

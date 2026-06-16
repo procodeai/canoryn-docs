@@ -1,3 +1,7 @@
+---
+description: "The sidebar inspector in Canoryn Architect — configure node properties and inputs."
+---
+
 # Sidebar & Inspector
 
 The Architect interface is flanked by two key panels: the **Agent Browser** (Left) for file management and the **Property Inspector** (Right) for node configuration.

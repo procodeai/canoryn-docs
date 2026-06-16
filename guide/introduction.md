@@ -1,3 +1,7 @@
+---
+description: "What Canoryn is and how it works: a local-first macOS AI agent for voice-driven automation, your own models, and full on-device privacy."
+---
+
 # Introduction
 
 Welcome to the **[[appName]]** documentation.

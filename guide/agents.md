@@ -1,3 +1,7 @@
+---
+description: "Canoryn's multi-agent system — specialized agents that coordinate music, visuals, and system automation on macOS."
+---
+
 # Agents & Blueprints
 
 Understanding the relationship between Agents and Blueprints.

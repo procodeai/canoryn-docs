@@ -1,3 +1,7 @@
+---
+description: "Connect nodes in Canoryn Architect — wire triggers, data, and actions into a working agent."
+---
+
 # Wiring System
 
 Wires connect nodes together to define both the **order of execution** and the **flow of data**.

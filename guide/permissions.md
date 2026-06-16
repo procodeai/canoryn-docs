@@ -1,3 +1,7 @@
+---
+description: "The macOS permissions Canoryn needs (accessibility, automation, microphone) and why — all granted and used locally."
+---
+
 # Permissions
 
 [[appName]] requires certain macOS permissions to function. Here's what each does and why.

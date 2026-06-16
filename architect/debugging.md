@@ -1,3 +1,7 @@
+---
+description: "Debug agent workflows in Canoryn Architect — inspect runs and find what failed."
+---
+
 # Debugging & Console
 
 [[appName]] includes a professional-grade logging console and visual debugger to help you understand and fix your agent's behavior.

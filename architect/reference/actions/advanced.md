@@ -1,3 +1,7 @@
+---
+description: "Advanced action nodes in Canoryn Architect for power users."
+---
+
 # Advanced & Agent Operations
 
 Meta-cognitive tools for controlling the agent itself and performing developer-level operations.

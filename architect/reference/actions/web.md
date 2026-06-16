@@ -1,3 +1,7 @@
+---
+description: "Web action nodes in Canoryn Architect — fetch, browse, and automate online tasks."
+---
+
 # Web & Information
 
 Access the internet, retrieve live data, and perform general utility calculations.

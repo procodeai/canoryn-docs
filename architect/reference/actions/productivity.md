@@ -1,3 +1,7 @@
+---
+description: "Productivity action nodes in Canoryn Architect — Mail, Calendar, Finder, and more."
+---
+
 # Productivity & Communication
 
 Manage your schedule, tasks, and communications with native app integrations.

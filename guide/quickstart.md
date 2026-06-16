@@ -1,3 +1,7 @@
+---
+description: "Get started with Canoryn in minutes — install, grant permissions, and run your first natural-language command on macOS."
+---
+
 # Quick Start: Build a "Zen Master"
 
 In this guide, you will build an agent that finds ancient wisdom and turns it into deep philosophical musings.

@@ -1,3 +1,7 @@
+---
+description: "Memory action nodes in Canoryn Architect — store and recall context across runs."
+---
+
 # Memory Operations
 
 Advanced tools for managing long-term memory and database states.

@@ -1,3 +1,7 @@
+---
+description: "Reference for Canoryn's built-in actions — control apps, system, web, and media from your workflows."
+---
+
 # Actions Reference
 
 Actions are the building blocks of Canoryn agents. Each action represents a capability—something your agent can do.

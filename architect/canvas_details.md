@@ -1,3 +1,7 @@
+---
+description: "The Canoryn Architect canvas in detail — nodes, ports, and connections explained."
+---
+
 # Blueprint Canvas Details
 
 The Blueprint Canvas is the infinite, high-performance surface where you design agent behaviors. It uses a custom metal-accelerated rendering engine with Level-of-Detail (LOD) optimizations to handle large graphs smoothly.

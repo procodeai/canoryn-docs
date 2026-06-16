@@ -1,3 +1,7 @@
+---
+description: "Canoryn's system APIs — automate macOS apps, files, and shortcuts."
+---
+
 # System Actions
 
 Native macOS automation capabilities.

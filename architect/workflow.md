@@ -1,3 +1,7 @@
+---
+description: "Build an end-to-end workflow in Canoryn Architect, from trigger to action."
+---
+
 # Workflow & Agent Management
 
 Learn how to create, organize, and manage your agents in [[appName]].

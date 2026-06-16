@@ -1,3 +1,7 @@
+---
+description: "Fixes for common Canoryn issues on macOS — permissions, the first-launch security prompt, and integrations."
+---
+
 # Troubleshooting
 
 Use this page when [[appName]] does not launch, cannot use permissions, or fails to run a workflow.

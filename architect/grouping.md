@@ -1,3 +1,7 @@
+---
+description: "Group and organize nodes in Canoryn Architect to keep complex workflows readable."
+---
+
 # Grouping
 
 Groups are visual containers that help organize complex blueprints by bundling related nodes together.

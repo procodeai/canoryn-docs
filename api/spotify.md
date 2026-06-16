@@ -1,3 +1,7 @@
+---
+description: "Canoryn's music controls — drive playback and now-playing on macOS."
+---
+
 # Spotify Actions
 
 Control Spotify directly from your Canoryn agents.

@@ -1,3 +1,7 @@
+---
+description: "How Canoryn turns natural language into actions on your Mac — intent detection, planning, and native app execution."
+---
+
 # How [[appName]] Works
 
 [[appName]] is built on a structured architecture that connects system inputs, AI reasoning, and native action execution.
