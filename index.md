@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: "[[appName]]"
-  text: "Build local-first AI agents that automate your Mac"
-  tagline: "Build personal Mac automations with voice, visual workflows, and user-controlled AI providers."
+  text: "Build private AI agents for your Mac"
+  tagline: "A local-first agent workspace for macOS — design agents visually, talk to them by voice or chat, and run them on your own models. Native, ~20 MB, fully offline."
   actions:
     - theme: brand
       text: Get Started
