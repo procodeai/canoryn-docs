@@ -1,3 +1,7 @@
+---
+description: "Run Canoryn fully privately with local LLMs via Ollama — on-device inference with no data sent to the cloud."
+---
+
 # Local Processing
 
 [[appName]] is designed with **privacy-first** architecture. All AI processing happens on your Mac.

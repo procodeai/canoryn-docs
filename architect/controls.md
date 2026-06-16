@@ -1,3 +1,7 @@
+---
+description: "Canvas controls in Canoryn Architect — pan, zoom, select, and arrange your agent graph."
+---
+
 # Controls & Shortcuts
 
 A complete reference of all keyboard shortcuts and gestures in the Architect. These are managed by the `KeyBindingManager` and can be viewed in-app by pressing `⌘/`.

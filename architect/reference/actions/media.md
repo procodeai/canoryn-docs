@@ -1,3 +1,7 @@
+---
+description: "Media action nodes in Canoryn Architect — control music, playback, and wallpaper."
+---
+
 # Media & Entertainment
 
 Control playback, manage playlists, and access entertainment services.

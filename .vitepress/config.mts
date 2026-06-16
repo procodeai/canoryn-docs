@@ -51,12 +51,22 @@ export default defineConfig({
         return value;
       };
 
-      md.core.ruler.after("block", "branding_replace", (state) => {
-        state.tokens.forEach((token) => {
+      // Recurse into children: paragraph/heading text lives in each block token's
+      // `children` (inline tokens), and that's what actually renders — replacing only
+      // the top-level `content` misses all body text, leaving [[appName]] raw.
+      const applyToTokens = (tokens: any[]) => {
+        tokens.forEach((token) => {
           if (token.content) {
             token.content = replacePlaceholders(token.content);
           }
+          if (token.children && token.children.length) {
+            applyToTokens(token.children);
+          }
         });
+      };
+
+      md.core.ruler.after("block", "branding_replace", (state) => {
+        applyToTokens(state.tokens);
 
         // Also replace placeholders in page frontmatter (hero/actions/etc).
         if (state.env.frontmatter) {

@@ -1,3 +1,7 @@
+---
+description: "Download and install Canoryn on macOS 14+, including the one-time first-launch security step for the current beta build."
+---
+
 # Installation
 
 Get [[appName]] running on your Mac in under 5 minutes.

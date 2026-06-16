@@ -1,3 +1,7 @@
+---
+description: "Canoryn's AI APIs — use local or cloud models inside your agent workflows."
+---
+
 # AI Actions
 
 LLM-powered intelligence nodes for reasoning and generation.

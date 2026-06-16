@@ -1,3 +1,7 @@
+---
+description: "Use debug mode in Canoryn Architect to step through and inspect a running workflow."
+---
+
 # Debug Mode
 
 Debug mode gives you X-ray vision into your blueprint execution.

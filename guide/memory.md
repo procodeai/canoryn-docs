@@ -1,3 +1,7 @@
+---
+description: "How Canoryn remembers context across sessions using local, private memory — nothing leaves your Mac."
+---
+
 # Memory System
 
 Canoryn's local memory system allows workflows and assistants to store and retrieve persistent context.

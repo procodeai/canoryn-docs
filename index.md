@@ -32,6 +32,8 @@ features:
   - icon: 🔒
     title: Private & BYO Keys
     details: Keep control of your data and costs. Bring your own AI keys; all workflows and memory stay local.
+    
+description: "Canoryn is a local-first AI workspace agent for macOS — drive your Mac with natural-language voice commands and build your own agent workflows visually."
 ---
 
 ## Why [[appName]]?

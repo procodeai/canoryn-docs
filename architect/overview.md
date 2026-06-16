@@ -1,3 +1,7 @@
+---
+description: "Canoryn Architect — a visual builder for composing your own AI agent workflows from trigger, intelligence, and native app nodes."
+---
+
 # Architect Overview
 
 The **Architect** is [[appName]]'s visual programming environment — an infinite canvas where you design agent behaviors by connecting nodes with wires.

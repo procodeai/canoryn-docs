@@ -1,3 +1,7 @@
+---
+description: "Reference for Canoryn Architect's core nodes — triggers, intelligence, and execution."
+---
+
 # Node Reference
 
 A complete catalog of every built-in node available in the Architect. Nodes are organized by **category**.

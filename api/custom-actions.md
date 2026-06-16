@@ -1,3 +1,7 @@
+---
+description: "Build custom actions to extend Canoryn with your own capabilities."
+---
+
 # Custom Actions
 
 ::: warning Developer Feature

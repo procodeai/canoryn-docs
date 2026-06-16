@@ -1,3 +1,7 @@
+---
+description: "Known limitations of the current Canoryn beta and what's planned next."
+---
+
 # Beta Limitations
 
 [[appName]] is in active beta. The goal is to make local-first Mac automation useful and trustworthy before expanding the product surface.
