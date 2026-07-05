@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Fired by canoryn's release workflow after a release publishes, so the
+  # build-time changelog (releases.json data loader) picks up the new version.
+  repository_dispatch:
+    types: [canoryn-release]
 
 permissions:
   contents: read
