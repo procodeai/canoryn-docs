@@ -8,6 +8,7 @@ export const branding = {
   supportEmail: "support@canoryn.app",
   githubUrl: "https://github.com/procodeai/canoryn-releases",
   releasesUrl: "https://github.com/procodeai/canoryn-releases/releases",
+  releaseFeedUrl: "https://raw.githubusercontent.com/procodeai/canoryn-releases/main/releases.json",
   twitterUrl: "https://x.com/canoryn",
   instagramUrl: "https://www.instagram.com/canoryn.app/",
   youtubeUrl: "https://www.youtube.com/@canoryn",
