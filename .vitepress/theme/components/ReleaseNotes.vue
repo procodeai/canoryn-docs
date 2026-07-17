@@ -1,6 +1,13 @@
 <script setup lang="ts">
-// Import the data exported from our data loader
 import { data as releases } from '../releases.data.mjs'
+
+function formatDate(iso: string) {
+  return new Date(iso).toLocaleDateString(undefined, {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  })
+}
 </script>
 
 <template>
@@ -8,26 +15,35 @@ import { data as releases } from '../releases.data.mjs'
     <div v-if="!releases || releases.length === 0" class="no-releases">
       <p>No release notes available at the moment. Please check back later.</p>
     </div>
-    
-    <div v-for="release in releases" :key="release.tag" class="release-item">
-      <h2 :id="release.tag">{{ release.name }}</h2>
-      
-      <div class="release-meta">
-        <span class="tag">{{ release.tag }}</span>
-        <span class="date">{{ new Date(release.publishedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' }) }}</span>
-      </div>
-      
-      <!-- Render the HTML generated at build time by VitePress -->
+
+    <article
+      v-for="release in releases"
+      :key="release.tag"
+      class="release-item"
+    >
+      <!-- One heading: product title + date. Tag is in the anchor id only (no badge repeat). -->
+      <header class="release-header">
+        <h2 :id="release.tag">{{ release.name }}</h2>
+        <time class="date" :datetime="release.publishedAt">
+          {{ formatDate(release.publishedAt) }}
+        </time>
+      </header>
+
       <div class="release-body custom-markdown" v-html="release.html"></div>
-      
+
       <div class="release-actions">
-        <a :href="release.url" target="_blank" rel="noopener noreferrer" class="github-link">
-          View Raw Release on GitHub
+        <a
+          :href="release.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="github-link"
+        >
+          View on GitHub
         </a>
       </div>
-      
+
       <hr class="release-divider" />
-    </div>
+    </article>
   </div>
 </template>
 
@@ -38,29 +54,27 @@ import { data as releases } from '../releases.data.mjs'
 .release-item {
   margin-bottom: 4rem;
 }
-.release-item h2 {
-  margin-top: 0;
+.release-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.75rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.release-header h2 {
+  margin: 0;
   border-top: none;
   padding-top: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
-.release-meta {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
+.date {
   font-size: 0.9rem;
   color: var(--vp-c-text-2);
 }
-.tag {
-  background-color: var(--vp-c-bg-soft);
-  padding: 0.2rem 0.6rem;
-  border-radius: 6px;
-  font-family: var(--vp-font-family-mono);
-  font-weight: 600;
-  color: var(--vp-c-brand-1);
-}
 .release-body {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   line-height: 1.7;
 }
 .github-link {
@@ -82,7 +96,11 @@ import { data as releases } from '../releases.data.mjs'
   border-top: 1px solid var(--vp-c-divider);
 }
 
-/* Fix injected HTML spacing to match VitePress */
+/* Hide leftover duplicate title if a feed body still starts with # Canoryn … */
+.custom-markdown :deep(> h1:first-child) {
+  display: none;
+}
+
 .custom-markdown :deep(h3) {
   margin-top: 1.5rem;
   margin-bottom: 0.8rem;

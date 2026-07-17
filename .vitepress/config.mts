@@ -13,8 +13,7 @@ function docsCanonicalPath(relativePath: string): string {
 
 export default defineConfig({
   base: "/docs/",
-  // Default would be `<srcDir>/public`; our static assets live next to this config.
-  publicDir: ".vitepress/public",
+  // Static assets: ./public (VitePress default). themeConfig.logo → /docs/logo.svg
   title: branding.appName,
   description: "Build local-first AI agents that automate your Mac",
   ignoreDeadLinks: false,
@@ -39,7 +38,7 @@ export default defineConfig({
 
   head: [
     ["link", { rel: "icon", href: "/docs/favicon.svg", type: "image/svg+xml" }],
-    ["meta", { name: "theme-color", content: "#10b981" }],
+    ["meta", { name: "theme-color", content: "#f97316" }],
     ["meta", { property: "og:type", content: "website" }],
     ["meta", { property: "og:site_name", content: `${branding.appName} Docs` }],
     [

@@ -17,8 +17,13 @@ function nestUnderDocs() {
 }
 
 function copyPublicIntoDocs() {
-  const publicDir = path.join(root, ".vitepress/public");
-  if (!fs.existsSync(publicDir)) return;
+  // VitePress default public dir is <srcDir>/public (repo root ./public).
+  const candidates = [
+    path.join(root, "public"),
+    path.join(root, ".vitepress/public"),
+  ];
+  const publicDir = candidates.find((dir) => fs.existsSync(dir));
+  if (!publicDir) return;
   for (const name of fs.readdirSync(publicDir)) {
     fs.copyFileSync(path.join(publicDir, name), path.join(docsDist, name));
   }
