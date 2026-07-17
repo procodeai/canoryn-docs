@@ -1,0 +1,35 @@
+# https://canoryn.app/docs/robots.txt
+# Search + AI agents may read public docs. Prefer canoryn.app (not *.pages.dev).
+
+User-agent: *
+Allow: /
+
+# Common AI / answer-engine crawlers (explicit allow)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://canoryn.app/docs/sitemap.xml
