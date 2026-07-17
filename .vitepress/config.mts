@@ -1,22 +1,47 @@
 import { defineConfig } from "vitepress";
 import { branding } from "./branding";
 
+const docsOrigin = "https://canoryn.app/docs/";
+
+function docsCanonicalPath(relativePath: string): string {
+  const cleaned = relativePath
+    .replace(/(^|\/)index\.md$/, "$1")
+    .replace(/\.md$/, "")
+    .replace(/\/+$/, "");
+  return cleaned ? `${docsOrigin}${cleaned}` : docsOrigin;
+}
+
 export default defineConfig({
   base: "/docs/",
+  // Default would be `<srcDir>/public`; our static assets live next to this config.
+  publicDir: ".vitepress/public",
   title: branding.appName,
   description: "Build local-first AI agents that automate your Mac",
   ignoreDeadLinks: false,
+  // Keep README out of the public site / sitemap (repo readme ≠ docs page).
+  srcExclude: ["**/README.md", "**/readme.md"],
+  // Trailing slash required: without it, sitemap URLs resolve to canoryn.app/guide/...
+  // (dropping /docs) and Google gets 404s. See VitePress sitemap + `base` docs.
   sitemap: {
-    hostname: "https://canoryn.app/docs",
+    hostname: docsOrigin,
+    transformItems: (items) =>
+      items
+        .filter((item) => {
+          const path = item.url.replace(/^\//, "").toLowerCase();
+          return path !== "readme" && !path.endsWith("/readme");
+        })
+        .map((item) => ({
+          ...item,
+          // Relative to hostname so /docs/ is preserved (leading "/" would wipe it).
+          url: item.url.replace(/^\//, ""),
+        })),
   },
 
   head: [
-    ["link", { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" }],
+    ["link", { rel: "icon", href: "/docs/favicon.svg", type: "image/svg+xml" }],
     ["meta", { name: "theme-color", content: "#10b981" }],
     ["meta", { property: "og:type", content: "website" }],
-    ["meta", { property: "og:url", content: "https://canoryn.app/docs" }],
-    ["link", { rel: "canonical", href: "https://canoryn.app/docs/" }],
-    ["meta", { property: "og:title", content: `${branding.appName} Docs` }],
+    ["meta", { property: "og:site_name", content: `${branding.appName} Docs` }],
     [
       "meta",
       {
@@ -24,7 +49,22 @@ export default defineConfig({
         content: "Build local-first AI agents that automate your Mac",
       },
     ],
+    ["meta", { name: "twitter:card", content: "summary" }],
   ],
+
+  // Per-page canonical + og:url (global canonical was collapsing every page to /docs/).
+  transformPageData(pageData) {
+    const canonical = docsCanonicalPath(pageData.relativePath);
+    const title = pageData.title
+      ? `${pageData.title} | ${branding.appName}`
+      : `${branding.appName} Docs`;
+    pageData.frontmatter.head ??= [];
+    pageData.frontmatter.head.push(
+      ["link", { rel: "canonical", href: canonical }],
+      ["meta", { property: "og:url", content: canonical }],
+      ["meta", { property: "og:title", content: title }],
+    );
+  },
 
   // Clean URLs (no .html extension)
   cleanUrls: true,

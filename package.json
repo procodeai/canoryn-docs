@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build && node -e \"const fs = require('fs'); if (!fs.existsSync('.vitepress/dist/docs')) { fs.mkdirSync('.vitepress/dist/docs'); fs.readdirSync('.vitepress/dist').forEach(f => { if (f !== 'docs') fs.renameSync('.vitepress/dist/' + f, '.vitepress/dist/docs/' + f); }); }\"",
+    "docs:build": "vitepress build && node scripts/postbuild.mjs",
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
