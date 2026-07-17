@@ -1,0 +1,51 @@
+# Canoryn
+
+> Canoryn is a local-first AI workspace agent for macOS. Design agents in a visual builder (Architect), talk to them by voice or chat, and run them on your own models (Ollama / BYO keys) — native, ~20 MB, fully offline.
+
+Product site: https://canoryn.app  
+Parent studio: https://procodeai.com  
+Docs home: https://canoryn.app/docs/  
+Full docs dump for agents: https://canoryn.app/docs/llms-full.txt
+
+## Docs
+
+- [Introduction](https://canoryn.app/docs/guide/introduction): What Canoryn is and who it is for
+- [Installation](https://canoryn.app/docs/guide/installation): Install the macOS DMG and first launch
+- [Quick Start](https://canoryn.app/docs/guide/quickstart): Build a first agent workflow in minutes
+- [How it works](https://canoryn.app/docs/guide/how-it-works): Runtime architecture and local-first model
+- [Agents & Blueprints](https://canoryn.app/docs/guide/agents): Agents, blueprints, and .cryn files
+- [Memory](https://canoryn.app/docs/guide/memory): On-device memory system
+- [Permissions](https://canoryn.app/docs/guide/permissions): macOS permissions and privacy boundaries
+- [Local processing](https://canoryn.app/docs/guide/local-processing): What stays on-device vs cloud providers
+- [Beta limitations](https://canoryn.app/docs/guide/beta-limitations): Current beta constraints
+- [Troubleshooting](https://canoryn.app/docs/guide/troubleshooting): Common install and runtime issues
+
+## Architect
+
+- [Overview](https://canoryn.app/docs/architect/overview): Visual agent builder
+- [Canvas & interactions](https://canoryn.app/docs/architect/canvas_details): Pan, zoom, and canvas input
+- [Controls & shortcuts](https://canoryn.app/docs/architect/controls): Keyboard and pointer shortcuts
+- [Wiring](https://canoryn.app/docs/architect/wiring): Connecting nodes
+- [Core nodes](https://canoryn.app/docs/architect/reference/core_nodes): Logic and flow nodes
+
+## API / actions
+
+- [Actions overview](https://canoryn.app/docs/api/actions): System actions catalog
+- [System actions](https://canoryn.app/docs/api/system): Files, UI, and system control
+- [AI actions](https://canoryn.app/docs/api/ai): Model and intelligence actions
+- [Spotify actions](https://canoryn.app/docs/api/spotify): Media control actions
+
+## Product
+
+- [Download](https://canoryn.app/download): Public beta DMG for macOS
+- [Changelog](https://canoryn.app/changelog): Product release notes
+- [Docs changelog](https://canoryn.app/docs/changelog): Documentation release notes
+- [Pricing](https://canoryn.app/pricing): Plans and founding supporter
+- [Support](https://canoryn.app/support): Help and contact
+- [GitHub releases](https://github.com/procodeai/canoryn-releases): Versioned builds and appcast
+
+## Optional
+
+- [Privacy](https://canoryn.app/legal/privacy)
+- [Terms](https://canoryn.app/legal/terms)
+- [ProCode AI](https://procodeai.com): Parent studio
