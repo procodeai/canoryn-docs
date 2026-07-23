@@ -1,5 +1,11 @@
 import { createMarkdownRenderer } from 'vitepress'
+import { readFileSync, existsSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
+import { dirname, join } from 'node:path'
 import { branding } from '../branding'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const localFallbackPath = join(__dirname, 'releases.fallback.json')
 
 /**
  * GitHub release bodies usually start with `# Canoryn x.y.z`, but
@@ -41,14 +47,31 @@ function stripLeadingTitleHeading(body, title, tag) {
   return lines.join('\n').replace(/^\s+/, '')
 }
 
+async function loadFeedJson() {
+  try {
+    const response = await fetch(branding.releaseFeedUrl)
+    if (response.ok) {
+      return await response.json()
+    }
+    console.warn(
+      `[releases.data] feed HTTP ${response.status} ${response.statusText}; trying local fallback`,
+    )
+  } catch (error) {
+    console.warn(
+      `[releases.data] feed fetch failed (${error?.message || error}); trying local fallback`,
+    )
+  }
+
+  if (existsSync(localFallbackPath)) {
+    return JSON.parse(readFileSync(localFallbackPath, 'utf8'))
+  }
+
+  return { schemaVersion: 1, latest: null, releases: [] }
+}
+
 export default {
   async load() {
-    const response = await fetch(branding.releaseFeedUrl)
-    if (!response.ok) {
-      throw new Error(`Failed to fetch Canoryn release feed: ${response.status} ${response.statusText}`)
-    }
-
-    const feed = await response.json()
+    const feed = await loadFeedJson()
     const rawReleases = Array.isArray(feed.releases) ? feed.releases : []
 
     const md = await createMarkdownRenderer(process.cwd())
@@ -65,5 +88,5 @@ export default {
         url: `${branding.releasesUrl}/tag/${release.tag}`,
       }
     })
-  }
+  },
 }

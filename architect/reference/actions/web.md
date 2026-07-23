@@ -1,12 +1,63 @@
 ---
-description: "Web action nodes in Canoryn Architect — fetch, browse, and automate online tasks."
+description: "Web action nodes in Canoryn Architect — live Browser Nodes, fetch, browse, and automate online tasks."
 ---
 
 # Web & Information
 
-Access the internet, retrieve live data, and perform general utility calculations.
+Access the internet, retrieve live data, and put **real webpages** on the Architect canvas.
 
-## Web Access
+## Browser Nodes (live web on the canvas)
+
+For the full product guide — multiple live pages, scroll/click, profiles, Finder restore — see **[Browser Nodes](/guide/browser-nodes)**.
+
+A Browser Node is a real WebKit page on the canvas (not a screenshot). Workflows and chat can drive those sessions with the actions below. Prefer these over raw HTTP when the site needs JavaScript, login, or a layout you’re watching.
+
+### browser.load
+
+|                 |                                                                 |
+| :-------------- | :-------------------------------------------------------------- |
+| **Type**        | `browser.load`                                                  |
+| **Description** | Navigates a Browser Node (or shared agent session) to a URL and waits for readiness. |
+| **Inputs**      | `url`, optional `node_id`, `wait_for` (load / domready / selector), `selector`, `timeout_s` |
+| **Outputs**     | Final URL, title                                                |
+
+### browser.read_page
+
+|                 |                                                                 |
+| :-------------- | :-------------------------------------------------------------- |
+| **Type**        | `browser.read_page`                                             |
+| **Description** | Maps visible headings and interactive elements as `ref_N` ids the agent can act on. |
+| **Inputs**      | optional `node_id`, `max_chars`                                 |
+| **Outputs**     | Page map, ref count                                             |
+
+### browser.click / browser.fill
+
+|                 |                                                                 |
+| :-------------- | :-------------------------------------------------------------- |
+| **Types**       | `browser.click`, `browser.fill`                                 |
+| **Description** | Click or type into the live page. Prefer a `ref` from `browser.read_page`; CSS `selector` also works. |
+| **Notes**       | `browser.fill` is consent-gated; field text is not logged.      |
+
+### browser.extract_text / extract_html / extract_structured
+
+|                 |                                                                 |
+| :-------------- | :-------------------------------------------------------------- |
+| **Types**       | `browser.extract_text`, `browser.extract_html`, `browser.extract_structured` |
+| **Description** | Pull content from the **rendered** DOM (works on JS-heavy pages that raw HTTP cannot). |
+
+### browser.snapshot / navigate / wait_for / list_sessions / run_js
+
+| **Type** | **Purpose** |
+| :------- | :---------- |
+| `browser.snapshot` | PNG capture of the page |
+| `browser.navigate` | Back / forward / reload |
+| `browser.wait_for` | Wait for a selector |
+| `browser.list_sessions` | List open browser sessions |
+| `browser.run_js` | Run authored JavaScript (consent-gated) |
+
+---
+
+## Web Access (HTTP & search)
 
 ### HTTP Request
 
@@ -40,7 +91,7 @@ Access the internet, retrieve live data, and perform general utility calculation
 |                 |                                             |
 | :-------------- | :------------------------------------------ |
 | **Type**        | `web.get_page`                              |
-| **Description** | Fetches the full HTML content of a webpage. |
+| **Description** | Fetches the full HTML content of a webpage over HTTP (no JS render). Prefer a [Browser Node](/guide/browser-nodes) + `browser.extract_*` for modern sites. |
 | **Inputs**      | `URL` (String)                              |
 | **Outputs**     | `HTML` (String), `Text Content` (String)    |
 
