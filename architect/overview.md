@@ -8,18 +8,21 @@ The **Architect** is [[appName]]'s visual programming environment — an infinit
 
 Think of it as a visual script: instead of writing code line by line, you connect building blocks together to describe _what_ your agent should do and _when_.
 
-You can also **describe the workflow in chat** next to the canvas — the [Architect Copilot](/guide/architect-copilot) builds and edits the graph for you. Manual wiring and Copilot work together.
+You can also **describe the workflow in chat** — from the [Architect Copilot](/guide/architect-copilot) (sparkles in the top toolbar) or from main **Chat**. Both can build and edit the graph. Copilot keeps the conversation beside the canvas you’re on. Manual wiring and chat authoring work together.
 
 ## The Workspace
 
 The Architect is split into main panels:
 
-| Panel                  | Location      | Purpose                                         |
-| :--------------------- | :------------ | :---------------------------------------------- |
-| **Agent Browser**      | Left Sidebar  | Manage your agent files and folders.            |
-| **Blueprint Canvas**   | Center        | The infinite canvas where you build your agent. |
-| **Property Inspector** | Right Sidebar | Configure the selected node's settings.         |
-| **Copilot / chat**     | Beside canvas | Describe builds and edits in natural language.  |
+| Panel | Location | Purpose |
+| :---- | :------- | :------ |
+| **Projects sidebar** | Left (grid mode) | Open and organize workflows (`.cryn`) in your workspace |
+| **Architect Copilot** | Left (sparkles mode) | Chat linked to this canvas — build and edit the graph |
+| **Canvas** | Center | Build the graph: nodes, wires, live surfaces |
+| **Inspector** | Right | Configure the selected node |
+
+Switch **Projects** ↔ **Copilot** with the grid / sparkles control in the Architect toolbar (top left). Details: [Architect Copilot](/guide/architect-copilot#where-it-is).
+
 
 > [!TIP]
 > Press `Cmd + .` to toggle **Focus Mode**, which hides both sidebars for a distraction-free canvas.
@@ -32,7 +35,7 @@ Nodes are Visual blocks that represent a single action or decision. Every node h
 
 - **Input Ports** (left side): Receive execution flow or data.
 - **Output Ports** (right side): Send execution flow or data.
-- **Properties**: Configurable settings edited in the Inspector.
+- **Properties**: Configurable settings edited in the **Inspector** (right).
 
 There are **5 categories** of nodes:
 
@@ -83,4 +86,4 @@ Details: [Architect Copilot → Enable vs Play](/guide/architect-copilot#enable-
 
 ---
 
-**Next**: [Architect Copilot](/guide/architect-copilot) · [Research boards](/guide/research-boards) · [Canvas & Interactions](/architect/canvas_details) · [Node Reference](/architect/reference/core_nodes).
+**Next**: [Projects Sidebar & Inspector](/architect/sidebar_inspector) · [Architect Copilot](/guide/architect-copilot) · [Browser Nodes](/guide/browser-nodes) · [Canvas & Interactions](/architect/canvas_details) · [Node Reference](/architect/reference/core_nodes).

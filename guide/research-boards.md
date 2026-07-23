@@ -38,12 +38,12 @@ That means you can:
 
 - **Play** to test.
 - **Enable** so CLI or an external agent can run the same board later.
-- Edit one browser URL or prompt without rebuilding the whole board ([Architect Copilot](/guide/architect-copilot)).
+- Edit one browser URL or prompt without rebuilding the whole board (Chat or [Architect Copilot](/guide/architect-copilot)).
 
 ## Tips
 
 - Prefer **official sources** in the prompt so the board stays grounded.
-- After the first build, use Copilot for small changes (“add Safari to the comparison”, “email me the report”).
+- After the first build, use Chat or Copilot for small changes (“add Safari to the comparison”, “email me the report”).
 - Arrange and resize browser nodes like a desk — your layout is part of the saved workflow.
 - Collapse groups carefully — browser pages should survive group collapse; if a page looks blank, expand the group and Play again.
 - Markdown reports keep their content after Play; if something looks empty, check you’re looking at the document node output after a successful run.

@@ -6,11 +6,11 @@ description: "Build an end-to-end workflow in Canoryn Architect, from trigger to
 
 Learn how to create, organize, and manage your agents in [[appName]].
 
-## Creating Agents
+## Creating workflows
 
-1.  **Sidebar**: Click the **`+` (New Agent)** button in the header.
-2.  **Context Menu**: Right-click on any folder and select **New Agent**.
-3.  **From Library**: Drag an agent from **My Library** into **My Projects** to create an editable copy.
+1.  **Projects sidebar**: Click the **`+` (New)** button in the header.
+2.  **Context Menu**: Right-click on any folder and select **New Agent** / new workflow.
+3.  **From Library**: Drag an item from **My Library** into **My Projects** to create an editable copy.
 
 ## Organization
 
@@ -18,16 +18,16 @@ Learn how to create, organize, and manage your agents in [[appName]].
 
 Keep your workspace clean with nested folders:
 
-1.  Click the **New Folder** icon in the sidebar header to create a root folder.
-2.  **Drag and Drop** agents into folders to organize them.
-3.  **Rename**: Select a folder or agent and press `Return` to rename it.
+1.  Click the **New Folder** icon in the Projects sidebar header to create a root folder.
+2.  **Drag and Drop** workflows into folders to organize them.
+3.  **Rename**: Select a folder or item and press `Return` to rename it.
 
 ### Window Management
 
-[[appName]] supports a professional multi-window workflow:
+[[appName]] supports a multi-window workflow:
 
-- **Open in New Window**: Right-click an agent in the sidebar and select "Open in New Window".
-- **Focus Mode**: Press `Cmd + Shift + F` to toggle Focus Mode, hiding the sidebar and inspector for a distraction-free canvas.
+- **Open in New Window**: Right-click an item in the Projects sidebar and select "Open in New Window".
+- **Focus Mode**: Press `⌘.` (or `Cmd + Shift + F` where available) to hide the Projects sidebar and Inspector for a distraction-free canvas.
 
 ## Saving & Versioning
 
