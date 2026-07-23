@@ -180,6 +180,7 @@ export default defineConfig({
             { text: "Installation", link: "/guide/installation" },
             { text: "Quick Start", link: "/guide/quickstart" },
             { text: "Architect Copilot", link: "/guide/architect-copilot" },
+            { text: "Browser Nodes", link: "/guide/browser-nodes" },
             { text: "Research Boards", link: "/guide/research-boards" },
             { text: "CLI & MCP", link: "/guide/cli-and-mcp" },
             { text: "Beta Limitations", link: "/guide/beta-limitations" },

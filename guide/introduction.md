@@ -17,8 +17,8 @@ Welcome to the **[[appName]]** documentation.
 ### 📐 Visual Architect + Copilot
 Design workflows with a node-based editor — or describe what you want in the [Architect Copilot](/guide/architect-copilot) and watch the graph appear. Edit one step without rebuilding the whole flow.
 
-### 🔬 Research boards
-Compare sites in parallel, synthesize a report, and re-run the board as a real workflow. See [Research boards](/guide/research-boards).
+### 🔬 Research boards & live browsers
+Compare sites in parallel on real [Browser Nodes](/guide/browser-nodes) you can scroll and click, synthesize a report, and reopen the desk from Finder. See [Research boards](/guide/research-boards).
 
 ### 🎙️ Voice, chat & triggers
 Speak naturally, use chat, or trigger on schedule, app events, webhooks, and more.

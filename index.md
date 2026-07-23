@@ -17,6 +17,9 @@ features:
   - icon: 📐
     title: Architect + Copilot
     details: Wire nodes by hand or describe the workflow in chat — Canoryn builds and edits the graph while you watch.
+  - icon: 🌐
+    title: Live Browser Nodes
+    details: Real webpages on the canvas — scroll, click, resize, pick a profile, wire results. Reopen the whole desk from a .cryn file.
   - icon: 🔬
     title: Research boards
     details: Compare live sources in parallel, synthesize a report, and re-run the board as a real workflow.
@@ -49,6 +52,7 @@ Traditional automation tools and chatbots either lack local system context, forg
 
 - 📖 [Introduction](/guide/introduction) — What is [[appName]]?
 - ✨ [Architect Copilot](/guide/architect-copilot) — Build a workflow by describing it
+- 🌐 [Browser Nodes](/guide/browser-nodes) — Live webpages on the canvas
 - 🔬 [Research boards](/guide/research-boards) — Live comparison workspaces
 - 🖥️ [CLI & MCP](/guide/cli-and-mcp) — External agents and the command line
 - 🚀 [Installation](/guide/installation) — Download and setup
