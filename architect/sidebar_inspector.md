@@ -1,77 +1,72 @@
 ---
-description: "The sidebar inspector in Canoryn Architect — configure node properties and inputs."
+description: "Architect left Projects sidebar and right Inspector — organize workflows and configure selected nodes."
 ---
 
-# Sidebar & Inspector
+# Projects Sidebar & Inspector
 
-The Architect interface is flanked by two key panels: the **Agent Browser** (Left) for file management and the **Property Inspector** (Right) for node configuration.
+The Architect has two side panels. The **left** panel switches between Projects and Copilot:
 
-## Agent Browser (Sidebar)
+| Panel | Side | Job |
+| :---- | :--- | :-- |
+| **Projects sidebar** | Left (grid in the toolbar) | Open, create, and organize workflows in your workspace |
+| **Architect Copilot** | Left (sparkles in the toolbar) | Chat linked to this canvas — see [Architect Copilot](/guide/architect-copilot) |
+| **Inspector** | Right | Configure the **selected** node on the canvas |
 
-The sidebar allows you to organize your agents and navigate your workspace. It maps directly to the file system.
+> [!TIP]
+> Hide panels for focus: `⌘.` (Focus Mode). Toggle left: `⌘B`. Toggle Inspector: `⌘I`. See [Controls](/architect/controls).
+
+---
+
+## Projects sidebar (left)
+
+The left sidebar is your **file tree** for Architect — folders and workflow files (`.cryn`) on disk.
 
 ### Sections
 
-- **MY PROJECTS**: Agents and folders stored in your local workspace.
-- **MY LIBRARY**: Installed agents from the Agent Store (Read-Only).
+- **My Projects** — workflows and folders in your local workspace (editable).
+- **My Library** — shared or installed templates (when available); drag into **My Projects** to make an editable copy.
 
-### File Operations
+### Common actions
 
-| Action            | Method                         | Keyboard Shortcut |
-| :---------------- | :----------------------------- | :---------------- |
-| **Create Agent**  | Click `+` button in header     |                   |
-| **Create Folder** | Click `New Folder` icon        |                   |
-| **Rename**        | Select item and press `Return` | `Return`          |
-| **Move**          | Drag and drop within sidebar   |                   |
-| **Delete**        | Right-click > Delete           |                   |
-| **Duplicate**     | Right-click > Duplicate        |                   |
+| Action | How |
+| :----- | :-- |
+| **New workflow / agent** | `+` in the sidebar header, or right-click a folder → New |
+| **New folder** | New Folder icon in the header |
+| **Rename** | Select → `Return` |
+| **Move** | Drag and drop |
+| **Duplicate / Delete** | Right-click the item |
+| **Open in New Window** | Right-click → Open in New Window |
+| **Reveal in Finder** | Right-click → Reveal in Finder (shows the `.cryn` on disk) |
 
-_Note: Dragging and dropping allows you to organize agents into folders or move them to the root._
+---
 
-### Context Menus
+## Inspector (right)
 
-Right-click on an agent to:
+Select a node on the canvas. The **Inspector** shows controls for that node only.
 
-- **Edit Details**: Change name, description, and author.
-- **Open in New Window**: Open the agent in a separate standalone window for multi-tasking.
-- **Reveal in Finder**: Show the actual `.agent` file on disk.
+### Layout
 
-## Property Inspector
+1. **Header** — node name and category  
+2. **Description** — what the node does  
+3. **Properties** — the main settings (prompts, URLs, schedules, providers, …)  
+4. **Ports** — inputs and outputs (read-only list; wire them on the canvas)
 
-The Inspector allows you to configure the currently selected node. It adapts its controls based on the node's properties.
+In **Debug** mode you may also see last-run timing, values, or errors for that node.
 
-### Inspector Interface
+### Typical controls
 
-The inspector is divided into distinct cards:
+- **AI Provider / Model** — which backend and model this AI node uses  
+- **Tools** — which tools an AI node may call (when the node supports them)  
+- **Long text** — system instructions, prompts, context (multi-line editors)  
+- **Numbers** — durations and sizes; many labels are scrubbable (drag the label to change the value; `⇧` faster, `⌥` finer)
 
-1.  **Header**: Shows the node's icon, color-coded category, and title.
-2.  **Example / Description**: Brief explanation of the node's purpose.
-3.  **Properties**: The main configuration area.
-4.  **Interface**: A readonly list of all Input and Output ports.
+Changes apply to the selected node and are saved with the workflow (auto-save / `⌘S`).
 
-_In Debug Mode, additional cards appear:_
+---
 
-- **Last Execution**: Shows duration, input values, and output values.
-- **Execution Failed**: Displays error messages if the node crashed.
+## Related
 
-### Dynamic Controls
-
-[[appName]] uses specialized controls for different data types:
-
-#### Specialized Selectors
-
-- **AI Provider**: Choose between System Default or specific backend (OpenAI, Ollama, etc.).
-- **Model Selector**: Pick specific models (e.g., `gpt-4`, `llama3`).
-- **Tool Selector**: Configure tools for AI nodes (Automatic discovery vs Strict allowlist).
-
-#### Scrubbable Fields
-
-Numeric fields like **Opacity**, **Rotation**, **Duration**, **Scale**, and **Size** are "scrubbable".
-
-- **Click and Drag** the label left or right to adjust the value fluidly.
-- **Shift + Drag** for faster adjustment.
-- **Option + Drag** for precision adjustment.
-
-#### Text Editors
-
-Fields like `System Instructions`, `Prompt`, and `Context` use a multi-line code editor tailored for long-form text.
+- [Architect Overview](/architect/overview) — whole workspace map  
+- [Browser Nodes](/guide/browser-nodes) — live webpages **on the canvas**  
+- [Workflow & Management](/architect/workflow) — create, enable, organize  
+- [Controls & Shortcuts](/architect/controls)
