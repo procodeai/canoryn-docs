@@ -8,15 +8,18 @@ The **Architect** is [[appName]]'s visual programming environment — an infinit
 
 Think of it as a visual script: instead of writing code line by line, you connect building blocks together to describe _what_ your agent should do and _when_.
 
+You can also **describe the workflow in chat** next to the canvas — the [Architect Copilot](/guide/architect-copilot) builds and edits the graph for you. Manual wiring and Copilot work together.
+
 ## The Workspace
 
-The Architect is split into three main panels:
+The Architect is split into main panels:
 
 | Panel                  | Location      | Purpose                                         |
 | :--------------------- | :------------ | :---------------------------------------------- |
 | **Agent Browser**      | Left Sidebar  | Manage your agent files and folders.            |
 | **Blueprint Canvas**   | Center        | The infinite canvas where you build your agent. |
 | **Property Inspector** | Right Sidebar | Configure the selected node's settings.         |
+| **Copilot / chat**     | Beside canvas | Describe builds and edits in natural language.  |
 
 > [!TIP]
 > Press `Cmd + .` to toggle **Focus Mode**, which hides both sidebars for a distraction-free canvas.
@@ -71,4 +74,13 @@ Groups are visual containers that help organize related nodes. Select nodes and 
 
 ---
 
-**Next**: Learn about the [Canvas & Interactions](/architect/canvas_details) or explore the full [Node Reference](/architect/reference/core_nodes).
+## Enable vs Play
+
+- **Play** — run the graph now while drafting (including scheduled / event-triggered graphs for testing).
+- **Enable** — publish so schedules, CLI, and external agents can run it.
+
+Details: [Architect Copilot → Enable vs Play](/guide/architect-copilot#enable-vs-play).
+
+---
+
+**Next**: [Architect Copilot](/guide/architect-copilot) · [Research boards](/guide/research-boards) · [Canvas & Interactions](/architect/canvas_details) · [Node Reference](/architect/reference/core_nodes).

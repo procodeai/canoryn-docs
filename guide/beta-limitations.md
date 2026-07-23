@@ -10,10 +10,11 @@ description: "Known limitations of the current Canoryn beta and what's planned n
 
 [[appName]] is best suited for:
 
-- testing local AI-assisted workflows,
-- building small visual automation graphs,
-- running simple app/system actions,
-- experimenting with voice or text-triggered commands,
+- building workflows with the [Architect Copilot](/guide/architect-copilot) or by wiring nodes by hand,
+- [research boards](/guide/research-boards) that compare sources and produce a report you can re-run,
+- voice / chat / schedule / app-event triggers for personal Mac automation,
+- running simple app and system actions with explicit permissions,
+- using the [CLI & MCP](/guide/cli-and-mcp) so other AI tools can author or run **enabled** workflows,
 - sharing workflow ideas through `.cryn` files.
 
 ## What May Still Change
@@ -25,15 +26,19 @@ During beta, these areas may change between releases:
 - AI provider settings,
 - memory behavior,
 - app permissions and onboarding flow,
-- store/discovery publishing flow.
+- store/discovery publishing flow,
+- Copilot phrasing and clarification UX,
+- which coding agents appear as dispatch targets.
 
 ## Known Practical Limits
 
 - Some actions require macOS permissions before they work.
-- Cloud AI providers require your own API key.
+- Cloud AI providers require your own API key (stored in the macOS Keychain).
 - Local AI requires Ollama or another supported local model setup.
 - Complex UI automation can fail if the target app changes its interface.
 - Not every action listed in older examples may be available in every beta build.
+- Builds are still beta and may not be notarized — see [Installation](/guide/installation) for first-open steps.
+- Multi-agent supervision (Mission Control) remains experimental.
 
 ## Trust and Safety Expectations
 

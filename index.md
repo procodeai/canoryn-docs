@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "[[appName]]"
   text: "Build private AI agents for your Mac"
-  tagline: "A local-first agent workspace for macOS — design agents visually, talk to them by voice or chat, and run them on your own models. Native, ~20 MB, fully offline."
+  tagline: "A local-first agent workspace for macOS — build workflows by chat or canvas, run research boards, and drive them with your own models. Native, private, fully yours."
   actions:
     - theme: brand
       text: Get Started
@@ -14,40 +14,43 @@ hero:
       link: "[[githubUrl]]"
 
 features:
-  - icon: 📱
-    title: Native macOS App
-    details: Designed natively for macOS. Runs efficiently in the background with convenient menu bar access.
-  - icon: 🧠
-    title: Personalized Memory
-    details: Learns your preferences and remembers context across interactions to act as a true personal assistant.
-  - icon: 🎙️
-    title: Voice Commands
-    details: Speak naturally to trigger workflows, run app actions, and interact with your assistant.
   - icon: 📐
-    title: Visual Architect
-    details: Build and customize automation flows using an elegant, node-based workflow editor.
+    title: Architect + Copilot
+    details: Wire nodes by hand or describe the workflow in chat — Canoryn builds and edits the graph while you watch.
+  - icon: 🔬
+    title: Research boards
+    details: Compare live sources in parallel, synthesize a report, and re-run the board as a real workflow.
+  - icon: 🎙️
+    title: Voice, chat & triggers
+    details: Speak naturally, use chat, or trigger on schedule, app events, and webhooks.
+  - icon: 🖥️
+    title: CLI & other AI tools
+    details: Let Codex, Claude, Cursor, and similar tools author or run enabled workflows through CLI/MCP.
   - icon: 🔌
-    title: App & System Actions
-    details: Control supported apps, automate files where permitted, and run supported system actions.
+    title: App & system actions
+    details: Control supported apps and system actions with permissions you grant.
   - icon: 🔒
-    title: Private & BYO Keys
-    details: Keep control of your data and costs. Bring your own AI keys; all workflows and memory stay local.
+    title: Private & BYO keys
+    details: Local-first by default. Bring your own AI keys; workflows and memory stay on your Mac.
     
-description: "Canoryn is a local-first AI workspace agent for macOS — drive your Mac with natural-language voice commands and build your own agent workflows visually."
+description: "Canoryn is a local-first agent workspace for macOS — build private AI workflows by chat or canvas, run research boards, and keep control on your machine."
 ---
 
 ## Why [[appName]]?
 
-Traditional automation tools and chatbots either lack local system context, forget your preferences, or require complex developer setups. [[appName]] bridges this gap by acting as a native assistant that connects natural intent with real system actions, while adapting to your workflows.
+Traditional automation tools and chatbots either lack local system context, forget your preferences, or require complex developer setups. [[appName]] bridges this gap by making agent workflows **visible and steerable** on your Mac — with consent, your models, and files you can inspect.
 
-- **A Personalized Assistant**: It can use saved context and preferences to adapt workflows to how you work.
-- **More Than a Chatbot**: It does not just talk—it executes workflows and interacts with supported Mac apps.
-- **Beyond Shortcuts**: Integrates visual workflows, system events, and AI reasoning to handle tasks Siri and Shortcuts cannot easily manage.
-- **Local-First Control**: Workflows are stored locally. Local AI can keep prompts on your Mac, while cloud providers process prompts you choose to send.
+- **Build by chat or canvas**: Describe a workflow or wire nodes; edit surgically without starting over.
+- **More than a chatbot**: Research boards and automations actually run — browsers, reports, app actions.
+- **Beyond Shortcuts**: Schedules, app events, webhooks, and other AI tools can drive the same enabled workflows.
+- **Local-first control**: Workflows are stored locally. Local AI can keep prompts on your Mac; cloud providers only see what you choose to send.
 
 ## Quick Links
 
-- 📖 [Introduction](/guide/introduction) - What is [[appName]]?
-- 🚀 [Installation](/guide/installation) - Download and setup
-- 🎨 [Architect Overview](/architect/overview) - Learn the visual editor
-- 🔌 [Actions API](/api/actions) - Available system actions
+- 📖 [Introduction](/guide/introduction) — What is [[appName]]?
+- ✨ [Architect Copilot](/guide/architect-copilot) — Build a workflow by describing it
+- 🔬 [Research boards](/guide/research-boards) — Live comparison workspaces
+- 🖥️ [CLI & MCP](/guide/cli-and-mcp) — External agents and the command line
+- 🚀 [Installation](/guide/installation) — Download and setup
+- 🎨 [Architect Overview](/architect/overview) — Visual editor
+- 🔌 [Actions API](/api/actions) — Available system actions
