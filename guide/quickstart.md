@@ -14,6 +14,9 @@ You will learn how to:
 2.  **Process Data** with an AI model.
 3.  **Perform Actions** (Text-to-Speech).
 
+> [!TIP]
+> Prefer describing the workflow instead of wiring by hand? Open the [Architect Copilot](/guide/architect-copilot) and ask it to build the same “Zen Master” flow, then use **Play** to test. This page remains the manual path.
+
 ---
 
 ## Step 1: Create a New Agent

@@ -10,7 +10,7 @@ Get [[appName]] running on your Mac in under 5 minutes.
 
 | Requirement | Minimum                | Recommended                |
 | ----------- | ---------------------- | -------------------------- |
-| macOS       | 13.0 (Ventura)         | 14.0+ (Sonoma)             |
+| macOS       | 14.0 (Sonoma)          | 14.0+ / Apple Silicon      |
 | RAM         | 8GB                    | 16GB+                      |
 | Storage     | 2GB                    | 10GB (for local AI models) |
 | Processor   | Apple Silicon or Intel | Apple Silicon              |
@@ -19,10 +19,9 @@ Get [[appName]] running on your Mac in under 5 minutes.
 
 Get the latest version of [[appName]] for macOS:
 
-[Download [[appName]] for macOS](https://canoryn.app) (Universal DMG)
+[Download [[appName]] for macOS](https://canoryn.app/download) (Universal DMG)
 
-> **Requirements**: macOS 15.0+ (Sequoia) with Apple Silicon (M1/M2/M3) recommended.
-
+> **Requirements**: macOS 14.0+ (Sonoma). Apple Silicon (M1/M2/M3) recommended; Intel is supported.
 ## Setup
 
 1. Open `[[appName]].dmg` and drag the app to Applications.

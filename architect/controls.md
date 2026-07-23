@@ -118,7 +118,7 @@ These shortcuts work even when [[appName]] is **not in focus**, using a system-l
 | :-------------------- | :------- | :------------------------- |
 | **Toggle Voice Mode** | `⇧⌘V`    | Enable/disable voice input |
 | **Quick Action**      | `⌥⌘A`    | Open quick action menu     |
-| **Submit to Copilot** | `⌘↩`     | Send copilot prompt        |
+| **Submit to Copilot** | `⌘↩`     | Send copilot prompt — see [Architect Copilot](/guide/architect-copilot) |
 
 ## Mouse Shortcuts
 

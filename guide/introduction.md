@@ -1,46 +1,43 @@
 ---
-description: "What Canoryn is and how it works: a local-first macOS AI agent for voice-driven automation, your own models, and full on-device privacy."
+description: "What Canoryn is: a local-first macOS agent workspace — build workflows by chat or canvas, run research boards, and let other AI tools drive them with consent."
 ---
 
 # Introduction
 
 Welcome to the **[[appName]]** documentation.
 
-[[appName]] is a native macOS assistant for building personal AI automations. It is not just a chatbot, and it is not just a shortcut runner. It lives close to your Mac, connecting voice commands, visual workflow graphs, native app actions, local context, and user-controlled AI providers.
+[[appName]] is a local-first **agent workspace** for macOS. You design workflows on a visual canvas (or by chatting next to it), talk to agents by voice or chat, run live research boards, and optionally let other AI tools author or run the same workflows through the CLI/MCP — on your machine, with your models, under your consent.
 
 ## What is [[appName]]?
 
-[[appName]] is your AI presence on macOS. It understands commands, runs workflows, controls supported apps, and helps you automate personal work that Siri, Shortcuts, browser chatbots, and tools like n8n cannot comfortably handle.
-
-Instead of navigating complex scripts or restricted cloud integrations, [[appName]] lets you build powerful assistants that learn, remember, and act across your Mac using a clear, visual builder.
+[[appName]] is where Mac agent workflows become visible and reusable. It is not only a chatbot, and not only a shortcut runner. You build automations as graphs, watch them run, enable them for schedules and external agents, and keep workflows as plain `.cryn` files on disk.
 
 ## Core Capabilities
 
-### 📱 Native macOS Integration
-Canoryn is a native macOS application built specifically for Apple desktop environments. It runs fast, integrates with system accessibility APIs, and lives in your menu bar for instant access.
+### 📐 Visual Architect + Copilot
+Design workflows with a node-based editor — or describe what you want in the [Architect Copilot](/guide/architect-copilot) and watch the graph appear. Edit one step without rebuilding the whole flow.
 
-### 🧠 Personalized Memory & Context
-Canoryn acts as a true personal assistant by learning your preferences and habits. It maintains a persistent local memory, allowing it to remember context from past conversations and adapt workflows to your personal style over time.
+### 🔬 Research boards & live browsers
+Compare sites in parallel on real [Browser Nodes](/guide/browser-nodes) you can scroll and click, synthesize a report, and reopen the desk from Finder. See [Research boards](/guide/research-boards).
 
-### 🎙️ Voice & Intent
-Trigger workflows and speak commands naturally. Canoryn processes voice inputs to translate your intent into immediate system action.
+### 🎙️ Voice, chat & triggers
+Speak naturally, use chat, or trigger on schedule, app events, webhooks, and more.
 
-### 📐 Visual Architect
-Design custom workflows with a node-based editor. Wire together triggers, logic blocks, and app actions to automate tasks without writing code.
+### 🔌 Native app & system actions
+Control supported apps and system actions from your workflows, with permissions you grant.
 
-### 🔌 Native App Actions
-Automate native system tasks and control supported applications (like Spotify, files, and terminal commands) directly through your workflows.
+### 🖥️ CLI & other AI tools
+Install the command-line tool from Settings and connect MCP so Codex, Claude, Cursor, and similar tools can create, enable, and run workflows. See [CLI & MCP](/guide/cli-and-mcp).
 
-### 🔑 Bring Your Own AI Keys
-Keep control over your costs and data. Connect your own API keys for providers like OpenAI, Anthropic, or run local models.
+### 🔑 Bring your own AI
+Connect your own API keys or run local models. Keys stay in the macOS Keychain.
 
-### 🔒 Local-First Design
-Your data and configurations stay on your device. Workflows are saved as `.cryn` files, which you can easily manage, back up, or share.
+### 🔒 Local-first design
+Workflows, transcripts, and memory stay on your Mac unless you choose a cloud provider for a step.
 
 ## Next Steps
 
-Ready to get started?
-
-- [Installation Guide](/guide/installation) - Download and install [[appName]] on your Mac
-- [Quick Start](/guide/quickstart) - Build your first workflow in 5 minutes
-- [Architect Overview](/architect/overview) - Learn the visual editor
+- [Installation Guide](/guide/installation) — download and install [[appName]]
+- [Architect Copilot](/guide/architect-copilot) — build a workflow by describing it
+- [Quick Start](/guide/quickstart) — wire a first workflow by hand
+- [Architect Overview](/architect/overview) — canvas building blocks
