@@ -1,19 +1,33 @@
 ---
-description: "Build and edit Canoryn workflows by chatting next to the Architect canvas — clarifications, surgical edits, and enable vs Play."
+description: "Docked Architect chat linked to the live canvas — also covered: main Chat can build workflows too, clarifications, enable vs Play."
 ---
 
 # Architect Copilot
 
-The **Architect Copilot** lets you describe a workflow in chat next to the canvas. [[appName]] builds and edits the graph for you — instead of running the underlying task immediately.
+The **Architect Copilot** is the chat docked in the Architect — always linked to the open canvas. You describe what to build or edit; [[appName]] changes the graph.
 
-Use it when you want to **design** automation (“build a workflow that…”), not when you want a one-off action right now.
+**Chat** (the main chat elsewhere in the app) can also build workflows, open boards, and work with the canvas. Use Copilot when you want that conversation **beside the live graph** you’re editing. Use Chat when you’re already chatting and want a workflow or board without switching sidebars first.
+
+Prefer design phrasing (“build a workflow that…”) when you want a graph — not a one-off action right now.
+
+
+## Where it is
+
+In the Architect window toolbar (top left, next to Home), use the **two-button switch**:
+
+| Control | Icon | Opens |
+| :------ | :--- | :---- |
+| Projects / files | Grid | **Projects sidebar** — your workflow file tree |
+| **Architect Copilot** | Sparkles | Copilot chat — header reads *Linked persistent Chat · live canvas* |
+
+The Copilot replaces the left sidebar content while that mode is selected. The canvas stays in the center; the **Inspector** stays on the right for the selected node.
 
 ## Open the Copilot
 
 1. Open the **Architect** (Window → Architect, or your usual shortcut).
 2. Open or create the workflow you want to work on.
-3. Use the **Copilot / chat** panel next to the canvas.
-4. Describe what the workflow should do.
+3. In the top toolbar, click the **sparkles** control (**Architect Copilot**).
+4. Describe what the workflow should do in the chat.
 
 Example prompts:
 
@@ -63,7 +77,7 @@ If the Copilot needs a capability that isn’t built in yet, [[appName]] may pro
 - Prefer short, concrete goals (“when X happens, do Y, then Z”).
 - If the Copilot asks a question, answer it in the card — that keeps the graph honest.
 - After a build, use **Play** once, then **Enable** when you’re ready for schedules or external agents.
-- You can still wire nodes by hand — Copilot and the palette work together. See [Quick Start](/guide/quickstart) for a manual walkthrough.
+- You can still wire nodes by hand — Copilot, Chat, and the palette work together. See [Quick Start](/guide/quickstart) for a manual walkthrough.
 
 ## Related
 

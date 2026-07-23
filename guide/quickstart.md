@@ -15,14 +15,14 @@ You will learn how to:
 3.  **Perform Actions** (Text-to-Speech).
 
 > [!TIP]
-> Prefer describing the workflow instead of wiring by hand? Open the [Architect Copilot](/guide/architect-copilot) and ask it to build the same “Zen Master” flow, then use **Play** to test. This page remains the manual path.
+> Prefer describing the workflow instead of wiring by hand? Ask in **Chat**, or open the [Architect Copilot](/guide/architect-copilot) beside the canvas, to build the same “Zen Master” flow — then use **Play** to test. This page remains the manual path.
 
 ---
 
 ## Step 1: Create a New Agent
 
 1.  Open the **Architect** (Window > Architect).
-2.  In the Sidebar, click the **`+`** button (or right-click "My Projects" -> "New Agent").
+2.  In the **Projects sidebar**, click the **`+`** button (or right-click **My Projects** → New).
 3.  Name your agent **"Zen Master"**.
 
 > _Screenshot coming soon: Screenshot: Empty Canvas and New Agent Dialog_

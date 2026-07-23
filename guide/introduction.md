@@ -15,7 +15,7 @@ Welcome to the **[[appName]]** documentation.
 ## Core Capabilities
 
 ### 📐 Visual Architect + Copilot
-Design workflows with a node-based editor — or describe what you want in the [Architect Copilot](/guide/architect-copilot) and watch the graph appear. Edit one step without rebuilding the whole flow.
+Design workflows with a node-based editor — or describe what you want in **Chat** or the [Architect Copilot](/guide/architect-copilot) and watch the graph appear. Edit one step without rebuilding the whole flow.
 
 ### 🔬 Research boards & live browsers
 Compare sites in parallel on real [Browser Nodes](/guide/browser-nodes) you can scroll and click, synthesize a report, and reopen the desk from Finder. See [Research boards](/guide/research-boards).

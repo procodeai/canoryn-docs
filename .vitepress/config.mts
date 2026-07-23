@@ -216,7 +216,7 @@ export default defineConfig({
               link: "/architect/canvas_details",
             },
             {
-              text: "Browser & Inspector",
+              text: "Projects Sidebar & Inspector",
               link: "/architect/sidebar_inspector",
             },
             { text: "Workflow & Management", link: "/architect/workflow" },

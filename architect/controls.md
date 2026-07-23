@@ -71,9 +71,11 @@ A complete reference of all keyboard shortcuts and gestures in the Architect. Th
 
 ## View & Panels
 
+In the Architect toolbar (top left, next to Home), the **grid / sparkles** switch sets the left sidebar to **Projects** or **Architect Copilot**. See [Architect Copilot](/guide/architect-copilot#where-it-is).
+
 | Action                          | Shortcut |
 | :------------------------------ | :------- |
-| **Toggle Left Panel (Browser)** | `⌘B`     |
+| **Toggle left sidebar**         | `⌘B`     |
 | **Toggle Inspector**            | `⌘I`     |
 | **Toggle Bottom Panel**         | `⌘J`     |
 | **Toggle Status Bar**           | `⌘\`     |
