@@ -4,7 +4,7 @@ description: "Live Browser Nodes on the Canoryn canvas — real webpages you can
 
 # Browser Nodes
 
-A **Browser Node** is a real webpage on the Architect canvas — not a screenshot, not a search snippet. Each node hosts a live WebKit page you can scroll, click, and resize. Put several on one board, wire their results into the rest of the workflow, and reopen the whole desk later from Finder.
+A **Browser Node** is a real webpage on the Architect canvas — not a screenshot, not a search snippet. Each node hosts a live WebKit page you can scroll, click, and resize. Put several on one board, wire their results into the rest of the workflow, and reopen the whole board later from Finder.
 
 [[appName]] is not trying to replace Safari as your everyday browser. It makes the web a **live surface inside a workflow** so you and the agent work on the same pages.
 
@@ -58,7 +58,7 @@ Wire browser outputs (title, URL, extracted text) into AI or document nodes so t
 
 ## Reopen the whole session from Finder
 
-Workflows save as **`.cryn`** files. Double-click one from Finder (or open it in [[appName]]) to bring back the canvas layout — including Browser Nodes and their URLs — so your desk returns without rebuilding from chat history.
+Workflows save as **`.cryn`** files. Double-click one from Finder (or open it in [[appName]]) to bring back the canvas layout — including Browser Nodes and their URLs — so your board returns without rebuilding from chat history.
 
 Expand collapsed groups if a page looks blank after restore; the live surface reattaches when the node is visible again.
 

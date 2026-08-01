@@ -6,7 +6,7 @@ description: "Build live Canoryn research boards — compare sites in parallel o
 
 A **research board** is a live workspace on the Architect canvas: multiple **[Browser Nodes](/guide/browser-nodes)** (real scrollable webpages), extraction steps, and a written report — wired as a **real workflow**, not a static diagram.
 
-Use it when you want [[appName]] to gather sources in parallel and produce something you can re-run — or when you simply want your reading desk (dev docs, design sites, dashboards) laid out and saved.
+Use it when you want [[appName]] to gather sources in parallel and produce something you can re-run — or when you simply want a reading board (dev docs, design sites, dashboards) laid out and saved.
 
 ## Try one from chat
 
@@ -44,7 +44,7 @@ That means you can:
 
 - Prefer **official sources** in the prompt so the board stays grounded.
 - After the first build, use Chat or Build with chat for small changes (“add Safari to the comparison”, “email me the report”).
-- Arrange and resize browser nodes like a desk — your layout is part of the saved workflow.
+- Arrange and resize browser nodes freely — your layout is part of the saved workflow.
 - Collapse groups carefully — browser pages should survive group collapse; if a page looks blank, expand the group and Play again.
 - Markdown reports keep their content after Play; if something looks empty, check you’re looking at the document node output after a successful run.
 
