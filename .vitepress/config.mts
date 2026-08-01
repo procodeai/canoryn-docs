@@ -15,7 +15,7 @@ export default defineConfig({
   base: "/docs/",
   // Static assets: ./public (VitePress default). themeConfig.logo → /docs/logo.svg
   title: branding.appName,
-  description: "Build local-first AI agents that automate your Mac",
+  description: "Local-first macOS agent workspace — build and run workflows on your Mac",
   ignoreDeadLinks: false,
   // Keep README out of the public site / sitemap (repo readme ≠ docs page).
   srcExclude: ["**/README.md", "**/readme.md"],
@@ -45,7 +45,7 @@ export default defineConfig({
       "meta",
       {
         property: "og:description",
-        content: "Build local-first AI agents that automate your Mac",
+        content: "Local-first macOS agent workspace — build and run workflows on your Mac",
       },
     ],
     ["meta", { name: "twitter:card", content: "summary" }],
@@ -179,7 +179,7 @@ export default defineConfig({
             { text: "Introduction", link: "/guide/introduction" },
             { text: "Installation", link: "/guide/installation" },
             { text: "Quick Start", link: "/guide/quickstart" },
-            { text: "Architect Copilot", link: "/guide/architect-copilot" },
+            { text: "Build with chat", link: "/guide/build-with-chat" },
             { text: "Browser Nodes", link: "/guide/browser-nodes" },
             { text: "Research Boards", link: "/guide/research-boards" },
             { text: "CLI & MCP", link: "/guide/cli-and-mcp" },
@@ -194,7 +194,7 @@ export default defineConfig({
               text: `How ${branding.appName} Works`,
               link: "/guide/how-it-works",
             },
-            { text: "Agents & Blueprints", link: "/guide/agents" },
+            { text: "Workflows", link: "/guide/workflows" },
             { text: "Memory System", link: "/guide/memory" },
           ],
         },

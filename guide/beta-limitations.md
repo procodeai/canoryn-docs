@@ -10,7 +10,7 @@ description: "Known limitations of the current Canoryn beta and what's planned n
 
 [[appName]] is best suited for:
 
-- building workflows with **Chat**, the [Architect Copilot](/guide/architect-copilot), or by wiring nodes by hand,
+- building workflows with **Chat**, [Build with chat](/guide/build-with-chat), or by wiring nodes by hand,
 - [Browser Nodes](/guide/browser-nodes) and [research boards](/guide/research-boards) for live multi-page reading and comparison,
 - voice / chat / schedule / app-event triggers for personal Mac automation,
 - running simple app and system actions with explicit permissions,
@@ -27,7 +27,7 @@ During beta, these areas may change between releases:
 - memory behavior,
 - app permissions and onboarding flow,
 - store/discovery publishing flow,
-- Copilot phrasing and clarification UX,
+- Build with chat phrasing and clarification UX,
 - which coding agents appear as dispatch targets.
 
 ## Known Practical Limits

@@ -103,7 +103,7 @@ canoryn run cancel <run-id>
 ```
 
 > [!IMPORTANT]
-> **Enable** the workflow in the Architect (or via `workflow enable`) before expecting schedule / CLI / MCP runs to succeed. **Play** on the canvas still works while drafting. See [Architect Copilot → Enable vs Play](/guide/architect-copilot#enable-vs-play).
+> **Enable** the workflow in the Architect (or via `workflow enable`) before expecting schedule / CLI / MCP runs to succeed. **Play** on the canvas still works while drafting. See [Build with chat → Enable vs Play](/guide/build-with-chat#enable-vs-play).
 
 ## Ask, chat, and actions
 
@@ -219,7 +219,7 @@ Consent still applies. Routine auto-allow in Settings never silently bypasses **
 
 ## Canvas steps that dispatch coding agents
 
-Workflows can include a step that **hands work to** Codex, Claude, Cursor, or Antigravity on a repo, then continues from the result. Build that on the canvas, in **Chat**, or via the [Architect Copilot](/guide/architect-copilot); run it with **Play** or via CLI/MCP once **Enabled**.
+Workflows can include a step that **hands work to** Codex, Claude, Cursor, or Antigravity on a repo, then continues from the result. Build that on the canvas, in **Chat**, or via [Build with chat](/guide/build-with-chat); run it with **Play** or via CLI/MCP once **Enabled**.
 
 ## Consent and exit codes
 
@@ -244,6 +244,6 @@ Useful exit codes (`canoryn help exit-codes` when the app can answer):
 
 ## Related
 
-- [Architect Copilot](/guide/architect-copilot)
+- [Build with chat](/guide/build-with-chat)
 - [Research boards](/guide/research-boards)
 - [Permissions](/guide/permissions)

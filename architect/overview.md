@@ -1,14 +1,14 @@
 ---
-description: "Canoryn Architect — a visual builder for composing your own AI agent workflows from trigger, intelligence, and native app nodes."
+description: "Canoryn Architect — a visual builder for composing your own AI workflows from trigger, intelligence, and native app nodes."
 ---
 
 # Architect Overview
 
-The **Architect** is [[appName]]'s visual programming environment — an infinite canvas where you design agent behaviors by connecting nodes with wires.
+The **Architect** is [[appName]]'s visual programming environment — an infinite canvas where you design workflows by connecting nodes with wires.
 
-Think of it as a visual script: instead of writing code line by line, you connect building blocks together to describe _what_ your agent should do and _when_.
+Think of it as a visual script: instead of writing code line by line, you connect building blocks together to describe _what_ your workflow should do and _when_.
 
-You can also **describe the workflow in chat** — from the [Architect Copilot](/guide/architect-copilot) (sparkles in the top toolbar) or from main **Chat**. Both can build and edit the graph. Copilot keeps the conversation beside the canvas you’re on. Manual wiring and chat authoring work together.
+You can also **describe the workflow in chat** — with [Build with chat](/guide/build-with-chat) (sparkles in the top toolbar) or from main **Chat**. Both can build and edit the graph. Build with chat keeps the conversation beside the canvas you’re on. Manual wiring and chat authoring work together.
 
 ## The Workspace
 
@@ -17,11 +17,11 @@ The Architect is split into main panels:
 | Panel | Location | Purpose |
 | :---- | :------- | :------ |
 | **Projects sidebar** | Left (grid mode) | Open and organize workflows (`.cryn`) in your workspace |
-| **Architect Copilot** | Left (sparkles mode) | Chat linked to this canvas — build and edit the graph |
+| **Build with chat** | Left (sparkles mode) | Chat linked to this canvas — build and edit the graph |
 | **Canvas** | Center | Build the graph: nodes, wires, live surfaces |
 | **Inspector** | Right | Configure the selected node |
 
-Switch **Projects** ↔ **Copilot** with the grid / sparkles control in the Architect toolbar (top left). Details: [Architect Copilot](/guide/architect-copilot#where-it-is).
+Switch **Projects** ↔ **Build with chat** with the grid / sparkles control in the Architect toolbar (top left). Details: [Build with chat](/guide/build-with-chat#where-it-is).
 
 
 > [!TIP]
@@ -60,7 +60,7 @@ Groups are visual containers that help organize related nodes. Select nodes and 
 
 ## How Execution Works
 
-1.  Every agent starts from a **Trigger** node (e.g., "On Start").
+1.  Every workflow starts from a **Trigger** node (e.g., "On Start").
 2.  Execution follows **Flow Wires** (white) from output to input.
 3.  When a node executes, it reads its **Data Wires** for input values.
 4.  The node processes and passes its results downstream.
@@ -82,8 +82,8 @@ Groups are visual containers that help organize related nodes. Select nodes and 
 - **Play** — run the graph now while drafting (including scheduled / event-triggered graphs for testing).
 - **Enable** — publish so schedules, CLI, and external agents can run it.
 
-Details: [Architect Copilot → Enable vs Play](/guide/architect-copilot#enable-vs-play).
+Details: [Build with chat → Enable vs Play](/guide/build-with-chat#enable-vs-play).
 
 ---
 
-**Next**: [Projects Sidebar & Inspector](/architect/sidebar_inspector) · [Architect Copilot](/guide/architect-copilot) · [Browser Nodes](/guide/browser-nodes) · [Canvas & Interactions](/architect/canvas_details) · [Node Reference](/architect/reference/core_nodes).
+**Next**: [Projects Sidebar & Inspector](/architect/sidebar_inspector) · [Build with chat](/guide/build-with-chat) · [Browser Nodes](/guide/browser-nodes) · [Canvas & Interactions](/architect/canvas_details) · [Node Reference](/architect/reference/core_nodes).

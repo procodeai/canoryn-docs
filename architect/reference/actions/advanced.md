@@ -16,7 +16,7 @@ Meta-cognitive tools for controlling the agent itself and performing developer-l
 |                 |                                                                                       |
 | :-------------- | :------------------------------------------------------------------------------------ |
 | **Type**        | `architect.generate_workflow`                                                         |
-| **Description** | Creates a new agent workflow graph from a text description.                           |
+| **Description** | Creates a new workflow graph from a text description.                           |
 | **Inputs**      | `Name` (String), `Description` (String), `Nodes JSON` (String), `Wires JSON` (String) |
 | **Outputs**     | `Success Message` (String)                                                            |
 

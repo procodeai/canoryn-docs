@@ -15,7 +15,7 @@ hero:
 
 features:
   - icon: 📐
-    title: Architect + Copilot
+    title: Architect + chat
     details: Wire nodes by hand or describe the workflow in chat — Canoryn builds and edits the graph while you watch.
   - icon: 🌐
     title: Live Browser Nodes
@@ -41,7 +41,7 @@ description: "Canoryn is a local-first agent workspace for macOS — build priva
 
 ## Why [[appName]]?
 
-Traditional automation tools and chatbots either lack local system context, forget your preferences, or require complex developer setups. [[appName]] bridges this gap by making agent workflows **visible and steerable** on your Mac — with consent, your models, and files you can inspect.
+Traditional automation tools and chatbots either lack local system context, forget your preferences, or require complex developer setups. [[appName]] bridges this gap by making workflows **visible and steerable** on your Mac — with consent, your models, and files you can inspect.
 
 - **Build by chat or canvas**: Describe a workflow or wire nodes; edit surgically without starting over.
 - **More than a chatbot**: Research boards and automations actually run — browsers, reports, app actions.
@@ -51,7 +51,7 @@ Traditional automation tools and chatbots either lack local system context, forg
 ## Quick Links
 
 - 📖 [Introduction](/guide/introduction) — What is [[appName]]?
-- ✨ [Architect Copilot](/guide/architect-copilot) — Build a workflow by describing it
+- ✨ [Build with chat](/guide/build-with-chat) — Describe a workflow and watch the graph appear
 - 🌐 [Browser Nodes](/guide/browser-nodes) — Live webpages on the canvas
 - 🔬 [Research boards](/guide/research-boards) — Live comparison workspaces
 - 🖥️ [CLI & MCP](/guide/cli-and-mcp) — External agents and the command line

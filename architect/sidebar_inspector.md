@@ -4,12 +4,12 @@ description: "Architect left Projects sidebar and right Inspector — organize w
 
 # Projects Sidebar & Inspector
 
-The Architect has two side panels. The **left** panel switches between Projects and Copilot:
+The Architect has two side panels. The **left** panel switches between Projects and Build with chat:
 
 | Panel | Side | Job |
 | :---- | :--- | :-- |
 | **Projects sidebar** | Left (grid in the toolbar) | Open, create, and organize workflows in your workspace |
-| **Architect Copilot** | Left (sparkles in the toolbar) | Chat linked to this canvas — see [Architect Copilot](/guide/architect-copilot) |
+| **Build with chat** | Left (sparkles in the toolbar) | Chat linked to this canvas — see [Build with chat](/guide/build-with-chat) |
 | **Inspector** | Right | Configure the **selected** node on the canvas |
 
 > [!TIP]

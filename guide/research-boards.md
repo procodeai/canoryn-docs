@@ -10,7 +10,7 @@ Use it when you want [[appName]] to gather sources in parallel and produce somet
 
 ## Try one from chat
 
-With [[appName]] running and a model configured, open **Chat** (or the Architect Copilot) and ask for a board, for example:
+With [[appName]] running and a model configured, open **Chat** (or Build with chat) and ask for a board, for example:
 
 ```text
 Build me a live research board comparing Arc, Dia, and Chrome using official sources
@@ -38,12 +38,12 @@ That means you can:
 
 - **Play** to test.
 - **Enable** so CLI or an external agent can run the same board later.
-- Edit one browser URL or prompt without rebuilding the whole board (Chat or [Architect Copilot](/guide/architect-copilot)).
+- Edit one browser URL or prompt without rebuilding the whole board (Chat or [Build with chat](/guide/build-with-chat)).
 
 ## Tips
 
 - Prefer **official sources** in the prompt so the board stays grounded.
-- After the first build, use Chat or Copilot for small changes (“add Safari to the comparison”, “email me the report”).
+- After the first build, use Chat or Build with chat for small changes (“add Safari to the comparison”, “email me the report”).
 - Arrange and resize browser nodes like a desk — your layout is part of the saved workflow.
 - Collapse groups carefully — browser pages should survive group collapse; if a page looks blank, expand the group and Play again.
 - Markdown reports keep their content after Play; if something looks empty, check you’re looking at the document node output after a successful run.
@@ -51,6 +51,6 @@ That means you can:
 ## Related
 
 - [Browser Nodes](/guide/browser-nodes) — live pages, profiles, Finder restore
-- [Architect Copilot](/guide/architect-copilot)
+- [Build with chat](/guide/build-with-chat)
 - [Architect Overview](/architect/overview)
 - [CLI & MCP](/guide/cli-and-mcp)
