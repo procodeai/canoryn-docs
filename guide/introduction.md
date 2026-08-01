@@ -10,15 +10,15 @@ Welcome to the **[[appName]]** documentation.
 
 ## What is [[appName]]?
 
-[[appName]] is where Mac workflows become visible and reusable. It is not only a chatbot, and not only a shortcut runner. You build automations as graphs, watch them run, enable them for schedules and external agents, and keep workflows as plain `.cryn` files on disk.
+[[appName]] is where Mac workflows become visible and reusable. It is not only a chatbot, and not only a shortcut runner. You build automations as workflows, watch them run, enable them for schedules and external agents, and keep workflows as plain `.cryn` files on disk.
 
 ## Core Capabilities
 
 ### 📐 Visual Architect + chat
-Design workflows with a node-based editor — or describe what you want in **Chat** or [Build with chat](/guide/build-with-chat) and watch the graph appear. Edit one step without rebuilding the whole flow.
+Design workflows with a node-based editor — or describe what you want in **Chat** or [Build with chat](/guide/build-with-chat) and watch the workflow appear. Edit one step without rebuilding the whole flow.
 
 ### 🔬 Research boards & live browsers
-Compare sites in parallel on real [Browser Nodes](/guide/browser-nodes) you can scroll and click, synthesize a report, and reopen the desk from Finder. See [Research boards](/guide/research-boards).
+Compare sites in parallel on real [Browser Nodes](/guide/browser-nodes) you can scroll and click, synthesize a report, and reopen the board from Finder. See [Research boards](/guide/research-boards).
 
 ### 🎙️ Voice, chat & triggers
 Speak naturally, use chat, or trigger on schedule, app events, webhooks, and more.
@@ -38,6 +38,6 @@ Workflows, transcripts, and memory stay on your Mac unless you choose a cloud pr
 ## Next Steps
 
 - [Installation Guide](/guide/installation) — download and install [[appName]]
-- [Build with chat](/guide/build-with-chat) — describe a workflow and watch the graph appear
+- [Build with chat](/guide/build-with-chat) — describe a workflow and watch it appear
 - [Quick Start](/guide/quickstart) — wire a first workflow by hand
 - [Architect Overview](/architect/overview) — canvas building blocks

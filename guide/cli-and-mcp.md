@@ -77,8 +77,8 @@ Full workflow surface (also in shell completion):
 | :------ | :-------- |
 | `workflow list` | See workflows and whether they’re enabled / runnable |
 | `workflow inspect <ref>` | Triggers, inputs, outputs, lifecycle |
-| `workflow validate <ref>` | Check the graph before enabling or sharing |
-| `workflow capabilities [keyword]` | What steps you can drop on a graph |
+| `workflow validate <ref>` | Check the workflow before enabling or sharing |
+| `workflow capabilities [keyword]` | What steps you can drop on a workflow |
 | `workflow compile …` | Build a `.cryn` from a source file / stdin (DSL or YAML) |
 | `workflow doctor <file>` | Check a `.cryn` / `.crynpack` before import |
 | `workflow import` / `pack` | Bring packages in or package a workflow out |

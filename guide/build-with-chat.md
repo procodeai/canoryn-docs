@@ -4,11 +4,11 @@ description: "Build workflows by chatting beside the live Architect canvas — c
 
 # Build with chat
 
-**Build with chat** is the sparkles-mode panel in the Architect — chat docked beside the open canvas. You describe what to build or edit; [[appName]] changes the workflow graph.
+**Build with chat** is the sparkles-mode panel in the Architect — chat docked beside the open canvas. You describe what to build or edit; [[appName]] changes the workflow.
 
-**Chat** (the main chat elsewhere in the app) can also build workflows, open boards, and work with the canvas. Use Build with chat when you want that conversation **beside the live graph** you’re editing. Use Chat when you’re already chatting and want a workflow or board without switching sidebars first.
+**Chat** (the main chat elsewhere in the app) can also build workflows, open boards, and work with the canvas. Use Build with chat when you want that conversation **beside the live workflow** you’re editing. Use Chat when you’re already chatting and want a workflow or board without switching sidebars first.
 
-Prefer design phrasing (“build a workflow that…”) when you want a graph — not a one-off action right now.
+Prefer design phrasing (“build a workflow that…”) when you want a reusable workflow — not a one-off action right now.
 
 ## Where it is
 
@@ -52,7 +52,7 @@ Press **⌘↩** to submit (see [Controls & Shortcuts](/architect/controls)).
 - **Browse available steps** — ask what’s possible, or explore the live list of steps (with inputs/outputs) before inventing something new.
 
 > [!TIP]
-> Phrasing matters. “**Build a workflow** that plays focus music when I open Xcode” designs a graph. “Play focus music” may run music now. Everyday shortcuts no longer fire the underlying action when you asked to design.
+> Phrasing matters. “**Build a workflow** that plays focus music when I open Xcode” designs a workflow. “Play focus music” may run music now. Everyday shortcuts no longer fire the underlying action when you asked to design.
 
 ## Enable vs Play
 
@@ -74,7 +74,7 @@ If a capability isn’t built in yet, [[appName]] may propose a **custom script 
 ## Tips
 
 - Prefer short, concrete goals (“when X happens, do Y, then Z”).
-- If the chat asks a question, answer it in the card — that keeps the graph honest.
+- If the chat asks a question, answer it in the card — that keeps the workflow honest.
 - After a build, use **Play** once, then **Enable** when you’re ready for schedules or external agents.
 - You can still wire nodes by hand — Build with chat, Chat, and the palette work together. See [Quick Start](/guide/quickstart) for a manual walkthrough.
 

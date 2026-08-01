@@ -16,10 +16,10 @@ hero:
 features:
   - icon: 📐
     title: Architect + chat
-    details: Wire nodes by hand or describe the workflow in chat — Canoryn builds and edits the graph while you watch.
+    details: Wire nodes by hand or describe the workflow in chat — Canoryn builds and edits the workflow while you watch.
   - icon: 🌐
     title: Live Browser Nodes
-    details: Real webpages on the canvas — scroll, click, resize, pick a profile, wire results. Reopen the whole desk from a .cryn file.
+    details: Real webpages on the canvas — scroll, click, resize, pick a profile, wire results. Reopen the whole board from a saved workflow.
   - icon: 🔬
     title: Research boards
     details: Compare live sources in parallel, synthesize a report, and re-run the board as a real workflow.
@@ -51,7 +51,7 @@ Traditional automation tools and chatbots either lack local system context, forg
 ## Quick Links
 
 - 📖 [Introduction](/guide/introduction) — What is [[appName]]?
-- ✨ [Build with chat](/guide/build-with-chat) — Describe a workflow and watch the graph appear
+- ✨ [Build with chat](/guide/build-with-chat) — Describe a workflow and watch it appear
 - 🌐 [Browser Nodes](/guide/browser-nodes) — Live webpages on the canvas
 - 🔬 [Research boards](/guide/research-boards) — Live comparison workspaces
 - 🖥️ [CLI & MCP](/guide/cli-and-mcp) — External agents and the command line
