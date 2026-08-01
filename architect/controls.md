@@ -1,5 +1,5 @@
 ---
-description: "Canvas controls in Canoryn Architect — pan, zoom, select, and arrange your agent graph."
+description: "Canvas controls in Canoryn Architect — pan, zoom, select, and arrange your workflow graph."
 ---
 
 # Controls & Shortcuts
@@ -71,7 +71,7 @@ A complete reference of all keyboard shortcuts and gestures in the Architect. Th
 
 ## View & Panels
 
-In the Architect toolbar (top left, next to Home), the **grid / sparkles** switch sets the left sidebar to **Projects** or **Architect Copilot**. See [Architect Copilot](/guide/architect-copilot#where-it-is).
+In the Architect toolbar (top left, next to Home), the **grid / sparkles** switch sets the left sidebar to **Projects** or **Build with chat**. See [Build with chat](/guide/build-with-chat#where-it-is).
 
 | Action                          | Shortcut |
 | :------------------------------ | :------- |
@@ -120,7 +120,7 @@ These shortcuts work even when [[appName]] is **not in focus**, using a system-l
 | :-------------------- | :------- | :------------------------- |
 | **Toggle Voice Mode** | `⇧⌘V`    | Enable/disable voice input |
 | **Quick Action**      | `⌥⌘A`    | Open quick action menu     |
-| **Submit to Copilot** | `⌘↩`     | Send copilot prompt — see [Architect Copilot](/guide/architect-copilot) |
+| **Submit to Build with chat** | `⌘↩`     | Send Build with chat prompt — see [Build with chat](/guide/build-with-chat) |
 
 ## Mouse Shortcuts
 

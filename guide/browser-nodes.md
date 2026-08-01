@@ -83,7 +83,7 @@ Full catalog: [Web & Information](/architect/reference/actions/web).
 
 ## Tips
 
-- Start from [Architect Copilot](/guide/architect-copilot) or Chat: ask for a board with N browser nodes for the sites you care about.
+- Start from [Build with chat](/guide/build-with-chat) or Chat: ask for a board with N browser nodes for the sites you care about.
 - Keep official / logged-in sources on the board so synthesis stays grounded.
 - Use **Work** vs **Personal** profiles so agents don’t mix contexts.
 - [[appName]] may snapshot or pause off-screen pages to keep the canvas smooth — hover or activate a node to bring the live view back.
@@ -91,6 +91,6 @@ Full catalog: [Web & Information](/architect/reference/actions/web).
 ## Related
 
 - [Research boards](/guide/research-boards)
-- [Architect Copilot](/guide/architect-copilot)
+- [Build with chat](/guide/build-with-chat)
 - [Architect Overview](/architect/overview)
 - [Web actions reference](/architect/reference/actions/web)

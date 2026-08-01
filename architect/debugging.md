@@ -1,10 +1,10 @@
 ---
-description: "Debug agent workflows in Canoryn Architect — inspect runs and find what failed."
+description: "Debug workflows in Canoryn Architect — inspect runs and find what failed."
 ---
 
 # Debugging & Console
 
-[[appName]] includes a professional-grade logging console and visual debugger to help you understand and fix your agent's behavior.
+[[appName]] includes a professional-grade logging console and visual debugger to help you understand and fix your workflow's behavior.
 
 ## Pro Console
 
@@ -37,7 +37,7 @@ The console is divided into top-level controls and a split-pane view:
 
 ## Visual Debugger
 
-When you run an agent, the Blueprint Canvas switches to **Debug Mode**.
+When you run a workflow, the canvas switches to **Debug Mode**.
 
 ### Live Execution Flow
 

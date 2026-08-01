@@ -4,7 +4,7 @@ description: "Build an end-to-end workflow in Canoryn Architect, from trigger to
 
 # Workflow & Agent Management
 
-Learn how to create, organize, and manage your agents in [[appName]].
+Learn how to create, organize, and manage your workflows in [[appName]].
 
 ## Creating workflows
 
@@ -50,8 +50,8 @@ Keep your workspace clean with nested folders:
 
 1.  **Designing**: Use the Canvas to wire together nodes.
 2.  **Debugging**: Use the Console and Debug Mode to test behavior in real-time.
-3.  **Deploying**: (Future) Package your agent for standalone execution.
-    > _Note: You can always run and use your agents locally within [[appName]] directly from the canvas or sidebar._
+3.  **Deploying**: (Future) Package your workflow for standalone execution.
+    > _Note: You can always run and use your workflows locally within [[appName]] directly from the canvas or sidebar._
 
 ### Deleting Agents
 

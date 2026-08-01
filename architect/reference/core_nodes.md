@@ -13,7 +13,7 @@ A complete catalog of every built-in node available in the Architect. Nodes are 
 
 ## Triggers
 
-Trigger nodes **start** your agent's execution. Every agent needs at least one trigger. They have no flow input — only flow and data outputs.
+Trigger nodes **start** workflow execution. Every workflow needs at least one trigger. They have no flow input — only flow and data outputs.
 
 **Color**: 🟡 Yellow (`#FFD60A`)
 
@@ -241,7 +241,7 @@ AI nodes call a language model and return a text response. Most support **Tool A
 
 ## Memory
 
-Memory nodes allow your agent to store, recall, and manipulate data across executions.
+Memory nodes allow your workflow to store, recall, and manipulate data across executions.
 
 **Color**: 🟢 Green (`#34C759`) / 🩵 Teal (`#00C7BE`)
 
