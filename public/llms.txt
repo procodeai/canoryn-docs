@@ -12,6 +12,9 @@ Full docs dump for agents: https://canoryn.app/docs/llms-full.txt
 - [Introduction](https://canoryn.app/docs/guide/introduction): What Canoryn is and who it is for
 - [Installation](https://canoryn.app/docs/guide/installation): Install the macOS DMG and first launch
 - [Quick Start](https://canoryn.app/docs/guide/quickstart): Build a first agent workflow in minutes
+- [Build with chat](https://canoryn.app/docs/guide/build-with-chat): Chat docked beside the Architect canvas
+- [Chat workbench](https://canoryn.app/docs/guide/chat-workbench): Session projects, typed tabs, file desk, agent loop
+- [Review workbench](https://canoryn.app/docs/guide/review-workbench): Git Review beside Chat — scopes, SCM, lazy diffs
 - [How it works](https://canoryn.app/docs/guide/how-it-works): Runtime architecture and local-first model
 - [Agents & Blueprints](https://canoryn.app/docs/guide/agents): Agents, blueprints, and .cryn files
 - [Memory](https://canoryn.app/docs/guide/memory): On-device memory system

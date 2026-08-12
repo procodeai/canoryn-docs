@@ -71,6 +71,7 @@ function writeLlmsFull() {
     "guide/quickstart.md",
     "guide/build-with-chat.md",
     "guide/chat-workbench.md",
+    "guide/review-workbench.md",
     "guide/how-it-works.md",
     "guide/agents.md",
     "guide/memory.md",
