@@ -180,6 +180,7 @@ export default defineConfig({
             { text: "Installation", link: "/guide/installation" },
             { text: "Quick Start", link: "/guide/quickstart" },
             { text: "Build with chat", link: "/guide/build-with-chat" },
+            { text: "Chat workbench", link: "/guide/chat-workbench" },
             { text: "Browser Nodes", link: "/guide/browser-nodes" },
             { text: "Research Boards", link: "/guide/research-boards" },
             { text: "CLI & MCP", link: "/guide/cli-and-mcp" },

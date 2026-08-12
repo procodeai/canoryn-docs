@@ -11,6 +11,7 @@ description: "Known limitations of the current Canoryn beta and what's planned n
 [[appName]] is best suited for:
 
 - building workflows with **Chat**, [Build with chat](/guide/build-with-chat), or by wiring nodes by hand,
+- reviewing code beside chat with a [session project workbench](/guide/chat-workbench) (review-first — not a full IDE),
 - [Browser Nodes](/guide/browser-nodes) and [research boards](/guide/research-boards) for live multi-page reading and comparison,
 - voice / chat / schedule / app-event triggers for personal Mac automation,
 - running simple app and system actions with explicit permissions,
