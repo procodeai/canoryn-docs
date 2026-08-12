@@ -17,6 +17,9 @@ Welcome to the **[[appName]]** documentation.
 ### 📐 Visual Architect + chat
 Design workflows with a node-based editor — or describe what you want in **Chat** or [Build with chat](/guide/build-with-chat) and watch the workflow appear. Edit one step without rebuilding the whole flow.
 
+### 🧰 Chat workbench
+Attach a **session project**, review files and diffs beside the conversation, and keep terminal or browser tabs open while the agent works. See [Chat workbench](/guide/chat-workbench).
+
 ### 🔬 Research boards & live browsers
 Compare sites in parallel on real [Browser Nodes](/guide/browser-nodes) you can scroll and click, synthesize a report, and reopen the board from Finder. See [Research boards](/guide/research-boards).
 
