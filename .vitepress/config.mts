@@ -182,6 +182,8 @@ export default defineConfig({
             { text: "Build with chat", link: "/guide/build-with-chat" },
             { text: "Chat workbench", link: "/guide/chat-workbench" },
             { text: "Review workbench", link: "/guide/review-workbench" },
+            { text: "Annotations", link: "/guide/annotations" },
+            { text: "Appearance", link: "/guide/appearance" },
             { text: "Browser Nodes", link: "/guide/browser-nodes" },
             { text: "Research Boards", link: "/guide/research-boards" },
             { text: "CLI & MCP", link: "/guide/cli-and-mcp" },

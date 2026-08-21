@@ -6,6 +6,8 @@ description: "Attach a project to Chat, open typed workbench tabs, review git ch
 
 From **0.3.0**, main **Chat** is a three-lane desk: **sessions** · **conversation** · **work panel**. Attach folders to a session, open typed tabs beside the feed, and review what the agent did without leaving the window.
 
+From **0.4.0**, the same workbench gains **durable annotations** on File / Review and shared **Appearance** controls (syntax themes, typography, translucent editors). See [Annotations](/guide/annotations) and [Appearance](/guide/appearance).
+
 This is **review-first**. The panel is a read-only viewer with an escape hatch to your real editor — not a replacement for Xcode, Cursor, or VS Code.
 
 Docs companion: [Review workbench](/guide/review-workbench) for git diffs, stage/discard/commit, and large-repo behavior.

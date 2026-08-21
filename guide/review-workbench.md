@@ -87,6 +87,8 @@ Leave a **thread on a line range** from unified or split Review (or from a norma
 
 Annotations are not owned by a single chat session or a one-off diff card.
 
+Full walkthrough: [Annotations](/guide/annotations).
+
 ## Freshness
 
 Review listens to project file / repository events (debounced). After your own git mutations it soft-refreshes metadata and rehydrates only paths that actually moved — so staging one hunk should not flash the whole tree or overwrite a newer selection with a stale async load.
@@ -100,5 +102,7 @@ Review listens to project file / repository events (debounced). After your own g
 ## Related
 
 - [Chat workbench](/guide/chat-workbench) — projects, tabs, file desk, agent loop
+- [Annotations](/guide/annotations) — durable review threads on File and Review
+- [Appearance](/guide/appearance) — syntax themes and typography
 - [Permissions](/guide/permissions) — consent for writes and shell
 - [Build with chat](/guide/build-with-chat) — Architect canvas chat

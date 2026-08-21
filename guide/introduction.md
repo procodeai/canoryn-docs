@@ -18,7 +18,7 @@ Welcome to the **[[appName]]** documentation.
 Design workflows with a node-based editor — or describe what you want in **Chat** or [Build with chat](/guide/build-with-chat) and watch the workflow appear. Edit one step without rebuilding the whole flow.
 
 ### 🧰 Chat workbench
-Attach a **session project**, review files and diffs beside the conversation, and keep terminal or browser tabs open while the agent works. See [Chat workbench](/guide/chat-workbench).
+Attach a **session project**, review files and diffs beside the conversation, and keep terminal or browser tabs open while the agent works. From 0.4.0, leave **[durable annotations](/guide/annotations)** on File or Review and tune **[Appearance](/guide/appearance)** (syntax themes, typography). See [Chat workbench](/guide/chat-workbench).
 
 ### 🔬 Research boards & live browsers
 Compare sites in parallel on real [Browser Nodes](/guide/browser-nodes) you can scroll and click, synthesize a report, and reopen the board from Finder. See [Research boards](/guide/research-boards).
@@ -41,6 +41,9 @@ Workflows, transcripts, and memory stay on your Mac unless you choose a cloud pr
 ## Next Steps
 
 - [Installation Guide](/guide/installation) — download and install [[appName]]
+- [Chat workbench](/guide/chat-workbench) — session projects and the work panel
+- [Annotations](/guide/annotations) — durable review threads (0.4.0)
+- [Appearance](/guide/appearance) — themes and typography (0.4.0)
 - [Build with chat](/guide/build-with-chat) — describe a workflow and watch it appear
 - [Quick Start](/guide/quickstart) — wire a first workflow by hand
 - [Architect Overview](/architect/overview) — canvas building blocks
