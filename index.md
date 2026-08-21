@@ -51,6 +51,9 @@ Traditional automation tools and chatbots either lack local system context, forg
 ## Quick Links
 
 - 📖 [Introduction](/guide/introduction) — What is [[appName]]?
+- 🧰 [Chat workbench](/guide/chat-workbench) — Session projects and the work panel
+- 🧵 [Annotations](/guide/annotations) — Durable review threads (0.4.0)
+- 🎨 [Appearance](/guide/appearance) — Themes and typography (0.4.0)
 - ✨ [Build with chat](/guide/build-with-chat) — Describe a workflow and watch it appear
 - 🌐 [Browser Nodes](/guide/browser-nodes) — Live webpages on the canvas
 - 🔬 [Research boards](/guide/research-boards) — Live comparison workspaces
