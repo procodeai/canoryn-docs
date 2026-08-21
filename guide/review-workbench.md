@@ -6,7 +6,7 @@ description: "Git Review beside Chat — staged and unstaged changes, lazy diffs
 
 The **Review** tab in the [Chat workbench](/guide/chat-workbench) is a Source Control desk for the session project. Open it from **+ → Review** (whole root) or from a file path (file-scoped).
 
-Review is for **inspecting and committing** what changed. Editing file contents still happens in your external editor; the File tab stays read-only.
+Review is for **inspecting and committing** what changed. From **0.4.0**, you can also leave **durable review threads** (annotations) on a diff or a normal file — they live with the project, not inside a single chat session. Editing file contents still happens in your external editor; the File tab stays read-only.
 
 ## Open Review
 
@@ -76,6 +76,16 @@ On hover over a change block (working-tree Changes / unstaged):
 - **Revert Change** — restores those lines in the working tree from the reverse patch
 
 Not offered on Staged cards or read-only scopes.
+
+## Annotations (0.4.0+)
+
+Leave a **thread on a line range** from unified or split Review (or from a normal File tab). Threads are stored with the project:
+
+- shared across chat sessions on the same repo root,
+- anchored by content fingerprint (lines are hints — moved code can reattach or ask for review),
+- open / resolved with agent and user replies in order.
+
+Annotations are not owned by a single chat session or a one-off diff card.
 
 ## Freshness
 
