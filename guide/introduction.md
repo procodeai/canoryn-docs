@@ -20,6 +20,9 @@ Design workflows with a node-based editor — or describe what you want in **Cha
 ### 🧰 Chat workbench
 Attach a **session project**, review files and diffs beside the conversation, and keep terminal or browser tabs open while the agent works. From 0.4.0, leave **[durable annotations](/guide/annotations)** on File or Review and tune **[Appearance](/guide/appearance)** (syntax themes, typography). See [Chat workbench](/guide/chat-workbench).
 
+### ✏️ Code editor
+From 0.5.0 the File tab edits: syntax colouring across 71 languages, folding, multiple carets, find and replace, snippets, and formatting on save — computed in-process, so it costs the size of the file you have open. Turn on a **[language server](/guide/language-servers)** for compiler diagnostics, hover, go-to-definition and cross-file rename. Review reads like Xcode: a native list that lands on the file you asked for, a fold band you drag open, and comment threads that hold their shape. See [Code editor](/guide/code-editor) and [Reviewing a diff](/guide/reviewing-a-diff).
+
 ### 🔬 Research boards & live browsers
 Compare sites in parallel on real [Browser Nodes](/guide/browser-nodes) you can scroll and click, synthesize a report, and reopen the board from Finder. See [Research boards](/guide/research-boards).
 

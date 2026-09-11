@@ -8,7 +8,7 @@ From **0.3.0**, main **Chat** is a three-lane desk: **sessions** · **conversati
 
 From **0.4.0**, the same workbench gains **durable annotations** on File / Review and shared **Appearance** controls (syntax themes, typography, translucent editors). See [Annotations](/guide/annotations) and [Appearance](/guide/appearance).
 
-This is **review-first**. The panel is a read-only viewer with an escape hatch to your real editor — not a replacement for Xcode, Cursor, or VS Code.
+This is **review-first**. From **0.5.0** the File tab is a real [code editor](/guide/code-editor) — colouring, folding, multiple carets, find and replace, and opt-in [language servers](/guide/language-servers) — so the change an agent just proposed can be finished without leaving. It is still not trying to be Xcode, Cursor or VS Code for the day; the escape hatch to your real editor stays.
 
 Docs companion: [Review workbench](/guide/review-workbench) for git diffs, stage/discard/commit, and large-repo behavior.
 
@@ -115,9 +115,9 @@ Closing the **last** tab hides the work panel.
 
 Select lines → floating **Ask about line(s)…** drafts a root-qualified `path:start-end` citation and a fenced snippet into the composer. It does **not** auto-send — you review and submit.
 
-### External editor (the escape hatch)
+### Editing here, or elsewhere
 
-The workbench is **read-only** on purpose. Use **Open** / Open Externally / Reveal in Finder / copy path when you want to edit in VS Code, Xcode, or another app. Disk remains the source of truth: after you save elsewhere, the tab refreshes through the project file watcher (including atomic save/rename).
+The File tab edits from **0.5.0** — see the [code editor](/guide/code-editor) guide for what it does and where it stops. For anything larger than the change in front of you, use **Open** / Open Externally / Reveal in Finder / copy path to continue in VS Code, Xcode, or another app. Disk remains the source of truth either way: after you save anywhere, the tab refreshes through the project file watcher (including atomic save/rename), and a file you are editing keeps its caret and scroll position across tab switches.
 
 Deleted-on-disk files keep last content with a stale banner instead of vanishing mid-review.
 
