@@ -182,6 +182,9 @@ export default defineConfig({
             { text: "Build with chat", link: "/guide/build-with-chat" },
             { text: "Chat workbench", link: "/guide/chat-workbench" },
             { text: "Review workbench", link: "/guide/review-workbench" },
+            { text: "Reviewing a diff", link: "/guide/reviewing-a-diff" },
+            { text: "Code editor", link: "/guide/code-editor" },
+            { text: "Language servers", link: "/guide/language-servers" },
             { text: "Annotations", link: "/guide/annotations" },
             { text: "Appearance", link: "/guide/appearance" },
             { text: "Browser Nodes", link: "/guide/browser-nodes" },
@@ -340,6 +343,14 @@ export default defineConfig({
                 },
               ],
             },
+          ],
+        },
+      ],
+      "/reference/": [
+        {
+          text: "Reference",
+          items: [
+            { text: "Editor shortcuts", link: "/reference/editor-shortcuts" },
           ],
         },
       ],

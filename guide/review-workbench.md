@@ -6,7 +6,7 @@ description: "Git Review beside Chat — staged and unstaged changes, lazy diffs
 
 The **Review** tab in the [Chat workbench](/guide/chat-workbench) is a Source Control desk for the session project. Open it from **+ → Review** (whole root) or from a file path (file-scoped).
 
-Review is for **inspecting and committing** what changed. From **0.4.0**, you can also leave **durable review threads** (annotations) on a diff or a normal file — they live with the project, not inside a single chat session. Editing file contents still happens in your external editor; the File tab stays read-only.
+Review is for **inspecting and committing** what changed. From **0.4.0**, you can also leave **durable review threads** (annotations) on a diff or a normal file — they live with the project, not inside a single chat session. From **0.5.0**, the File tab is a real [code editor](/guide/code-editor), so a small fix no longer means switching apps — and reading a diff well has its own guide: [Reviewing a diff](/guide/reviewing-a-diff).
 
 ## Open Review
 
