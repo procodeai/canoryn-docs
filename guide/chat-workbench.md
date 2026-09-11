@@ -117,7 +117,7 @@ Select lines → floating **Ask about line(s)…** drafts a root-qualified `path
 
 ### Editing here, or elsewhere
 
-The File tab edits from **0.5.0** — see the [code editor](/guide/code-editor) guide for what it does and where it stops. For anything larger than the change in front of you, use **Open** / Open Externally / Reveal in Finder / copy path to continue in VS Code, Xcode, or another app. Disk remains the source of truth either way: after you save anywhere, the tab refreshes through the project file watcher (including atomic save/rename), and a file you are editing keeps its caret and scroll position across tab switches.
+The File tab edits from **0.5.0** — see the [code editor](/guide/code-editor) guide for what it does and where it stops. For anything larger than the change in front of you, use **Open** / Open Externally / Reveal in Finder / copy path to continue in VS Code, Xcode, or another app. A tab with no unsaved edits follows the disk: save elsewhere and it refreshes through the project file watcher (including atomic save/rename). A tab *with* unsaved edits keeps them when the disk changes, shows a banner, and lets you choose — see [editing safely alongside agents](/guide/code-editor#editing-safely-alongside-agents). A file you are editing keeps its caret and scroll position across tab switches.
 
 Deleted-on-disk files keep last content with a stale banner instead of vanishing mid-review.
 

@@ -90,6 +90,10 @@ What the pointer shows is where you are:
 
 The I-beam appears over code and nowhere else.
 
+## Review is read-only
+
+You can select, search, fold and comment in Review, but not type. A diff is a projection of Git state — `HEAD`, the index, a commit, an agent turn — and editing it in place would mean rebasing your keystrokes onto patch coordinates, which is a later release. To change the code, open the file (**Open** in the header) and edit it in the [code editor](/guide/code-editor); Review refreshes as you save.
+
 ## Split view
 
 Split review — old on the left, new on the right — receives the fold band, the drag, and comment threads. Revealed-context shading in split view follows in a later release.

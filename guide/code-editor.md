@@ -120,6 +120,50 @@ If the formatter is not installed, the editor says which one it wanted and how t
 
 A file you are editing stays where you left it across tab switches: caret, selection and scroll position are kept per file.
 
+## Editing safely alongside agents
+
+An agent may write to the same file you have open. So may your external editor. The editor is built for that, and the contract is simple: **your unsaved edits are never lost, and nothing is overwritten without you saying so.**
+
+### What you can edit
+
+Only files in the **working tree**. A diff in Review, a file at `HEAD`, the index, a commit, an agent turn — those are projections, and they stay read-only. Find, folding and go-to-symbol all work in them; typing does not. Editing inside Review, with edits rebased onto patch coordinates, is a later release.
+
+### Preview tabs
+
+Opening a file from the tree gives you a **preview** tab — its title in italics, replaced by the next file you open. Your first edit promotes it to a real tab. A tab with unsaved changes shows a dot instead of a close button, so you cannot close it by reflex.
+
+### When the file changes under you
+
+Every save is atomic and checks that the file on disk is the one you started from. If something else — an agent, another editor, a `git checkout` — wrote to the file while you had unsaved edits, the tab shows a banner:
+
+> **This file changed outside Canoryn. Your unsaved edits are preserved.**
+
+Your buffer stays exactly as you left it; the external bytes are kept in a conflict record. Then you decide:
+
+| Choose | Result |
+| :----- | :----- |
+| **Reload** | Discard your edits and take the external version |
+| **Overwrite** | Write your buffer over the external change |
+| **Save a Copy…** | Keep both: save yours somewhere else, leave the file as the other writer left it |
+
+If the file was **deleted** outside Canoryn, the banner says so and **Overwrite** becomes **Recreate** — your buffer is written back as a new file. Reload and Overwrite each confirm first, since both are one-way.
+
+Without unsaved edits, an external change simply refreshes the tab — disk is the source of truth until you start typing.
+
+### Recovery
+
+Unsaved and conflicted buffers are stored in the project database as you type. Close the tab, quit Canoryn, or lose the session — reopen the file and your edits are there, with the banner if a conflict was pending.
+
+### History
+
+The workbench keeps **Back** and **Forward** history across the files you open, like a browser — the chevrons in the tab bar. Jumping to a definition or a search result and coming back is one click.
+
+### Find in project, and Replace All
+
+**Find in project** (⌥⌘F) searches the tree and **sees your unsaved buffers** — a match in a file you have edited but not saved is a match in your version, not the disk's.
+
+**Replace All** asks before it writes. Files with unsaved or conflicted buffers are **skipped** rather than silently rewritten, and the whole replacement is one Undo.
+
 ## Where the editor stops
 
 The editor is for the change in front of you. It does not build a project model, watch the whole tree, or run tasks. For real diagnostics, hover and definition, turn on a [language server](/guide/language-servers) for that language; for reviewing what an agent changed, use [Review](/guide/reviewing-a-diff).
