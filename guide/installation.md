@@ -1,5 +1,5 @@
 ---
-description: "Download and install Canoryn on macOS 14+, including the one-time first-launch security step for the current beta build."
+description: "Download and install Canoryn on macOS 15.4+, including the one-time first-launch security step for the current beta build."
 ---
 
 # Installation
@@ -10,7 +10,7 @@ Get [[appName]] running on your Mac in under 5 minutes.
 
 | Requirement | Minimum                | Recommended                |
 | ----------- | ---------------------- | -------------------------- |
-| macOS       | 14.0 (Sonoma)          | 14.0+ / Apple Silicon      |
+| macOS       | 15.4 (Sequoia)         | 15.4+ / Apple Silicon      |
 | RAM         | 8GB                    | 16GB+                      |
 | Storage     | 2GB                    | 10GB (for local AI models) |
 | Processor   | Apple Silicon or Intel | Apple Silicon              |
@@ -21,7 +21,7 @@ Get the latest version of [[appName]] for macOS:
 
 [Download [[appName]] for macOS](https://canoryn.app/download) (Universal DMG)
 
-> **Requirements**: macOS 14.0+ (Sonoma). Apple Silicon (M1/M2/M3) recommended; Intel is supported.
+> **Requirements**: macOS 15.4+ (Sequoia). Canoryn 0.5.0 is the last version for macOS 14. Apple Silicon (M1/M2/M3) recommended; Intel is supported.
 ## Setup
 
 1. Open `[[appName]].dmg` and drag the app to Applications.

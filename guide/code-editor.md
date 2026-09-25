@@ -48,6 +48,34 @@ Find, go-to-line and go-to-symbol work in any file, including read-only ones —
 ⇧⌘F is Focus Mode in Canoryn. ⇧⌘B is the project check because plain ⌘B is the left panel. The editor claims the shortcut that is actually free rather than the one VS Code uses, and says so in the code.
 :::
 
+## Changes in the gutter
+
+In a Git repository the gutter rail marks what changed against `HEAD` as you edit — added, modified, and a wedge where lines were deleted — in your theme's change colours. The marks follow your typing a moment later, off the main thread.
+
+### Moving between changes
+
+| Do | Press |
+| :- | :---- |
+| Next change | ⌃⌥↓ or ⌃⌥] |
+| Previous change | ⌃⌥↑ or ⌃⌥[ |
+
+Past the last change it wraps to the first, with a brief flash along the rail. Both are also in the editor's context menu.
+
+### Overview ruler
+
+A 14 pt ruler down the right edge shows every change in the file at once, with the visible part of the file as a band and the caret as a hairline. Click or drag on it to go there.
+
+### Opening a change
+
+Click a change mark or a deletion wedge — or press **⌥⏎** with the caret in a change — and the change opens in place: the lines that were there at `HEAD` appear directly above the current ones, on the editor's own grid and colouring, so old and new read as one piece of code. A glass card beside the rail carries what you can do with it:
+
+- **Revert** — put the old lines back, as one undoable edit.
+- **Stage** / **Unstage** — this change alone. While the file has unsaved edits it reads **Save to stage**: Git stages the file on disk, so save first.
+- **Commit** — this change alone, with your message or one the model writes; **Amend** folds it into the last commit. After a commit the card says what it did, with **Undo**. See [Git & commits](/guide/git-and-commits).
+- **Copy** the old lines.
+
+↑ and ↓ on the card step to the neighbouring change. **Esc**, **✕** or a click elsewhere closes it.
+
 ## Folding
 
 Chevrons in the gutter fold and unfold blocks. **⌥⌘←** folds the block around the caret, as in Xcode. A fold inside a fold works; a folded block shows a badge with its line count, and clicking the badge unfolds it.

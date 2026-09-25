@@ -177,19 +177,51 @@ export default defineConfig({
           text: "Getting Started",
           items: [
             { text: "Introduction", link: "/guide/introduction" },
+            { text: "What Canoryn does", link: "/guide/features" },
             { text: "Installation", link: "/guide/installation" },
             { text: "Quick Start", link: "/guide/quickstart" },
-            { text: "Build with chat", link: "/guide/build-with-chat" },
+          ],
+        },
+        {
+          text: "Chat & Agents",
+          items: [
             { text: "Chat workbench", link: "/guide/chat-workbench" },
-            { text: "Review workbench", link: "/guide/review-workbench" },
-            { text: "Reviewing a diff", link: "/guide/reviewing-a-diff" },
+            { text: "Agent core (preview)", link: "/guide/agent-core" },
+            { text: "CLI & MCP", link: "/guide/cli-and-mcp" },
+          ],
+        },
+        {
+          text: "Code & Git",
+          items: [
             { text: "Code editor", link: "/guide/code-editor" },
             { text: "Language servers", link: "/guide/language-servers" },
+            { text: "Git & commits", link: "/guide/git-and-commits" },
+            { text: "Review workbench", link: "/guide/review-workbench" },
+            { text: "Reviewing a diff", link: "/guide/reviewing-a-diff" },
             { text: "Annotations", link: "/guide/annotations" },
-            { text: "Appearance", link: "/guide/appearance" },
+            { text: "Editor shortcuts", link: "/reference/editor-shortcuts" },
+          ],
+        },
+        {
+          text: "Documents",
+          items: [
+            { text: "Documents", link: "/guide/documents" },
+            { text: "AI in documents", link: "/guide/document-ai" },
+            { text: "Sharing & publishing", link: "/guide/sharing-documents" },
+          ],
+        },
+        {
+          text: "Canvas & Workflows",
+          items: [
+            { text: "Build with chat", link: "/guide/build-with-chat" },
             { text: "Browser Nodes", link: "/guide/browser-nodes" },
             { text: "Research Boards", link: "/guide/research-boards" },
-            { text: "CLI & MCP", link: "/guide/cli-and-mcp" },
+          ],
+        },
+        {
+          text: "Help",
+          items: [
+            { text: "Appearance", link: "/guide/appearance" },
             { text: "Beta Limitations", link: "/guide/beta-limitations" },
             { text: "Troubleshooting", link: "/guide/troubleshooting" },
           ],
