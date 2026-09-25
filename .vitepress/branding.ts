@@ -12,7 +12,7 @@ export const branding = {
   twitterUrl: "https://x.com/canoryn",
   instagramUrl: "https://www.instagram.com/canoryn.app/",
   youtubeUrl: "https://www.youtube.com/@canoryn",
-  currentVersion: "0.5.0",
+  currentVersion: "0.6.0",
 } as const;
 
 export type BrandingVariables = keyof typeof branding;

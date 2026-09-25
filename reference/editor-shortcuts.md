@@ -18,13 +18,16 @@ The editor claims the shortcut that is actually free in Canoryn rather than the 
 | Find in project | ⌥⌘F | ⇧⌘F is Focus Mode |
 | Jump to matching bracket | ⌃M | |
 | Select enclosing block | ⇧⌃M | |
+| Next change | ⌃⌥↓ or ⌃⌥] | As Xcode; wraps at the end |
+| Previous change | ⌃⌥↑ or ⌃⌥[ | As Xcode |
+| Open the change at the caret | ⌥⏎ | Or click its mark in the gutter |
 | Go to definition | ⌘-click | Needs a [language server](/guide/language-servers) |
 
 ## Folding
 
 | Action | Shortcut | Note |
 | :----- | :------- | :--- |
-| Fold block at caret | ⌥⌘← | As Xcode |
+| Fold / unfold block at caret | ⌥⌘← or ⌥⌘→ | As Xcode |
 | Fold / unfold | gutter chevron | |
 | Unfold | click the folded badge | |
 
@@ -43,13 +46,47 @@ The editor claims the shortcut that is actually free in Canoryn rather than the 
 | Action | Shortcut | Note |
 | :----- | :------- | :--- |
 | Toggle line comment | ⌘/ | |
-| Duplicate line / selection | ⇧⌥↓ | ⇧⌘D is Show Debug |
+| Duplicate line / selection | ⇧⌥↓ or ⇧⌥↑ | ⇧⌘D is Show Debug |
+| Move line up / down | ⌥⌘↑ / ⌥⌘↓ | |
+| Toggle block comment | ⇧⌥A | As VS Code |
 | Delete line | ⇧⌘K | As VS Code |
 | Join lines | ⌃J | As VS Code |
 | Format document | ⇧⌥F | As VS Code |
 | Expand snippet | Tab | After its prefix |
 | Next snippet field | Tab | |
 | Save | ⌘S | |
+
+## Git
+
+| Action | Shortcut | Note |
+| :----- | :------- | :--- |
+| Next / previous change | ⌃⌥↓ / ⌃⌥↑ | |
+| Open the change at the caret | ⌥⏎ | Revert, Stage, Commit, Copy on its card |
+| Step between changes on the card | ↑ / ↓ | |
+| Close the card | Esc | |
+
+## Markdown documents
+
+In **Edit** mode of a Markdown file ([Documents](/guide/documents)):
+
+| Action | Shortcut | Note |
+| :----- | :------- | :--- |
+| Bold / italic | ⌘B / ⌘I | |
+| Inline code | ⌘E | |
+| Link | ⌘K | Uses a URL on the clipboard |
+| Strikethrough | ⇧⌘X | |
+| Highlight | ⇧⌘H | `==text==` |
+| Heading 1–6 | ⌥⌘1 … ⌥⌘6 | Again removes it |
+| Body text | ⌥⌘0 | |
+| Bulleted / numbered list | ⇧⌘8 / ⇧⌘7 | |
+| Quote | ⇧⌘9 | |
+| To-do | ⌘↩ | Ticks it when it is one |
+| Comment on the selection | ⌥⌘M | |
+| Insert a block | `/` | At the start of a line or after a space |
+| Select the block | Esc | Then ↑ ↓, ⇧↑ ⇧↓ to extend, ⌫ to delete |
+| Move block up / down | ⇧⌘↑ / ⇧⌘↓ | |
+| Duplicate block | ⌘D | |
+| Save / undo / redo | ⌘S / ⌘Z / ⇧⌘Z | This editor's own history |
 
 ## Project
 
