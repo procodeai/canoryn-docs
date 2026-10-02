@@ -9,7 +9,7 @@ A running list of what the app can do today, grouped by what you are trying to g
 ## Work with an agent
 
 - **Chat with an agent about a project.** Attach folders to a session; the agent reads, searches, edits and runs commands in them, showing each step and asking before anything that needs consent. → [Chat workbench](/guide/chat-workbench)
-- **Agent core (preview).** A newer loop that checks every edit it makes, shares one language server with the editor, and has you review its plan first. → [Agent core](/guide/agent-core)
+- **Agent core.** The loop behind chat (default since 0.6.1): it checks every edit it makes, shares one language server with the editor, and has you review its plan first. → [Agent core](/guide/agent-core)
 - **Your own models.** OpenAI, Anthropic, Gemini, a ChatGPT subscription, or local models through Ollama. → [Local processing](/guide/local-processing)
 - **From other tools.** Drive Canoryn from the terminal or another agent. → [CLI & MCP](/guide/cli-and-mcp)
 

@@ -1,15 +1,15 @@
 ---
-description: "The agent core (preview): a newer agent loop for coding sessions that checks every edit, shares one language server with the editor, reviews plans with you first, and needs evidence to close a to-do. Off by default."
+description: "The agent core: the agent loop for coding sessions that checks every edit, shares one language server with the editor, reviews plans with you first, and needs evidence to close a to-do. On by default since 0.6.1."
 ---
 
-# Agent core (preview)
+# Agent core
 
-The agent core is a newer loop for coding sessions in chat. It is a **preview in 0.6.0** and off by default; chat keeps the current loop unless you turn it on.
+The agent core is the loop behind coding sessions in chat. It arrived as a preview in **0.6.0** and is the **default since 0.6.1**: chat, voice, quick actions and quick input run on it. If you turned it off before, it stays off until you turn it on again.
 
 ```bash
-canoryn agent core on      # route chat turns through the agent core
+canoryn agent core on      # route chat turns through the agent core (the default)
 canoryn agent core status
-canoryn agent core off
+canoryn agent core off     # go back to the older loop
 ```
 
 ## What it does differently
