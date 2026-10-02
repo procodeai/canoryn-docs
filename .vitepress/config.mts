@@ -180,13 +180,14 @@ export default defineConfig({
             { text: "What Canoryn does", link: "/guide/features" },
             { text: "Installation", link: "/guide/installation" },
             { text: "Quick Start", link: "/guide/quickstart" },
+            { text: "Your account", link: "/guide/account" },
           ],
         },
         {
           text: "Chat & Agents",
           items: [
             { text: "Chat workbench", link: "/guide/chat-workbench" },
-            { text: "Agent core (preview)", link: "/guide/agent-core" },
+            { text: "Agent core", link: "/guide/agent-core" },
             { text: "CLI & MCP", link: "/guide/cli-and-mcp" },
           ],
         },

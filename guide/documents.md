@@ -20,7 +20,7 @@ All three edit the same buffer, so unsaved changes, ⌘S and conflicts behave as
 
 - **Properties** — the `---` block at the top of a file shows as a card. `icon:`, `cover:` and `title:` draw the page header instead.
 - **Callouts** — `> [!NOTE]`, `> [!TIP]`, `> [!IMPORTANT]`, `> [!WARNING]`, `> [!CAUTION]`.
-- **Diagrams and math** — ```` ```mermaid ```` and ```` ```math ```` fences render as pictures; click a diagram to zoom, pan and edit its source.
+- **Diagrams and math** — ```` ```mermaid ```` and ```` ```math ```` fences render as pictures; click a diagram to zoom, pan and edit its source. Since **0.6.1**, math written as on GitHub renders too: `$$…$$` on its own lines as a block, `$…$` inside a sentence — in Preview, Edit, exported pages, PDFs and published pages.
 - **Links** — a bare GitHub issue or PR link becomes a card; a link to another file opens it in a tab.
 - **Highlights** — `==text==`.
 - **Toggles** — `<details><summary>Title</summary> … </details>` opens and closes in Preview.
