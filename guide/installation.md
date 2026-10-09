@@ -25,16 +25,7 @@ Get the latest version of [[appName]] for macOS:
 ## Setup
 
 1. Open `[[appName]].dmg` and drag the app to Applications.
-2. **Open the App** (macOS Gatekeeper warning):
-   The beta is not notarized yet, so the first launch may say macOS could not verify the app. Clear that once, either way:
-   - **Terminal (fastest):**
-     ```bash
-     xattr -dr com.apple.quarantine /Applications/[[appName]].app
-     ```
-     Then open [[appName]] from Applications.
-   - **System Settings:** click **Done** on the warning, open **System Settings → Privacy & Security**, scroll to **Security**, click **Open Anyway** next to the [[appName]] message, confirm with Touch ID or your password, and click **Open Anyway** again.
-
-   You only do this once per install. (On macOS 15, right-click → Open no longer bypasses the warning.)
+2. **Open the App.** [[appName]] is signed and notarized by Apple from 0.6.2 on, so it opens like any Mac app. (If you still have 0.6.1 or older installed, let it update itself, or download the current version.)
 3. Launch [[appName]] and grant the required system permissions:
    - **Accessibility**: To control windows and type text.
    - **Screen Recording**: To see the screen (processed locally).
